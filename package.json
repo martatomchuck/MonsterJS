@@ -1,0 +1,46 @@
+{
+  "name": "KazikKoduje",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack",
+    "dev": "./node_modules/.bin/webpack-dev-server --inline --hot --open"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-stage-2": "^7.0.0",
+    "autoprefixer": "^9.1.5",
+    "axios": "^0.18.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^3.4.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "lodash": "^4.17.11",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-redux": "^7.1.3",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.20.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
