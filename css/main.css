@@ -130,6 +130,11 @@ body {
   margin: 0 0 15px 0;
 }
 
+.title span {
+  font-weight: 600;
+  opacity: 70%;
+}
+
 .description {
   color: #f8eeee;
   font-family: sans-serif;
