@@ -1,65 +1,76 @@
-// Konfiguracja webpacka
-
-const path = require("path");
+//Konfiguracja Webpack
+var path = require('path');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: './js/app.js', //plik scalający, wejściowy
-    output: {
-        filename: "js/out.js",
-        path: path.resolve(__dirname, ".")
-    },
-    watch: false, //śledzenie zmian
-    mode: 'development',  //development - nieupakowany, production - upakowany, zoptymalizowany
-    devtool: "source-map",  //wskazanie linii błędu w trakcie debugowania
-    module: { 
-        rules: [  //ustawimy dodatkowe reguły:
-            {
-                test: /\.m?js$/,  //dwa rozszerzenia .js albo .mjs (rzadziej uzywany)
-                exclude: /(node_modules|bower_components)/,
-                use: {
-                    loader: 'babel-loader', //babel js - tłumaczy na klasyczny zapis js; żeby wspierać stare przeglądarki
-                    options: {
-                        presets: ['@babel/preset-env'] //jeśli używasz babela to użyj takiego presetu
-                    }
+  devtool: 'eval-source-map',
+  watch: true,
+  mode: 'development',
+  entry: {
+    main: path.join(__dirname, 'js', 'app.js'),
+  },
+  output: {
+    path: path.join(__dirname, 'dist'),
+    filename: '[name].bundle.js'
+  },
+  devServer: {
+    contentBase: path.join(__dirname, "dist"),
+    compress: true,
+    port: 4500,
+    historyApiFallback: true
+  },
+  module: {
+    rules: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env', '@babel/preset-react'
+            ],
+            "plugins": [
+              [
+                "@babel/plugin-proposal-class-properties", {
+                  "loose": true
                 }
-            },
-            {
-                test: /\.(jpg|jpeg|gif|png|csv)$/,
-                use: {
-                    loader: "file-loader",
-                    options: {
-                        name: '[name].[ext]',
-                        publicPath: 'images',
-                        outputPath: 'images'
-                    }
-                }
-            },
-            {
-                test: /\.css$/, //domyślnie wszystkie pliki scalane to JS, ustawiamy reguły zachowania z plikami innymi niż .js
-                use: [
-                    { loader: 'style-loader' }, // style-loader wrzuca style już skonwertowane na .js do heada html (zalecane przez Chrome)
-                    { loader: 'css-loader' } //loadery: konwersja kodu .css na odpowiednik .js - wczytuje się najpierw
-                ],
-            },
-            {
-                test: /\.scss$/,
-                use: [
-                    { loader: "style-loader" }, //loadery: konwersja kodu .scss na .js
-                    { loader: "css-loader" },
-                    { loader: 'postcss-loader',
-                        options: {
-                            plugins: () => [
-                                new require('autoprefixer')()
-                            ]
-                        }
-                    },
-                    { loader: "sass-loader" }
-                ]
-            }
-        ]
-    },
-    plugins: [
-        //mogę sobie doinstalować pluginy
-
+              ]
+            ]
+          }
+        }
+      }, {
+        test: /\.(png|jpe?g|svg|gif|woff|otf)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]',
+            outputPath: 'images/'
+          }
+        }
+      },
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          // Creates `style` nodes from JS strings
+          'style-loader',
+          // Translates CSS into CommonJS
+          'css-loader',
+          // Compiles Sass to CSS
+          'sass-loader',
+        ],
+      },
     ]
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'index.html'),
+      hash: true
+    })
+  ]
 }
