@@ -176,9 +176,14 @@ body {
     width: 94%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    flex-direction: column;
     background-color: white;
     border-radius: 0 5px 5px 0;
+}
+
+.console-buttons {
+    display: flex;
+    justify-content: space-between;
 }
 
 .btn {
