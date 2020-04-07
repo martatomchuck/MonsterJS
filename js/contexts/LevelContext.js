@@ -1,11 +1,17 @@
 import React, { createContext, Component } from 'react';
-import ReactDOM from "react-dom";
 
 export const LevelContext = createContext();
 
 class LevelContextProvider extends Component {
+    state = {
+        level: 1
+    }
     render () {
-        return null
+        return (
+            <LevelContext.Provider value={{...this.state}}>
+                {this.props.children}
+            </LevelContext.Provider>
+        )
     }
 }
 
