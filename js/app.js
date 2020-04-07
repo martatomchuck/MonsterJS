@@ -7,19 +7,15 @@ import GameDataset from './data/dataset';
 // CONTEXTS
 import LevelContextProvider from './contexts/LevelContext';
 import UserInputContextProvider from './contexts/UserInputContext';
-import AnswerCorrectContextProvider from './contexts/AnswerCorrectContext';
+import AnswerContextProvider from './contexts/AnswerContext';
 
 // COMPONENTS
 
 const App = () => {
     return (
-        <LevelContextProvider value={1}>
-            <UserInputContextProvider value={""}>
-                <AnswerCorrectContextProvider value={false}>
-                    <GameEngine dataset={GameDataset}/>
-                </AnswerCorrectContextProvider>
-            </UserInputContextProvider>
-        </LevelContextProvider>
+        <AnswerContextProvider>
+            <GameEngine dataset={GameDataset}/>
+        </AnswerContextProvider>
     )
 }
 
