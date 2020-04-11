@@ -21,7 +21,7 @@ body {
 .section-left {
     width: 50%;
     height: 100%;
-    background-image: radial-gradient(#092563 10%, #011541 80%);
+    background-image: radial-gradient(#092563 15%, #011541 70%);
     // background-color: rgb(5, 29, 82);
     // background-color: rgba(1, 10, 67, 0.2);
     // background-color: #0c7b93;
@@ -225,5 +225,44 @@ body {
 }
 
 
+// WELCOME
+.welcome {
+    width: 800px;
+    height: 500px;
+    background-image: linear-gradient(90deg, #FF8704, #ff2e63);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 99999;
+    top: calc(50% - 250px);
+    left: calc(50% - 400px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+
+    p {
+        text-align: center;
+    }
+
+    .monsters {
+        display: flex;
+
+        div {
+            width: 80px;
+            height: 80px;
+            background-color: #ffc2c2;
+            margin: 10px;
+        }
+    }
+}
+
+.welcome-close-btn {
+    background-color: #96d3e0;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
 
 

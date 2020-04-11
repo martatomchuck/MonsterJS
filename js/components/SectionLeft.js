@@ -1,5 +1,7 @@
 import React, { Component, useState, useEffect, useContext } from "react";
 
+import SingleElement from './SingleElement';
+
 // SECTION LEFT
 const SectionLeft = () => {
     return (
@@ -37,10 +39,6 @@ const Game = () => {
             <h4 className="game-hint">Hover the element to peek its HTML structure.</h4>
         </>
     )
-}
-
-const SingleElement = () => {
-    return <div className="el"></div>
 }
 
 const Tooltip = () => {
