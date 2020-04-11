@@ -14,7 +14,7 @@ const Welcome = () => {
                 <div>2</div>
                 <div>3</div>
             </div>
-            <p>The game will teach you how to find HTML elements in your webpage using JavaScript functions.
+            <p><b>RULES:  </b>The game will teach you how to find and catch HTML elements using JavaScript functions.
             Read the instructions carefully and type your code to the console.</p>
             <p>Make the Monster Village a better place! Enjoy.</p>
         </div>
