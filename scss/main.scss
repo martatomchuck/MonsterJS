@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Baloo Paaji 2', cursive;
 }
 
 .container {
@@ -20,9 +21,12 @@ body {
 .section-left {
     width: 50%;
     height: 100%;
-    // background-color: #011541;
+    background-image: radial-gradient(#092563 10%, #011541 80%);
     // background-color: rgb(5, 29, 82);
-    background-color: rgba(1, 10, 67, 0.2);;
+    // background-color: rgba(1, 10, 67, 0.2);
+    // background-color: #0c7b93;
+    // background-color: #ffc2c2;
+    // background-color: rgb(1, 10, 67);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -30,54 +34,61 @@ body {
 }
 
 .counter {
-    width: 250px;
-    height: 35px;
-    color: white;
+    width: 280px;
+    height: 40px;
+    color: #092563;
     display: flex;
     justify-content: space-between;
-    font-family: sans-serif;
     text-align: center;
-    line-height: 35px;
+    line-height: 40px;
+    margin-top: 20px;
 }
 
 #counter-prev {
-    background-color: #00a8cc;
-    opacity: 40%;
-    width: 13%;
-    border-radius: 17.5px 2px 2px 17.5px;
+    // background-color: #00a8cc;
+    background-color: #ff9d9d;
+    width: 15%;
+    border-radius: 20px 2px 2px 20px;
 
     &:hover {
-        opacity: 70%;
+        opacity: 80%;
     }
 }
 
 #counter-level {
-    width: 70%;
-    background-color: #0e99b8;
-    opacity: 70%;
-    font-size: 1.2rem;
+    width: 65%;
+    background-color: #ffc2c2;
+    font-size: 1.3rem;
+    font-weight: 600;
     border-radius: 2px;
+    
+    &:hover {
+        opacity: 90%;
+    }
+}
+
+#counter-next {
+    // background-color: #00a8cc;
+    background-color: #ff9d9d;
+    width: 15%;
+    border-radius: 2px 20px 20px 2px;
     
     &:hover {
         opacity: 80%;
     }
 }
 
-#counter-next {
-    background-color: #00a8cc;
-    opacity: 40%;
-    width: 13%;
-    border-radius: 2px 17.5px 17.5px 2px;
-    
-    &:hover {
-        opacity: 70%;
-    }
+.game-hint {
+    color: white;
+    opacity: 0.7;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 20px;
 }
 
 .game {
-    width: 80%;
+    width: 70%;
     height: 75%;
-    padding-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -89,14 +100,21 @@ body {
     height: 140px;
     border-radius: 50%;
     background-color: #0c7b93;
-    // box-shadow: 0 5px 25px 5px #e3f6f5;
+    // background-color: #FF8704;
+    box-shadow: 0 5px 25px 5px #000b22;
     margin: 10px 20px;
     padding: 0;
     position: relative;
+    transition: all 2s ease;
+
+    &:hover {
+        transform: scale(1.15, 1.15);
+        transition: all 0.8s ease;
+        z-index: 1;
+    }
 
     &:hover::after  {
         content: '< tag class="klasa1 klasa2" id="id1 id2" >< /tag >';
-        font-family: sans-serif;
         font-size: 1.2rem;
         color: white;
         box-sizing: border-box;
@@ -119,41 +137,45 @@ body {
     width: 50%;
     height: 100%;
     // background-color: #000b22;
-    background-color: rgb(1, 10, 67);
+    // background-color: rgb(1, 10, 67);
+    background-color: #142850;
     box-shadow: 0px 0 20px 2px #020235;
+    box-shadow: 0 0 20px 2px #000b22;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
+    padding: 5px 30px 40px 40px;
 }
 
 .title {
     color: #ff9d9d;
-    font-size: 2em;
-    font-family: sans-serif;
-    font-weight: 800;
-    margin: 0 0 15px 0;
-
+    // color: #FF8704;
+    font-size: 2.7em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    
     span {
         font-weight: 600;
-        opacity: 70%;
+        opacity: 90%;
     }
 }
 
 .description {
     color: #f8eeee;
-    font-family: sans-serif;
     line-height: 28px;
-    font-size: 15px;
+    font-size: 17px;
 
     span {
         display: inline-block;
-        padding: 1px 8px;
-        background-color: rgba(#e3f6f5, 0.25);
+        padding: 1px 10px;
+        background-color: rgba(#33bfdf, 0.55);
+        border-radius: 5px;
         color: white;
-        font-weight: 800;
+        font-weight: 600;
+        letter-spacing: 1px;
     }
 }
 
@@ -163,6 +185,7 @@ body {
     margin: 50px 0;
     align-self: center;
     display: flex;
+    box-shadow: 5px 5px 40px 10px #000b22;
 }
 
 .console-numbers {
@@ -170,9 +193,8 @@ body {
     background-color: rgba(white, 0.3);
     color: white;
     font-size: 1.2em;
-    font-weight: 800;
-    font-family: sans-serif;
-    padding: 0 15px;
+    font-weight: 600;
+    padding: 10px 15px;
     border-radius: 5px 0 0 5px;
 }
 .console-task {
@@ -194,12 +216,12 @@ body {
     height: 45px;
     background-color: #ff2e63;
     color: white;
-    font-family: sans-serif;
     font-weight: 700;
     border-radius: 8px;
     text-align: center;
     line-height: 45px;
     margin: 10px 30px;
+
 }
 
 

@@ -22,17 +22,20 @@ const Counter = () => {
 
 const Game = () => {
     return (
-        <div className="game">
-            <SingleElement/>
-            <SingleElement/>
-            <SingleElement/>
-            <SingleElement/>
-            <SingleElement/>
-            <SingleElement/>
-            <SingleElement/>
-            <SingleElement/>
-            <SingleElement/>
-        </div>
+        <>
+            <div className="game">
+                <SingleElement/>
+                <SingleElement/>
+                <SingleElement/>
+                <SingleElement/>
+                <SingleElement/>
+                <SingleElement/>
+                <SingleElement/>
+                <SingleElement/>
+                <SingleElement/>
+            </div>
+            <h4 className="game-hint">Hover the element to peek its HTML structure.</h4>
+        </>
     )
 }
 
