@@ -16,12 +16,12 @@ const SectionLeft = () => {
 const Counter = () => {
     return (
         <LevelContext.Consumer>{(context) => {
-            const {level} = context;
+            const {level, handlePrevButton, handleNextButton} = context;
             return (
                 <div className="counter">
-                    <div id="counter-prev"></div>
+                    <div id="counter-prev" onClick={handlePrevButton}></div>
                     <div id="counter-level">Level {level} of 10</div>
-                    <div id="counter-next"></div>
+                    <div id="counter-next" onClick={handleNextButton}></div>
                 </div>
             )
         }}</LevelContext.Consumer>

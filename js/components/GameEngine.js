@@ -3,6 +3,7 @@ import React, { Component, useState, useEffect, useContext } from "react";
 import SectionLeft from './SectionLeft';
 import SectionRight from './SectionRight';
 import Welcome from './Welcome';
+import { LevelContext } from "../contexts/LevelContext";
 
 
 const GameEngine = ({dataset}) => {
