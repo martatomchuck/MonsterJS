@@ -15,12 +15,12 @@ class GameEngine extends Component {
 
         const {dataset} = this.props
 
-        // return (
-        //     <div className="container">
-        //         <SectionLeft/>
-        //         <SectionRight/>
-        //     </div>
-        // );
+        return (
+            <div className="container">
+                <SectionLeft/>
+                <SectionRight/>
+            </div>
+        );
 
         return <Welcome/>
     }
