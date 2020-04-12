@@ -16,14 +16,7 @@ const Name = () => {
 
 const Instructions = () => {
     return (
-        <div className="description">Jakiś tam opis <span>querySelector()</span> querySelector albo getElementById albo jeszcze czegoś tam innego Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quas, officia modi similique deserunt vel.
-            <ul>
-                <li><span>getElementsByClassName()</span> Eos vitae explicabomodi! Voluptate accusantium rem</li>
-                <li>Eos vitae explicabo modi! Voluptate accusantium rem</li>
-                <li>Eos vitae explicabo modi! Voluptate accusantium rem</li>
-            </ul>
-            <b>Examples:</b> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        </div>
+        <div className="description"></div>
     )
 }
 

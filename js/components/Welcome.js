@@ -6,7 +6,7 @@ const Welcome = () => {
             <a className="welcome-close-btn">close</a>
             <h1>Hello Detective!<br/>
             Welcome to Monster Village</h1>
-            <p>These friendly little Monsters are harassed by unwelcomed guests.<br/>
+            <p>These friendly little Monsters have been harassed by unwelcomed guests.<br/>
             Only you can help them to get rid of sinister creatures with your JavaScript superpowers.</p>
             <div className="monsters">
                 <div>1</div>

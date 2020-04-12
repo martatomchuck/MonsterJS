@@ -1,6 +1,7 @@
 import React, { Component, useState, useEffect, useContext } from "react";
 
 import SingleElement from './SingleElement';
+import { LevelContext } from "../contexts/LevelContext";
 
 // SECTION LEFT
 const SectionLeft = () => {
@@ -14,11 +15,16 @@ const SectionLeft = () => {
 
 const Counter = () => {
     return (
-        <div className="counter">
-            <div id="counter-prev"></div>
-            <div id="counter-level">Level 4 of 10</div>
-            <div id="counter-next"></div>
-        </div>
+        <LevelContext.Consumer>{(context) => {
+            const {level} = context;
+            return (
+                <div className="counter">
+                    <div id="counter-prev"></div>
+                    <div id="counter-level">Level {level} of 10</div>
+                    <div id="counter-next"></div>
+                </div>
+            )
+        }}</LevelContext.Consumer>
     )
 }
 

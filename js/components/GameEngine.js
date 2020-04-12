@@ -5,29 +5,24 @@ import SectionRight from './SectionRight';
 import Welcome from './Welcome';
 
 
-class GameEngine extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
+const GameEngine = ({dataset}) => {
+    dataset.map(e => {
+        return (
+            <div className="container">
+                <SectionLeft level={e.level} elements={e.elements}/>
+                <SectionRight description={e.task_description} instruction={e.instructions} example={e.example}/>
+            </div>
+        );
+    })
 
-    render() {
-
-        const {dataset} = this.props
-
-        // return (
-        //     <div className="container">
-        //         <SectionLeft/>
-        //         <SectionRight/>
-        //     </div>
-        // );
-
-        return <Welcome/>
-    }
-
-    componentDidMount() {
-        return <Welcome/>
-    }
+    return (
+        <div className="container">
+            <SectionLeft/>
+            <SectionRight/>
+        </div>
+    );
+ 
+    return <Welcome/>
 }
 
 export default GameEngine;
