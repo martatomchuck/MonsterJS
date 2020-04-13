@@ -1,10 +1,10 @@
 import React, { Component, useState, useEffect, useContext } from "react";
 
-const SectionRight = () => {
+const SectionRight = ({description, instructions, example}) => {
     return (
         <section className="section-right">
             <Name/>
-            <Instructions/>
+            <Instructions description={description} instructions={instructions} example={example}/>
             <Console/>
         </section>
     )
@@ -14,9 +14,29 @@ const Name = () => {
     return <div className="title">Selector game<span></span></div>
 }
 
-const Instructions = () => {
+const Instructions = ({description, instructions, example}) => {
     return (
-        <div className="description"></div>
+        <>
+            <div className="description">
+                {description.map((el) => {
+                    return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
+                })} 
+            </div>
+            <div className="description">
+                <ul>
+                    {instructions.map((el) => {
+                        return <li key={el.id}>{el.bullet.map((el) => {
+                            return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
+                        })}</li>
+                    })}
+                </ul>
+            </div>
+            <div className="description">
+                {example.map((el) => {
+                    return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
+                })}
+            </div>
+        </>
     )
 }
 
@@ -37,15 +57,15 @@ const Console = () => {
 }
 
 const InputCode = () => {
-    return <p>kod wejściowy</p>
+    return <p>Type in your code</p>
 }
 
 const OutputCode = () => {
-    return <p>kod wyjściowy</p>
+    return <p>Good job! The ghost is gone!</p>
 }
 
 const BtnOutput = () => {
-    return <div className="btn output-btn">Output</div>
+    return <div className="btn output-btn">Check</div>
 }
 
 const BtnNext = () => {

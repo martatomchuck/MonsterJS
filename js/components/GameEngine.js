@@ -7,23 +7,13 @@ import { LevelContext } from "../contexts/LevelContext";
 
 
 const GameEngine = ({dataset}) => {
-    dataset.map(e => {
-        return (
-            <div className="container">
-                <SectionLeft level={e.level} elements={e.elements}/>
-                <SectionRight description={e.task_description} instruction={e.instructions} example={e.example}/>
-            </div>
-        );
-    })
 
     return (
         <div className="container">
-            <SectionLeft/>
-            <SectionRight/>
+            <SectionLeft level={dataset[0].level} elements={dataset[0].elements}/>
+            <SectionRight description={dataset[0].task_description} instructions={dataset[0].instructions} example={dataset[0].example}/>
         </div>
     );
- 
-    return <Welcome/>
 }
 
 export default GameEngine;

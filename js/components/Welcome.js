@@ -1,9 +1,9 @@
 import React, { Component, useState, useEffect, useContext } from "react";
 
-const Welcome = () => {
+const Welcome = ({handleWelcomeClose}) => {
     return (
         <div className="welcome">
-            <a className="welcome-close-btn">close</a>
+            <a className="welcome-close-btn" onClick={handleWelcomeClose}>close</a>
             <h1>Hello Detective!<br/>
             Welcome to Monster Village</h1>
             <p>These friendly little Monsters have been harassed by unwelcomed guests.<br/>
@@ -14,7 +14,7 @@ const Welcome = () => {
                 <div>3</div>
             </div>
             <p><b>LEARNING OBJECTIVES: </b>The game will teach you how to find HTML elements using predefined JavaScript functions. 
-            Read the instructions carefully and type your code to the console. Enjoy it.</p>
+            Read the instructions carefully and type your code to the console. Happy hacking!</p>
             <p><b>PREREQUISITES: </b>For all JavaScript learners. Familiarity with the basics of HTML and JavaScript fundamentals is a plus but not required.</p>
             <h3>Make the Monster Village a better place.</h3>
         </div>
