@@ -207,6 +207,21 @@ body {
     border-radius: 0 5px 5px 0;
 }
 
+.output {
+    display: block;
+    width: 90%;
+    height: 80px;
+    color: white;
+    font-size: 25px;
+    background-color: #FF8704;
+    border-radius: 10px;
+    margin-top: 10%;
+    margin-left: 5%;
+    text-align: center;
+    line-height: 80px;
+
+}
+
 .console-buttons {
     display: flex;
     justify-content: space-between;
@@ -222,7 +237,6 @@ body {
     text-align: center;
     line-height: 45px;
     margin: 10px 30px;
-
 }
 
 

@@ -11,7 +11,7 @@ const GameEngine = ({dataset}) => {
     return (
         <div className="container">
             <SectionLeft level={dataset[0].level} elements={dataset[0].elements}/>
-            <SectionRight description={dataset[0].task_description} instructions={dataset[0].instructions} example={dataset[0].example}/>
+            <SectionRight description={dataset[0].task_description} instructions={dataset[0].instructions} example={dataset[0].example} default={dataset[0].default_input} expected={dataset[0].expected_input}/>
         </div>
     );
 }

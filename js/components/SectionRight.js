@@ -57,11 +57,19 @@ const Console = () => {
 }
 
 const InputCode = () => {
-    return <p>Type in your code</p>
+    const [userAnswer, setUserAnswer] = useState("");
+
+    return (
+        <div>
+            <p>Type in your code</p>
+        </div>
+    )
 }
 
 const OutputCode = () => {
-    return <p>Good job! The ghost is gone!</p>
+    const [isCorrect, setIsCorrect] = useState(false);
+
+    return <p className={"output"}>{isCorrect ? "Good job! The creature is gone!" : "Sorry, incorrect result. Try again."}</p>
 }
 
 const BtnOutput = () => {
