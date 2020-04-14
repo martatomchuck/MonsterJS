@@ -13,24 +13,13 @@ const SectionLeft = ({level, elements}) => {
     )
 }
 
-const Counter = (props) => {
-    // return (
-    //     <LevelContext.Consumer>{(context) => {
-    //         const {level, handlePrevButton, handleNextButton} = context;
-    //         return (
-    //             <div className="counter">
-    //                 <div id="counter-prev" onClick={handlePrevButton}></div>
-    //                 <div id="counter-level">Level {level} of 10</div>
-    //                 <div id="counter-next" onClick={handleNextButton}></div>
-    //             </div>
-    //         )
-    //     }}</LevelContext.Consumer>
-    // )
+const Counter = ({level}) => {
+    const {counter, handlePrevBtn, handleNextBtn} = useContext(LevelContext);
     return (
         <div className="counter">
-            <div id="counter-prev"></div>
-            <div id="counter-level">Level {props.level} of 10</div>
-            <div id="counter-next"></div>
+            <div id="counter-prev" onClick={handlePrevBtn}></div>
+            <div id="counter-level">Level {level} of 4</div>
+            <div id="counter-next" onClick={handleNextBtn}></div>
         </div>
     )
 }

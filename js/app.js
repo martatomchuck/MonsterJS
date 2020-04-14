@@ -17,7 +17,7 @@ import GameEngine from './components/GameEngine';
 // APP
 const App = () => {
     return (
-        <LevelContextProvider>
+        <LevelContextProvider dataset={GameDataset}>
             <AnswerContextProvider>
                 <GameEngine dataset={GameDataset}/>
             </AnswerContextProvider>

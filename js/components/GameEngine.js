@@ -7,11 +7,17 @@ import { LevelContext } from "../contexts/LevelContext";
 
 
 const GameEngine = ({dataset}) => {
+    const {counter} = useContext(LevelContext);
+
+    // Długość tablicy dataset = liczba leveli w grze
+    useEffect(() => {
+        console.log('dataset', dataset.length);
+    })
 
     return (
         <div className="container">
-            <SectionLeft level={dataset[0].level} elements={dataset[0].elements}/>
-            <SectionRight description={dataset[0].task_description} instructions={dataset[0].instructions} example={dataset[0].example} default={dataset[0].default_input} expected={dataset[0].expected_input}/>
+            <SectionLeft level={dataset[counter].level} elements={dataset[counter].elements}/>
+            <SectionRight description={dataset[counter].task_description} instructions={dataset[counter].instructions} example={dataset[counter].example} defaultInput={dataset[counter].default_input} expectedInput={dataset[counter].expected_input}/>
         </div>
     );
 }

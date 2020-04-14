@@ -1,25 +1,29 @@
-import React, { createContext, Component } from 'react';
+import React, { createContext, useState } from 'react';
 
 export const LevelContext = createContext();
 
-class LevelContextProvider extends Component {
-    state = {
-        level: 1
+const LevelContextProvider = (props) => {
+    const [counter, setCounter] = useState(0);
+
+    const handlePrevBtn = () => {
+        if (counter === 0) {
+            setCounter(0);
+        } else {
+        setCounter(counter-1);
+        }
     }
-    handlePrevBtn = () => {
-        this.setState({ level: this.state.level-1});
-        console.log(this.state.level - 1);
+    const handleNextBtn = () => {
+        if (counter === props.dataset.length-1) {
+            setCounter(props.dataset.length-1)
+        } else {
+        setCounter(counter+1);
+        }
     }
-    handleNextBtn = () => {
-        this.setState({ level: this.state.level+1});
-    }
-    render () {
-        return (
-            <LevelContext.Provider value={{...this.state, handlePrevBtn: this.handlePrevBtn, handleNextBtn: this.handleNextBtn}}>
-                {this.props.children}
-            </LevelContext.Provider>
-        )
-    }
+    return (
+        <LevelContext.Provider value={{counter, handlePrevBtn: handlePrevBtn, handleNextBtn: handleNextBtn}}>
+            {props.children}
+        </LevelContext.Provider>
+    )
 }
 
 export default LevelContextProvider;

@@ -49,10 +49,12 @@ body {
     background-color: #ff9d9d;
     width: 15%;
     border-radius: 20px 2px 2px 20px;
+    transition: all 0.5s ease;
     cursor: pointer;
 
     &:hover {
-        opacity: 80%;
+        opacity: 70%;
+        transition: all 0.5s ease;
     }
 }
 
@@ -62,10 +64,6 @@ body {
     font-size: 1.3rem;
     font-weight: 600;
     border-radius: 2px;
-    
-    &:hover {
-        opacity: 90%;
-    }
 }
 
 #counter-next {
@@ -73,9 +71,12 @@ body {
     background-color: #ff9d9d;
     width: 15%;
     border-radius: 2px 20px 20px 2px;
+    transition: all 0.5s ease;
+    cursor: pointer;
     
     &:hover {
-        opacity: 80%;
+        opacity: 70%;
+        transition: all 0.5s ease;
     }
 }
 
@@ -157,22 +158,18 @@ body {
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 5px;
-    
-    span {
-        font-weight: 600;
-        opacity: 90%;
-    }
 }
 
 .description {
     color: #f8eeee;
     line-height: 28px;
     font-size: 17px;
+    width: 90%;
 
     .bold {
         display: inline-block;
         padding: 1px 10px;
-        background-color: rgba(#33bfdf, 0.55);
+        background-color: rgba(#33bfdf, 0.25);
         border-radius: 5px;
         color: white;
         font-weight: 600;
@@ -182,24 +179,25 @@ body {
 
 .console {
     width: 95%;
-    height: 400px;
-    margin: 50px 0;
+    height: 40%;
+    margin: 50px 0 20px 0;
     align-self: center;
     display: flex;
     box-shadow: 5px 5px 40px 10px #000b22;
 }
 
 .console-numbers {
-    width: 6%;
+    width: 5%;
     background-color: rgba(white, 0.3);
     color: white;
     font-size: 1.2em;
     font-weight: 600;
-    padding: 10px 15px;
+    padding: 15px 15px;
     border-radius: 5px 0 0 5px;
 }
+
 .console-task {
-    width: 94%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -215,20 +213,21 @@ body {
     font-size: 25px;
     background-color: #FF8704;
     border-radius: 10px;
-    margin-top: 10%;
     margin-left: 5%;
     text-align: center;
-    line-height: 80px;
-
+    line-height: 74px;
+    border: 3px dashed #000b22;
 }
 
 .console-buttons {
     display: flex;
     justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
 }
 
 .btn {
-    width: 120px;
+    width: 150px;
     height: 45px;
     background-color: #ff2e63;
     color: white;
@@ -236,7 +235,14 @@ body {
     border-radius: 8px;
     text-align: center;
     line-height: 45px;
-    margin: 10px 30px;
+    margin: 0px 30px 30px 30px;
+    box-shadow: 5px 5px 20px 0px #000b22;
+    transition: all 0.5s ease;
+
+    &:hover {
+        background-color: #ff2e62b7;
+        transition: all 0.5s ease;
+    }
 }
 
 

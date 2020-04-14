@@ -1,17 +1,21 @@
-import React, { Component, useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext, useReducer  } from "react";
 
-const SectionRight = ({description, instructions, example}) => {
+const SectionRight = ({description, instructions, example, defaultInput, expectedInput}) => {
     return (
         <section className="section-right">
             <Name/>
             <Instructions description={description} instructions={instructions} example={example}/>
-            <Console/>
+            <Console defaultInput={defaultInput} expectedInput={expectedInput}/>
+            <div className="console-buttons">
+                <BtnOutput/>
+                <BtnNext/>
+            </div>
         </section>
     )
 }
 
 const Name = () => {
-    return <div className="title">Selector game<span></span></div>
+    return <div className="title">Selector game</div>
 }
 
 const Instructions = ({description, instructions, example}) => {
@@ -25,8 +29,8 @@ const Instructions = ({description, instructions, example}) => {
             <div className="description">
                 <ul>
                     {instructions.map((el) => {
-                        return <li key={el.id}>{el.bullet.map((el) => {
-                            return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
+                        return <li key={el.id}>{el.bullet.map((el2) => {
+                            return <span key={el2.id} className={el2.bold ? "bold" : ""}>{el2.text}</span>
                         })}</li>
                     })}
                 </ul>
@@ -40,27 +44,24 @@ const Instructions = ({description, instructions, example}) => {
     )
 }
 
-const Console = () => {
+const Console = ({defaultInput, expectedInput}) => {
     return (
         <div className="console">
             <div className="console-numbers">1 2 3 4 5 6 7 8 9</div>
             <div className="console-task">
-                <InputCode/>
-                <OutputCode/>
-                <div className="console-buttons">
-                    <BtnOutput/>
-                    <BtnNext/>
-                </div>
+                <InputCode defaultInput={defaultInput}/>
+                <OutputCode expectedInput={expectedInput}/>
             </div>
         </div>
     )
 }
 
-const InputCode = () => {
+const InputCode = ({defaultInput}) => {
     const [userAnswer, setUserAnswer] = useState("");
 
     return (
         <div>
+            <p>{defaultInput}</p> 
             <p>Type in your code</p>
         </div>
     )
