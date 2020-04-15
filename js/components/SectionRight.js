@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useContext, useReducer  } from "react";
 
+import { LevelContext } from '../contexts/LevelContext';
+
 const SectionRight = ({description, instructions, example, defaultInput, expectedInput}) => {
     return (
         <section className="section-right">
@@ -20,13 +22,11 @@ const Name = () => {
 
 const Instructions = ({description, instructions, example}) => {
     return (
-        <>
-            <div className="description">
+        <div className="description">
                 {description.map((el) => {
                     return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
                 })} 
-            </div>
-            <div className="description">
+
                 <ol>
                     {instructions.map((el) => {
                         return <li key={el.id}>{el.bullet.map((el2) => {
@@ -34,13 +34,11 @@ const Instructions = ({description, instructions, example}) => {
                         })}</li>
                     })}
                 </ol>
-            </div>
-            <div className="description">
+
                 {example.map((el) => {
                     return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
                 })}
-            </div>
-        </>
+        </div>
     )
 }
 
@@ -78,7 +76,8 @@ const BtnOutput = () => {
 }
 
 const BtnNext = () => {
-    return <div className="btn next-btn">Next</div>
+    const {handleNextBtn} = useContext(LevelContext);
+    return <div className="btn next-btn" onClick={handleNextBtn}>Next</div>
 }
 
 export default SectionRight;

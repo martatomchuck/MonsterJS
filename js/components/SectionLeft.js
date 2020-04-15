@@ -14,7 +14,7 @@ const SectionLeft = ({level, elements}) => {
 }
 
 const Counter = ({level}) => {
-    const {counter, handlePrevBtn, handleNextBtn} = useContext(LevelContext);
+    const {handlePrevBtn, handleNextBtn} = useContext(LevelContext);
     return (
         <div className="counter">
             <div id="counter-prev" onClick={handlePrevBtn}></div>
