@@ -27,13 +27,13 @@ const Instructions = ({description, instructions, example}) => {
                 })} 
             </div>
             <div className="description">
-                <ul>
+                <ol>
                     {instructions.map((el) => {
                         return <li key={el.id}>{el.bullet.map((el2) => {
                             return <span key={el2.id} className={el2.bold ? "bold" : ""}>{el2.text}</span>
                         })}</li>
                     })}
-                </ul>
+                </ol>
             </div>
             <div className="description">
                 {example.map((el) => {

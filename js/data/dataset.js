@@ -12,7 +12,7 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'Monster Village has been haunted by ghost. Help monsters to catch the ghost by using ', bold:false},
+            {id:1, text:'Monster Village has been haunted by ghost. Help monsters to track down the ghost by using ', bold:false},
             {id:2, text:'getElementById()', bold:true},
             {id:3, text:' method:', bold:false}
         ],
@@ -33,7 +33,8 @@ export default [
         ],
         example: [
             {id:1, text:'EXAMPLE: ', bold:false},
-            {id:2, text:'document.getElementById("element_id");', bold:true}
+            {id:2, text:'document.getElementById("element_id");', bold:true},
+            {id:3, text:' will access the element with #element_id.', bold:false}
         ],
         default_input: 'const enemy = document.',
         expected_input: 'getElementById("scary_ghost")',

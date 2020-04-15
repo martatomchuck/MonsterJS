@@ -19,7 +19,7 @@ body {
 
 // SECTION LEFT
 .section-left {
-    width: 50%;
+    width: 45%;
     height: 100%;
     background-image: radial-gradient(#092563 15%, #011541 70%);
     // background-color: rgb(5, 29, 82);
@@ -90,21 +90,22 @@ body {
 
 .game {
     width: 70%;
-    height: 75%;
+    height: 65%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    cursor: url('../assets/magnifying-glass64.png'), auto;
 }
 
 .el {
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     background-color: #0c7b93;
     // background-color: #FF8704;
     box-shadow: 0 5px 25px 5px #000b22;
-    margin: 10px 20px;
+    margin: 5px 20px;
     padding: 0;
     position: relative;
     transition: all 2s ease;
@@ -136,7 +137,7 @@ body {
 
 // SECTION RIGHT
 .section-right {
-    width: 50%;
+    width: 55%;
     height: 100%;
     // background-color: #000b22;
     // background-color: rgb(1, 10, 67);
@@ -161,19 +162,24 @@ body {
 }
 
 .description {
-    color: #f8eeee;
+    color: #c5c4c4;
     line-height: 28px;
     font-size: 17px;
-    width: 90%;
+    width: 95%;
+    height: 40%;
+
+    li {
+        padding: 3px 0;
+    }
 
     .bold {
         display: inline-block;
         padding: 1px 10px;
-        background-color: rgba(#33bfdf, 0.25);
+        background-color: rgba(#33bfdf, 0.15);
         border-radius: 5px;
         color: white;
         font-weight: 600;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
     }
 }
 
@@ -221,7 +227,7 @@ body {
 
 .console-buttons {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 90%;
     margin-left: 5%;
 }
