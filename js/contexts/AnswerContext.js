@@ -1,19 +1,16 @@
-import React, { createContext, Component } from 'react';
+import React, { createContext, useState } from 'react';
 
 export const AnswerContext = createContext();
 
-class AnswerContextProvider extends Component {
-    state = {
-        userAnswer: "",
-        isCorrect: false
-    }
-    render () {
-        return (
-            <AnswerContext.Provider value={{...this.state}}>
-                {this.props.children}
-            </AnswerContext.Provider>
-        )
-    }
+const AnswerContextProvider = (props) => {
+    const [userAnswer, setUserAnswer] = useState("");
+    const [isCorrect, setIsCorrect] = useState(false);
+
+    return (
+        <AnswerContext.Provider value={{userAnswer, isCorrect}}>
+            {props.children}
+        </AnswerContext.Provider>
+    )
 }
 
 export default AnswerContextProvider;

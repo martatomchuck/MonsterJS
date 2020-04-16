@@ -45,12 +45,12 @@ body {
 }
 
 #counter-prev {
-    // background-color: #00a8cc;
     background-color: #ff9d9d;
     width: 15%;
     border-radius: 20px 2px 2px 20px;
     transition: all 0.5s ease;
     cursor: pointer;
+    position: relative;
 
     &:hover {
         opacity: 70%;
@@ -67,7 +67,6 @@ body {
 }
 
 #counter-next {
-    // background-color: #00a8cc;
     background-color: #ff9d9d;
     width: 15%;
     border-radius: 2px 20px 20px 2px;
@@ -217,7 +216,7 @@ body {
     height: 80px;
     color: white;
     font-size: 25px;
-    background-color: #FF8704;
+    // background-color: #FF8704;
     border-radius: 10px;
     margin-left: 5%;
     text-align: center;

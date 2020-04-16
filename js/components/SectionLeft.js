@@ -4,21 +4,21 @@ import SingleElement from './SingleElement';
 import { LevelContext } from "../contexts/LevelContext";
 
 // SECTION LEFT
-const SectionLeft = ({level, elements}) => {
+const SectionLeft = ({datasetLength, level, elements}) => {
     return (
         <section className="section-left">
-            <Counter level={level}/>
+            <Counter datasetLength={datasetLength} level={level}/>
             <Game elements={elements}/>
         </section>
     )
 }
 
-const Counter = ({level}) => {
+const Counter = ({datasetLength, level}) => {
     const {handlePrevBtn, handleNextBtn} = useContext(LevelContext);
     return (
         <div className="counter">
             <div id="counter-prev" onClick={handlePrevBtn}></div>
-            <div id="counter-level">Level {level} of 4</div>
+            <div id="counter-level">Level {level} of {datasetLength}</div>
             <div id="counter-next" onClick={handleNextBtn}></div>
         </div>
     )

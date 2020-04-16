@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext, useReducer  } from "react";
 
 import { LevelContext } from '../contexts/LevelContext';
+import { AnswerContext } from "../contexts/AnswerContext";
 
 const SectionRight = ({description, instructions, example, defaultInput, expectedInput}) => {
     return (
@@ -9,7 +10,6 @@ const SectionRight = ({description, instructions, example, defaultInput, expecte
             <Instructions description={description} instructions={instructions} example={example}/>
             <Console defaultInput={defaultInput} expectedInput={expectedInput}/>
             <div className="console-buttons">
-                <BtnOutput/>
                 <BtnNext/>
             </div>
         </section>
@@ -43,18 +43,34 @@ const Instructions = ({description, instructions, example}) => {
 }
 
 const Console = ({defaultInput, expectedInput}) => {
-    return (
+    const [answerSubmit, setAnswerSubmit] = useState(false);
+    const handleCheck = () => {
+        setAnswerSubmit(true);
+    }
+    return answerSubmit ? (
         <div className="console">
             <div className="console-numbers">1 2 3 4 5 6 7 8 9</div>
             <div className="console-task">
                 <InputCode defaultInput={defaultInput}/>
                 <OutputCode expectedInput={expectedInput}/>
+                <div className="console-buttons">
+                    <BtnOutput handleCheck={handleCheck}/>
+                </div>
+            </div>
+        </div> ) : (
+        <div className="console">
+            <div className="console-numbers">1 2 3 4 5 6 7 8 9</div>
+            <div className="console-task">
+                <InputCode defaultInput={defaultInput}/>
+                <div className="console-buttons">
+                    <BtnOutput handleCheck={handleCheck}/>
+                </div>
             </div>
         </div>
     )
 }
 
-const InputCode = ({defaultInput}) => {
+const InputCode = ({defaultInput, handleCheck}) => {
     const [userAnswer, setUserAnswer] = useState("");
 
     return (
@@ -66,13 +82,14 @@ const InputCode = ({defaultInput}) => {
 }
 
 const OutputCode = () => {
-    const [isCorrect, setIsCorrect] = useState(false);
-
-    return <p className={"output"}>{isCorrect ? "Good job! The creature is gone!" : "Sorry, incorrect result. Try again."}</p>
+    const {isCorrect} = useContext(AnswerContext);
+    return <p className={"output"} style={isCorrect ? {backgroundColor: "#278654"} : {backgroundColor: "red"}}>{isCorrect ? "Good job! The creature is gone!" : "Sorry, incorrect result. Try again."}</p>
 }
 
-const BtnOutput = () => {
-    return <div className="btn output-btn">Check</div>
+const BtnOutput = ({handleCheck}) => {
+    return (
+        <div className="btn output-btn" onClick={handleCheck}>Check</div>
+    )
 }
 
 const BtnNext = () => {
