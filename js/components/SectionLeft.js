@@ -2,6 +2,7 @@ import React, { Component, useState, useEffect, useContext } from "react";
 
 import SingleElement from './SingleElement';
 import { LevelContext } from "../contexts/LevelContext";
+import { CheckContext } from "../contexts/CheckContext";
 
 // SECTION LEFT
 const SectionLeft = ({datasetLength, level, elements}) => {
@@ -15,11 +16,19 @@ const SectionLeft = ({datasetLength, level, elements}) => {
 
 const Counter = ({datasetLength, level}) => {
     const {handlePrevBtn, handleNextBtn} = useContext(LevelContext);
+    const {handleUnCheck} = useContext(CheckContext);
+
     return (
         <div className="counter">
-            <div id="counter-prev" onClick={handlePrevBtn}></div>
+            <div id="counter-prev" onClick={() => {
+                handlePrevBtn();
+                handleUnCheck();
+            }}></div>
             <div id="counter-level">Level {level} of {datasetLength}</div>
-            <div id="counter-next" onClick={handleNextBtn}></div>
+            <div id="counter-next" onClick={() => {
+                handleNextBtn();
+                handleUnCheck();
+            }}></div>
         </div>
     )
 }

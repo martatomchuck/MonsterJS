@@ -10,6 +10,7 @@ import GameDataset from './data/dataset';
 // CONTEXTS
 import LevelContextProvider from './contexts/LevelContext';
 import AnswerContextProvider from './contexts/AnswerContext';
+import CheckContextProvider from './contexts/CheckContext';
 
 // COMPONENTS
 import GameEngine from './components/GameEngine';
@@ -19,7 +20,9 @@ const App = () => {
     return (
         <LevelContextProvider dataset={GameDataset}>
             <AnswerContextProvider>
-                <GameEngine dataset={GameDataset}/>
+                <CheckContextProvider>
+                    <GameEngine dataset={GameDataset}/>
+                </CheckContextProvider>
             </AnswerContextProvider>
         </LevelContextProvider>
     )

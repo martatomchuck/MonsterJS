@@ -12,6 +12,7 @@ const LevelContextProvider = (props) => {
         setCounter(counter-1);
         }
     }
+    
     const handleNextBtn = () => {
         if (counter === props.dataset.length-1) {
             setCounter(props.dataset.length-1)
@@ -19,6 +20,7 @@ const LevelContextProvider = (props) => {
         setCounter(counter+1);
         }
     }
+
     return (
         <LevelContext.Provider value={{counter, handlePrevBtn: handlePrevBtn, handleNextBtn: handleNextBtn}}>
             {props.children}

@@ -4,6 +4,7 @@ import SectionLeft from './SectionLeft';
 import SectionRight from './SectionRight';
 import Welcome from './Welcome';
 import { LevelContext } from "../contexts/LevelContext";
+import { CheckContext } from '../contexts/CheckContext';
 
 
 const GameEngine = ({dataset}) => {

@@ -154,7 +154,8 @@ body {
 .title {
     color: #ff9d9d;
     // color: #FF8704;
-    font-size: 2.7em;
+    // color: #1ea6c5;
+    font-size: 2.6em;
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -193,8 +194,9 @@ body {
 
 .console-numbers {
     width: 5%;
-    background-color: rgba(white, 0.3);
-    color: white;
+    // background-color: rgba(white, 0.3);
+    background-color: rgb(223, 223, 223);
+    color: #000b229d;
     font-size: 1.2em;
     font-weight: 600;
     padding: 15px 15px;
@@ -210,13 +212,18 @@ body {
     border-radius: 0 5px 5px 0;
 }
 
-.output {
+.console-userinput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.console-output {
     display: block;
     width: 90%;
     height: 80px;
     color: white;
     font-size: 25px;
-    // background-color: #FF8704;
     border-radius: 10px;
     margin-left: 5%;
     text-align: center;
@@ -224,29 +231,44 @@ body {
     border: 3px dashed #000b22;
 }
 
-.console-buttons {
+.console-btn {
     display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin-left: 5%;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 .btn {
-    width: 150px;
+    width: 160px;
     height: 45px;
-    background-color: #ff2e63;
     color: white;
     font-weight: 700;
+    font-size: 18px;
     border-radius: 8px;
     text-align: center;
     line-height: 45px;
     margin: 0px 30px 30px 30px;
-    box-shadow: 5px 5px 20px 0px #000b22;
+    box-shadow: 4px 4px 7px 0px grey;
     cursor: pointer;
     transition: all 0.5s ease;
+}
+
+.check-btn {
+    background-color: #FF9721;
+    // background-color: #0c7b93;
 
     &:hover {
-        background-color: #ff2e62b7;
+        background-color: #FF8704;
+        transition: all 0.5s ease;
+    }
+}
+
+.next-btn {
+    background-color: #ff2e62b7;
+    box-shadow: 4px 4px 10px 0px #000b22;
+    margin-right: 48px;
+
+    &:hover {
+        background-color: #ff2e63;
         transition: all 0.5s ease;
     }
 }
