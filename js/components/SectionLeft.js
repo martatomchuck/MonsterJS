@@ -1,6 +1,5 @@
-import React, { Component, useState, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 
-import SingleElement from './SingleElement';
 import { LevelContext } from "../contexts/LevelContext";
 import { CheckContext } from "../contexts/CheckContext";
 
@@ -33,19 +32,13 @@ const Counter = ({datasetLength, level}) => {
     )
 }
 
-const Game = () => {
+const Game = ({elements}) => {
     return (
         <>
             <div className="game">
-                <SingleElement/>
-                <SingleElement/>
-                <SingleElement/>
-                <SingleElement/>
-                <SingleElement/>
-                <SingleElement/>
-                <SingleElement/>
-                <SingleElement/>
-                <SingleElement/>
+                {elements.map((monster) => {
+                    return <div key={monster.id} className={`element ${monster.url}`}></div>
+                })}
             </div>
             <h4 className="game-hint">Hover the element to peek its HTML structure.</h4>
         </>

@@ -4,10 +4,17 @@ export default [
         elements: [
             {
                 id: 1,
+                url: "ghost",
                 tooltip: ''
             },
             {
                 id: 2,
+                url: "monster1",
+                tooltip: ''
+            },
+            {
+                id: 3,
+                url: "monster1",
                 tooltip: ''
             }
         ],

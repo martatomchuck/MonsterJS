@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext, useReducer  } from "react";
+import React, { useState, useEffect, useContext } from "react";
 
 import { LevelContext } from '../contexts/LevelContext';
 import { AnswerContext } from "../contexts/AnswerContext";
