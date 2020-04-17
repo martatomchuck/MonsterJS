@@ -47,7 +47,7 @@ const Instructions = ({description, instructions, example}) => {
 const Console = ({defaultInput, expectedInput}) => {
     const {answerSubmit} = useContext(CheckContext);
 
-    return answerSubmit ? (
+    return (
         <div className="console">
             <div className="console-numbers">1 2 3 4 5 6 7 8 9</div>
             <div className="console-task">
@@ -55,17 +55,10 @@ const Console = ({defaultInput, expectedInput}) => {
                     <InputCode defaultInput={defaultInput}/>
                     <BtnOutput/>
                 </div>
-                <OutputCode expectedInput={expectedInput}/>
-            </div>
-        </div>
-    ) : (
-        <div className="console">
-            <div className="console-numbers">1 2 3 4 5 6 7 8 9</div>
-            <div className="console-task">
-                <div className="console-userinput"> 
-                    <InputCode defaultInput={defaultInput}/>
-                    <BtnOutput/>
-                </div>
+                {
+                    answerSubmit &&
+                    <OutputCode expectedInput={expectedInput}/>
+                }
             </div>
         </div>
     )

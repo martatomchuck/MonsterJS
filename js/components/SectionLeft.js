@@ -33,20 +33,42 @@ const Counter = ({datasetLength, level}) => {
 }
 
 const Game = ({elements}) => {
+    const [isHovering, setIsHovering] = useState(false);
+
+    const handleMouseHover = () => {
+        setIsHovering(!isHovering);
+    }
+
     return (
         <>
             <div className="game">
                 {elements.map((monster) => {
-                    return <div key={monster.id} className={`element ${monster.class}`}></div>
-                })}
+                    return (
+                        <>
+                            <div key={monster.id} className={`element ${monster.class}`} onMouseEnter={handleMouseHover} onMouseLeave={handleMouseHover}></div>
+                            <div>
+                                {
+                                    isHovering && <Tooltip elements={elements}/>
+                                }
+                            </div>
+                        </>
+                    )
+                    })}
             </div>
             <h4 className="game-hint">Hover the element to peek its HTML structure.</h4>
         </>
     )
 }
 
-const Tooltip = () => {
-    return 
+const Tooltip = ({elements}) => {
+
+    return (
+        <>
+            {elements.map((monster) => {
+                return <div key={monster.id} className={"tooltip"}>{monster.tooltip}</div>
+            })}
+        </>
+    )
 }
 
 export default SectionLeft;

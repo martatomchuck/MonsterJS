@@ -102,7 +102,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    cursor: url('../images/magnifying-glass32.png'), auto;
+    cursor: url('../images/magnifying-glass64.png'), auto;
 }
 
 .element {
@@ -115,30 +115,29 @@ body {
     box-shadow: 0 5px 25px 5px #000b22;
     margin: 5px 20px;
     position: relative;
-    transition: all 2s ease;
+    transition: all 2.5s ease;
 
     &:hover {
         transform: scale(1.15, 1.15);
-        transition: all 0.7s ease-out;
+        opacity: 75%;
+        transition: all 0.8s ease-out;
         z-index: 1;
     }
+}
 
-    &:hover::after  {
-        content: '< tag class="klasa1 klasa2" id="id1 id2" >< /tag >';
-        font-size: 1.2rem;
-        color: white;
-        box-sizing: border-box;
-        padding: 10px 10px 10px 20px;
-        display: block;
-        width: 250px;
-        height: 90px;
-        background-color: #244cfc;
-        position: absolute;
-        top: 120px;
-        left: 120px;
-        z-index: 999;
-        border-radius: 2px 45px 45px 25px;
-    }
+.tooltip {
+    font-size: 1.2rem;
+    color: white;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 20px;
+    width: 250px;
+    height: 90px;
+    background-color: #244cfc;
+    position: absolute;
+    // top: 10px;
+    left: 250px;
+    z-index: 999;
+    border-radius: 2px 45px 45px 25px;
 }
 
 .ghost {
@@ -197,6 +196,7 @@ body {
     background-image: url('../images/alien.svg');
 }
 
+
 // SECTION RIGHT
 .section-right {
     width: 55%;
@@ -218,7 +218,7 @@ body {
     color: #ff9d9d;
     // color: #FF8704;
     // color: #1ea6c5;
-    font-size: 2.6em;
+    font-size: 2.5em;
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 5px;
