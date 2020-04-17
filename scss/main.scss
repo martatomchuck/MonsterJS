@@ -119,7 +119,7 @@ body {
 
     &:hover {
         transform: scale(1.15, 1.15);
-        opacity: 75%;
+        opacity: 85%;
         transition: all 0.8s ease-out;
         z-index: 1;
     }
@@ -135,7 +135,7 @@ body {
     background-color: #244cfc;
     position: absolute;
     // top: 10px;
-    left: 250px;
+    // left: 250px;
     z-index: 999;
     border-radius: 2px 45px 45px 25px;
 }

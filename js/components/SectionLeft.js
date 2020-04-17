@@ -36,7 +36,11 @@ const Game = ({elements}) => {
     const [isHovering, setIsHovering] = useState(false);
 
     const handleMouseHover = () => {
-        setIsHovering(!isHovering);
+        setIsHovering(true);
+    }
+
+    const handleMouseHoverLeave = () => {
+        setIsHovering(false);
     }
 
     return (
@@ -44,30 +48,22 @@ const Game = ({elements}) => {
             <div className="game">
                 {elements.map((monster) => {
                     return (
-                        <>
-                            <div key={monster.id} className={`element ${monster.class}`} onMouseEnter={handleMouseHover} onMouseLeave={handleMouseHover}></div>
-                            <div>
-                                {
-                                    isHovering && <Tooltip elements={elements}/>
-                                }
-                            </div>
-                        </>
+                        <div>
+                            <div key={monster.id} className={`element ${monster.class}`} onMouseOver={handleMouseHover} onMouseLeave={handleMouseHoverLeave}></div>
+                            {isHovering && <Tooltip elements={elements}/>}
+                        </div>
                     )
-                    })}
+                })}
             </div>
             <h4 className="game-hint">Hover the element to peek its HTML structure.</h4>
         </>
     )
 }
 
-const Tooltip = ({elements}) => {
+const Tooltip = () => {
 
     return (
-        <>
-            {elements.map((monster) => {
-                return <div key={monster.id} className={"tooltip"}>{monster.tooltip}</div>
-            })}
-        </>
+        <div className={"tooltip"}></div>
     )
 }
 
