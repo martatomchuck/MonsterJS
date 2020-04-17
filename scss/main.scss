@@ -102,17 +102,13 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    cursor: url('../assets/magnifying-glass64.png'), auto;
+    cursor: url('../images/magnifying-glass32.png'), auto;
 }
 
 .element {
     width: 130px;
     height: 130px;
-    // border-radius: 50%;
-    // background-color: #0c7b93;
-    // background-color: #FF8704;
     border-radius: 10px;
-    // background-image: url('../assets/freak.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -123,7 +119,7 @@ body {
 
     &:hover {
         transform: scale(1.15, 1.15);
-        transition: all 0.8s ease;
+        transition: all 0.7s ease-out;
         z-index: 1;
     }
 
@@ -136,21 +132,21 @@ body {
         display: block;
         width: 250px;
         height: 90px;
-        background-color: #0c7b93;
+        background-color: #244cfc;
         position: absolute;
         top: 120px;
-        left: 90px;
+        left: 120px;
         z-index: 999;
         border-radius: 2px 45px 45px 25px;
     }
 }
 
 .ghost {
-    background-image: url('../images/ghost1.svg');
+    background-image: url('../images/ghost.svg');
 }
 
 .monster1 {
-    background-image: url('../images/dragon1.svg');
+    background-image: url('../images/monster1.svg');
 }
 
 .monster2 {
@@ -158,26 +154,48 @@ body {
 }
 
 .monster3 {
-    background-image: url('../images/dragon1.svg');
+    background-image: url('../images/monster3.svg');
 }
 
 .monster4 {
-    background-image: url('../images/dragon1.svg');
+    background-image: url('../images/monster4.svg');
 }
 
 .monster5 {
-    background-image: url('../images/dragon1.svg');
+    background-image: url('../images/monster5.svg');
 }
 
 .monster6 {
-    background-image: url('../images/dragon1.svg');
+    background-image: url('../images/monster6.svg');
 }
 
 .monster7 {
-    background-image: url('../images/dragon1.svg');
+    background-image: url('../images/monster7.svg');
 }
 
+.monster8 {
+    background-image: url('../images/monster8.svg');
+}
 
+.monster9 {
+    background-image: url('../images/monster9.svg');
+}
+
+.dragon {
+    background-image: url('../images/dragon.svg');
+}
+
+.coronavirus {
+    background-image: url('../images/coronavirus.svg');
+}
+
+.spreading-virus {
+    background-image: url('../images/spreading-virus.svg');
+}
+
+.alien {
+    background-image: url('../images/alien.svg');
+}
 
 // SECTION RIGHT
 .section-right {

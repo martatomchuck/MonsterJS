@@ -4,17 +4,17 @@ export default [
         elements: [
             {
                 id: 1,
-                url: "ghost",
+                class: "monster8",
                 tooltip: ''
             },
             {
                 id: 2,
-                url: "monster1",
+                class: "ghost",
                 tooltip: ''
             },
             {
                 id: 3,
-                url: "monster1",
+                class: "monster1",
                 tooltip: ''
             }
         ],
@@ -52,33 +52,54 @@ export default [
         elements: [
             {
                 id: 1,
+                class: "monster3",
                 tooltip: ''
             },
             {
                 id: 2,
+                class: "alien",
                 tooltip: ''
             },
             {
                 id: 3,
+                class: "monster8",
                 tooltip: ''
             },
             {
                 id: 4,
+                class: "ghost",
                 tooltip: ''
             },
             {
                 id: 5,
+                class: "monster1",
                 tooltip: ''
             },
             {
                 id: 6,
+                class: "monster2",
+                tooltip: ''
+            },
+            {
+                id: 7,
+                class: "monster4",
+                tooltip: ''
+            },
+            {
+                id: 8,
+                class: "monster5",
+                tooltip: ''
+            },
+            {
+                id: 9,
+                class: "monster6",
                 tooltip: ''
             }
         ],
         task_description: [
-            {id:1, text:'Monster Village has been haunted by ghost. Help monsters to catch the ghost by using ', bold:false},
+            {id:1, text:'Oh no! The ghost is still haunting the Monster Village. Help monsters to catch the ghost again by using ', bold:false},
             {id:2, text:'getElementById()', bold:true},
-            {id:3, text:' method:', bold:false}
+            {id:3, text:' method. It has to work this time.', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -96,7 +117,7 @@ export default [
             ]}
         ],
         example: [
-            {id:1, text:'Try it yourself!', bold:false}
+            {id:1, text:'Now try it yourself!', bold:false}
         ],
         default_input: 'const enemy = document.getElementById()',
         expected_input: '"scary_ghost"',

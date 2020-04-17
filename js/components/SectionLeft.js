@@ -37,7 +37,7 @@ const Game = ({elements}) => {
         <>
             <div className="game">
                 {elements.map((monster) => {
-                    return <div key={monster.id} className={`element ${monster.url}`}></div>
+                    return <div key={monster.id} className={`element ${monster.class}`}></div>
                 })}
             </div>
             <h4 className="game-hint">Hover the element to peek its HTML structure.</h4>
