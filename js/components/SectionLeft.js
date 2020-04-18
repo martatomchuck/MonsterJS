@@ -58,7 +58,7 @@ const Game = ({elements}) => {
                 })}
             </div>
             <h4 className="game-hint">Hover the element to peek its HTML structure.
-            <span>* Icons made by Smashicons from flaticon.com</span></h4>
+            <span>Icons made by Freepik & Smashicons from flaticon.com</span></h4>
         </>
     )
 }
