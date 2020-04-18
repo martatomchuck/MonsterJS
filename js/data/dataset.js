@@ -176,8 +176,8 @@ export default [
                 {id:3, text:' in elements — this selector returns multiples in an array-like structure', bold:false} 
             ]},
             {id:3, bullet: [
-                {id:1, text:'BE CAREFULL! It means that the native array methods will not work ', bold:false},
-                {id:2, text:'unless you convert them into an array', bold:true},
+                {id:1, text:'BE CAREFULL! It means that the native array methods will not work unless you ', bold:false},
+                {id:2, text:'convert them into an array', bold:true},
             ]}
         ],
         example: [
@@ -256,8 +256,8 @@ export default [
                 {id:3, text:' in elements — this selector returns multiples in an array-like structure', bold:false} 
             ]},
             {id:3, bullet: [
-                {id:1, text:'BE CAREFULL! It means that the native array methods will not work ', bold:false},
-                {id:2, text:'unless you convert them into an array', bold:true},
+                {id:1, text:'BE CAREFULL! It means that the native array methods will not work unless you ', bold:false},
+                {id:2, text:'convert them into an array', bold:true},
             ]}
         ],
         example: [

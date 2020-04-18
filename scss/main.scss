@@ -93,6 +93,16 @@ body {
     font-size: 19px;
     font-weight: 500;
     margin-bottom: 20px;
+
+    span {
+        display: block;
+        text-align: center;
+        color: white;
+        opacity: 0.5;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 15px
+    }
 }
 
 .game {
@@ -116,11 +126,11 @@ body {
     margin: 5px 20px;
     position: relative;
     transition: all 2.5s ease;
-    z-index: 1;
 
     &:hover {
         transform: scale(1.15, 1.15);
         transition: all 0.8s ease-out;
+        z-index: 99999;
     }
 }
 
@@ -137,7 +147,6 @@ body {
     position: absolute;
     top: 120px;
     left: 120px;
-    z-index: 999;
     border-radius: 2px 45px 45px 25px;
 }
 
@@ -294,7 +303,7 @@ body {
         border-radius: 5px;
         border: 1px solid white;
         background-color: rgba(221, 218, 218, 0.479);
-        width: 350px;
+        width: 340px;
     }
 }
 
@@ -346,7 +355,7 @@ form {
     // background-color: #0c7b93;
 
     &:hover {
-        background-color: #FF8704;
+        background-color: #ffa41b;
         transition: all 0.5s ease;
     }
 }
