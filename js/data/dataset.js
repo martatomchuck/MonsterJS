@@ -5,17 +5,17 @@ export default [
             {
                 id: 1,
                 class: "monster8",
-                tooltip: '<monster class="red one-eyed" id="Frank">Hello, I am a Monster!</monster>'
+                tooltip: '< monster class = "green one-eyed" id = "Frank" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 2,
                 class: "ghost",
-                tooltip: ''
+                tooltip: '< ghost class = "ghost fairy enemy" id = "scary-ghost" > Hello, I am a Ghost! </ ghost >'
             },
             {
                 id: 3,
                 class: "monster1",
-                tooltip: ''
+                tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
             }
         ],
         task_description: [
@@ -44,9 +44,9 @@ export default [
             {id:3, text:' will access the element with #element_id.', bold:false}
         ],
         default_input: 'const enemy = document.getElementById',
-        expected_input1: '("scary_ghost")',
-        expected_input2: "('scary_ghost')",
-        expected_output: 'const enemy = document.getElementById("scary_ghost")'
+        expected_input1: '("scary-ghost")',
+        expected_input2: "('scary-ghost')",
+        expected_output: 'const enemy = document.getElementById("scary-ghost")'
     },
     {
         level: 2,

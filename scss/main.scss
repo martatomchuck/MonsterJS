@@ -116,26 +116,27 @@ body {
     margin: 5px 20px;
     position: relative;
     transition: all 2.5s ease;
+    z-index: 1;
 
     &:hover {
         transform: scale(1.15, 1.15);
-        opacity: 85%;
         transition: all 0.8s ease-out;
-        z-index: 1;
     }
 }
 
 .tooltip {
-    font-size: 1.2rem;
+    display: block;
+    font-size: 1.1rem;
     color: white;
     box-sizing: border-box;
-    padding: 10px 10px 10px 20px;
-    width: 250px;
-    height: 90px;
+    padding: 12px 12px 12px 20px;
+    width: 270px;
+    height: 100px;
+    line-height: 25px;
     background-color: #244cfc;
     position: absolute;
-    // top: 10px;
-    // left: 250px;
+    top: 120px;
+    left: 120px;
     z-index: 999;
     border-radius: 2px 45px 45px 25px;
 }
@@ -227,12 +228,12 @@ body {
 .description {
     color: #c5c4c4;
     line-height: 28px;
-    font-size: 17px;
+    font-size: 1rem;
     width: 95%;
     min-height: 35%;
 
     li {
-        padding: 3px 0;
+        margin: 3px 0;
     }
 
     .bold {
@@ -248,7 +249,7 @@ body {
 
 .console {
     width: 100%;
-    height: 40%;
+    height: 37%;
     margin: 50px 0 20px 0;
     align-self: center;
     display: flex;
@@ -276,11 +277,11 @@ body {
 }
 
 .console-userinput {
-    margin: 8px 30px 30px 10px;
+    margin: 8px 30px 30px 15px;
 
     label {
         font-size: 1.1rem;
-        color: #000b22;
+        color: #000b22cb;
     }
 
     input[type="text"] {
@@ -331,14 +332,14 @@ form {
     text-align: center;
     line-height: 45px;
     margin: 0 30px 30px 30px;
-    box-shadow: 4px 4px 7px 0px grey;
+    box-shadow: 2px 4px 7px 0px grey;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 
 .check-btn {
     background-color: #FF9721;
-    margin: 30px 0;
+    margin: 20px 0;
     outline: none;
     border: none;
     align-self: center;

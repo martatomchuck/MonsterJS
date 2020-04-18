@@ -49,7 +49,7 @@ const Console = ({defaultInput, expectedInput}) => {
 
     return (
         <div className="console">
-            <div className="console-numbers">1 2 3 4 5 6 7 8 9</div>
+            <div className="console-numbers">1 2 3 4 5 6 7 8</div>
             <div className="console-task">
                 <div> 
                     <InputCode defaultInput={defaultInput}/>
@@ -81,6 +81,7 @@ const InputCode = ({defaultInput}) => {
                 <label>{defaultInput}</label>
                 <input type="text" placeholder="Type in your code" value={answer} onChange={(e) => setAnswer(e.target.value)} onClick={handleUnCheck} />
             </div>
+
             <input type="submit" className="btn check-btn" value="Check"></input>
         </form>
     );

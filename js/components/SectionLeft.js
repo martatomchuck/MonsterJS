@@ -33,25 +33,27 @@ const Counter = ({datasetLength, level}) => {
 }
 
 const Game = ({elements}) => {
-    const [isHovering, setIsHovering] = useState(false);
+    const [isHovering, setIsHovering] = useState(null);
 
-    const handleMouseHover = () => {
-        setIsHovering(true);
+    const handleMouseHover = (key) => {
+        setIsHovering(key);
     }
 
     const handleMouseHoverLeave = () => {
-        setIsHovering(false);
+        setIsHovering(null);
     }
+
 
     return (
         <>
             <div className="game">
                 {elements.map((monster) => {
                     return (
-                        <div>
-                            <div key={monster.id} className={`element ${monster.class}`} onMouseOver={handleMouseHover} onMouseLeave={handleMouseHoverLeave}></div>
-                            {isHovering && <Tooltip elements={elements}/>}
-                        </div>
+                        <>
+                            <div key={monster.id} className={`element ${monster.class}`} onMouseOver={() => handleMouseHover(monster.id)} onMouseLeave={handleMouseHoverLeave}>
+                                {isHovering === monster.id && <Tooltip tooltip={monster.tooltip} />}
+                            </div>
+                        </>
                     )
                 })}
             </div>
@@ -60,11 +62,8 @@ const Game = ({elements}) => {
     )
 }
 
-const Tooltip = () => {
-
-    return (
-        <div className={"tooltip"}></div>
-    )
+const Tooltip = ({tooltip}) => {
+    return <div className={"tooltip"}>{tooltip}</div>
 }
 
 export default SectionLeft;
