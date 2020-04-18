@@ -10,15 +10,19 @@ const AnswerContextProvider = (props) => {
     const {counter} = useContext(LevelContext);
 
     const verifyAnswer = (answer) => {
-        console.log(answer);
-        console.log(props.dataset[counter].expected_input);
+        // console.log(answer);
+        // console.log(props.dataset[counter].expected_input);
         if (answer == props.dataset[counter].expected_input1 || answer == props.dataset[counter].expected_input2) {
             setIsCorrect(true);
         } else {setIsCorrect(false)}
     }
 
+    const clearAnswer = () => {
+        setIsCorrect(false);
+    }
+
     return (
-        <AnswerContext.Provider value={{isCorrect, verifyAnswer}}>
+        <AnswerContext.Provider value={{isCorrect, verifyAnswer, clearAnswer}}>
             {props.children}
         </AnswerContext.Provider>
     )

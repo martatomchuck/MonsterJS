@@ -65,7 +65,7 @@ const Console = ({defaultInput, expectedInput}) => {
 
 const InputCode = ({defaultInput}) => {
     const {handleCheck, handleUnCheck} = useContext(CheckContext);
-    const {verifyAnswer} = useContext(AnswerContext);
+    const {verifyAnswer, clearAnswer} = useContext(AnswerContext);
 
     const [answer, setAnswer] = useState("");
     
@@ -79,7 +79,7 @@ const InputCode = ({defaultInput}) => {
         <form onSubmit={handleSubmit}>
             <div className="console-userinput">
                 <label>{defaultInput}</label>
-                <input type="text" placeholder="Type in your code" value={answer} onChange={(e) => setAnswer(e.target.value)} onClick={handleUnCheck} />
+                <input type="text" spellCheck="false" placeholder="Type in your code" value={answer} onChange={(e) => setAnswer(e.target.value)} onClick={() => {handleUnCheck(); clearAnswer();}} />
             </div>
 
             <input type="submit" className="btn check-btn" value="Check"></input>
@@ -98,10 +98,12 @@ const OutputCode = () => {
 const BtnNext = () => {
     const {handleNextBtn} = useContext(LevelContext);
     const {handleUnCheck} = useContext(CheckContext);
+    const {clearAnswer} = useContext(AnswerContext);
 
     return <div className="btn next-btn" onClick={() => {
         handleNextBtn();
         handleUnCheck();
+        clearAnswer();
     }}>Next</div>
 }
 

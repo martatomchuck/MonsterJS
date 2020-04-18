@@ -289,7 +289,7 @@ body {
 }
 
 .console-userinput {
-    margin: 8px 30px 30px 15px;
+    margin: 8px 10px 30px 15px;
 
     label {
         font-size: 1.1rem;
@@ -307,7 +307,7 @@ body {
         border-radius: 5px;
         border: 1px solid white;
         background-color: rgba(221, 218, 218, 0.479);
-        width: 340px;
+        width: 350px;
     }
 }
 
@@ -327,6 +327,28 @@ form {
     text-align: center;
     line-height: 74px;
     border: 3px dashed #000b22;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
 }
 
 .console-btn {

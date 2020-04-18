@@ -5,16 +5,19 @@ export default [
             {
                 id: 1,
                 class: "monster8",
+                disappear: false,
                 tooltip: '< monster class = "green one-eyed" id = "Frank"> Hello, I am a Monster! </ monster >'
             },
             {
                 id: 2,
                 class: "ghost",
+                disappear: true,
                 tooltip: '< ghost class = "ghost fairy enemy" id = "scary-ghost" > Hello, I am a Ghost! </ ghost >'
             },
             {
                 id: 3,
                 class: "monster1",
+                disappear: false,
                 tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
             }
         ],
@@ -45,8 +48,7 @@ export default [
         ],
         default_input: 'const enemy = document.getElementById',
         expected_input1: '("scary-ghost")',
-        expected_input2: "('scary-ghost')",
-        expected_output: 'const enemy = document.getElementById("scary-ghost")'
+        expected_input2: "('scary-ghost')"
     },
     {
         level: 2,
@@ -54,46 +56,55 @@ export default [
             {
                 id: 1,
                 class: "monster3",
+                disappear: false,
                 tooltip: '< monster class = "yellow notched" id = "Clark" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 2,
                 class: "alien",
+                disappear: false,
                 tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 3,
                 class: "monster8",
+                disappear: false,
                 tooltip: '< monster class = "green one-eyed" id = "Frank" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 4,
                 class: "ghost",
+                disappear: true,
                 tooltip: '< scaryghost class = "fairy" id = "watch-out-the-ghost" > I am a Ghost! </ scaryghost >'
             },
             {
                 id: 5,
                 class: "monster1",
+                disappear: false,
                 tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 6,
                 class: "monster2",
+                disappear: false,
                 tooltip: '< monster class = "purple happy" id = "Devil" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 7,
                 class: "monster4",
+                disappear: false,
                 tooltip: '< monster class = "turquoise dotted" id = "Thomas" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 8,
                 class: "monster5",
+                disappear: false,
                 tooltip: '< monster class = "dark-blue tentacles" id = "Julia" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 9,
                 class: "monster6",
+                disappear: false,
                 tooltip: '< monster class = "pink crazy-lady" id = "Martha" > Hello, I am a Monster! </ monster >'
             }
         ],
@@ -122,8 +133,7 @@ export default [
         ],
         default_input: 'const enemy = document.',
         expected_input1: 'getElementById("watch-out-the-ghost")',
-        expected_input2: "getElementById('watch-out-the-ghost')",
-        expected_output: 'const enemy = document.getElementById("watch-out-the-ghost")'
+        expected_input2: "getElementById('watch-out-the-ghost')"
     },
     {
         level: 3,
@@ -131,31 +141,37 @@ export default [
             {
                 id: 1,
                 class: "ghost",
+                disappear: true,
                 tooltip: '< ghost class = "ghost fairy enemy" id = "Christopher" > Hello, I am a Ghost! </ ghost >'
             },
             {
                 id: 2,
                 class: "alien",
+                disappear: false,
                 tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 3,
                 class: "monster8",
+                disappear: false,
                 tooltip: '< monster class = "green one-eyed" id = "Frank" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 4,
                 class: "monster1",
+                disappear: false,
                 tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 5,
                 class: "ghost",
+                disappear: true,
                 tooltip: '< ghost class = "ghost fairy enemy" id = "Juliette" > Hello, I am a Ghost! </ ghost >'
             },
             {
                 id: 6,
                 class: "ghost",
+                disappear: true,
                 tooltip: '< ghost class = "ghost fairy enemy" id = "Anastasia" > Hello, I am a Ghost! </ ghost >'
             }
         ],
@@ -187,8 +203,7 @@ export default [
         ],
         default_input: 'const enemy = document.getElementsByTagName',
         expected_input1: '("ghost")',
-        expected_input2: "('ghost')",
-        expected_output: 'const enemy = document.getElementsByTagName("ghost")'
+        expected_input2: "('ghost')"
     },
     {
         level: 4,
@@ -196,46 +211,55 @@ export default [
             {
                 id: 1,
                 class: "alien",
+                disappear: false,
                 tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 2,
                 class: "ghost",
+                disappear: true,
                 tooltip: '< ghostnomore class = "fairy enemy" id = "Annabella" > Hello, I am a Ghost! </ ghostnomore >'
             },
             {
                 id: 3,
                 class: "monster4",
+                disappear: false,
                 tooltip: '< monster class = "turquoise dotted" id = "Thomas" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 4,
                 class: "ghost",
+                disappear: true,
                 tooltip: '< ghostnomore class = "fairy enemy" id = "Elisabeth" > Hello, I am a Ghost! </ ghostnomore >'
             },
             {
                 id: 5,
                 class: "monster1",
+                disappear: false,
                 tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 6,
                 class: "ghost",
+                disappear: true,
                 tooltip: '< ghostnomore class = "fairy enemy" id = "Raphael" > Hello, I am a Ghost! </ ghostnomore >'
             },
             {
                 id: 7,
                 class: "monster5",
+                disappear: false,
                 tooltip: '< monster class = "dark-blue tentacles" id = "Julia" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 8,
                 class: "ghost",
+                disappear: true,
                 tooltip: '< ghostnomore class = "fairy enemy" id = "Theodor" > Hello, I am a Ghost! </ ghostnomore >'
             },
             {
                 id: 9,
                 class: "ghost",
+                disappear: true,
                 tooltip: '< ghostnomore class = "fairy enemy" id = "Catarina" > Hello, I am a Ghost! </ ghostnomore >'
             }
         ],
@@ -265,7 +289,6 @@ export default [
         ],
         default_input: 'const enemy = document.',
         expected_input1: 'getElementsByTagName("ghostnomore")',
-        expected_input2: "getElementsByTagName('ghostnomore')",
-        expected_output: 'const enemy = document.getElementsByTagName("ghostnomore")'
+        expected_input2: "getElementsByTagName('ghostnomore')"
     }
 ];
