@@ -51,9 +51,8 @@ const Console = ({defaultInput, expectedInput}) => {
         <div className="console">
             <div className="console-numbers">1 2 3 4 5 6 7 8 9</div>
             <div className="console-task">
-                <div className="console-userinput"> 
+                <div> 
                     <InputCode defaultInput={defaultInput}/>
-                    <BtnOutput/>
                 </div>
                 {
                     answerSubmit &&
@@ -65,13 +64,24 @@ const Console = ({defaultInput, expectedInput}) => {
 }
 
 const InputCode = ({defaultInput}) => {
-    const [userAnswer, setUserAnswer] = useState("");
-    const {handleUnCheck} = useContext(CheckContext);
+    const {handleCheck, handleUnCheck} = useContext(CheckContext);
+    const {verifyAnswer} = useContext(AnswerContext);
+
+    const [answer, setAnswer] = useState("");
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        handleCheck();
+        verifyAnswer(answer);
+    }
 
     return (
-        <form onClick={handleUnCheck}>
-            <label for="answer">{defaultInput}</label>
-            <input id="answer" type="text" placeholder="Type in your code" required/>
+        <form onSubmit={handleSubmit}>
+            <div className="console-userinput">
+                <label>{defaultInput}</label>
+                <input type="text" placeholder="Type in your code" value={answer} onChange={(e) => setAnswer(e.target.value)} onClick={handleUnCheck} />
+            </div>
+            <input type="submit" className="btn check-btn" value="Check"></input>
         </form>
     );
 }
@@ -82,12 +92,6 @@ const OutputCode = () => {
     return (
         <p className={"console-output"} style={isCorrect ? {backgroundColor: "#F57F00"} : {backgroundColor: "#DB0049"}}>{isCorrect ? "Good job! The Monster Village is safe now!" : "Sorry, incorrect result. Try again."}</p>
     )
-}
-
-const BtnOutput = () => {
-    const {handleCheck} = useContext(CheckContext);
-
-    return <div className="btn check-btn" onClick={handleCheck}>Check</div>
 }
 
 const BtnNext = () => {

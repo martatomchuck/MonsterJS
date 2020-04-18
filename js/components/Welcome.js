@@ -4,8 +4,7 @@ const Welcome = ({handleWelcomeClose}) => {
     return (
         <div className="welcome">
             <a className="welcome-close-btn" onClick={handleWelcomeClose}>close</a>
-            <h1>Hello Detective!<br/>
-            Welcome to Monster Village</h1>
+            <h1>Welcome to Monster Village</h1>
             <p>These friendly little Monsters have been harassed by unwelcomed guests.<br/>
             Only you can help them to get rid of sinister creatures with your JavaScript superpowers.</p>
             <div className="monsters">

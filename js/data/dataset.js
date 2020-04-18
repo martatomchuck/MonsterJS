@@ -44,7 +44,8 @@ export default [
             {id:3, text:' will access the element with #element_id.', bold:false}
         ],
         default_input: 'const enemy = document.getElementById',
-        expected_input: '("scary_ghost")',
+        expected_input1: '("scary_ghost")',
+        expected_input2: "('scary_ghost')",
         expected_output: 'const enemy = document.getElementById("scary_ghost")'
     },
     {
@@ -120,7 +121,8 @@ export default [
             {id:1, text:'This time, try it yourself!', bold:false}
         ],
         default_input: 'const enemy = document.',
-        expected_input: 'getElementById("watch_out_the_ghost")',
+        expected_input1: 'getElementById("watch_out_the_ghost")',
+        expected_input2: "getElementById('watch_out_the_ghost')",
         expected_output: 'const enemy = document.getElementById("watch_out_the_ghost")'
     },
     {
@@ -184,7 +186,8 @@ export default [
             {id:3, text:' will access all the elements with <element_tag></element_tag>.', bold:false}
         ],
         default_input: 'const enemy = document.getElementsByTagName',
-        expected_input: '("ghost")',
+        expected_input1: '("ghost")',
+        expected_input2: "('ghost')",
         expected_output: 'const enemy = document.getElementsByTagName("ghost")'
     },
     {
@@ -261,7 +264,8 @@ export default [
             {id:1, text:'Try it yourself!', bold:false}
         ],
         default_input: 'const enemy = document.',
-        expected_input: 'getElementsByTagName("ghostnomore")',
+        expected_input1: 'getElementsByTagName("ghostnomore")',
+        expected_input2: "getElementsByTagName('ghostnomore')",
         expected_output: 'const enemy = document.getElementsByTagName("ghostnomore")'
     }
 ];

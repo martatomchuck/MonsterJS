@@ -247,7 +247,7 @@ body {
 }
 
 .console {
-    width: 95%;
+    width: 100%;
     height: 40%;
     margin: 50px 0 20px 0;
     align-self: center;
@@ -276,10 +276,6 @@ body {
 }
 
 .console-userinput {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
     margin: 8px 30px 30px 10px;
 
     label {
@@ -287,7 +283,7 @@ body {
         color: #000b22;
     }
 
-    input {
+    input[type="text"] {
         font-size: 1.1rem;
         font-family: 'Roboto', sans-serif;
         color: #000b22;
@@ -295,10 +291,15 @@ body {
         padding: 10px;
         outline: none;
         border-radius: 5px;
-        border: 0.5px solid darkgray;
+        border: 1px solid white;
         background-color: rgba(221, 218, 218, 0.479);
         width: 350px;
     }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 .console-output {
@@ -337,8 +338,10 @@ body {
 
 .check-btn {
     background-color: #FF9721;
+    margin: 30px 0;
+    outline: none;
+    border: none;
     align-self: center;
-    margin: 40px 0;
     // background-color: #0c7b93;
 
     &:hover {
