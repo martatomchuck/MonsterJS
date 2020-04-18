@@ -69,11 +69,11 @@ const InputCode = ({defaultInput}) => {
     const {handleUnCheck} = useContext(CheckContext);
 
     return (
-        <div onClick={handleUnCheck}>
-            <p>{defaultInput}</p> 
-            <p>Type in your code</p>
-        </div>
-    )
+        <form onClick={handleUnCheck}>
+            <label for="answer">{defaultInput}</label>
+            <input id="answer" type="text" placeholder="Type in your code" required/>
+        </form>
+    );
 }
 
 const OutputCode = () => {

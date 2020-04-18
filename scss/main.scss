@@ -277,8 +277,28 @@ body {
 
 .console-userinput {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
+    margin: 8px 30px 30px 10px;
+
+    label {
+        font-size: 1.1rem;
+        color: #000b22;
+    }
+
+    input {
+        font-size: 1.1rem;
+        font-family: 'Roboto', sans-serif;
+        color: #000b22;
+        margin: 0 5px;
+        padding: 10px;
+        outline: none;
+        border-radius: 5px;
+        border: 0.5px solid darkgray;
+        background-color: rgba(221, 218, 218, 0.479);
+        width: 350px;
+    }
 }
 
 .console-output {
@@ -309,7 +329,7 @@ body {
     border-radius: 8px;
     text-align: center;
     line-height: 45px;
-    margin: 0px 30px 30px 30px;
+    margin: 0 30px 30px 30px;
     box-shadow: 4px 4px 7px 0px grey;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -317,6 +337,8 @@ body {
 
 .check-btn {
     background-color: #FF9721;
+    align-self: center;
+    margin: 40px 0;
     // background-color: #0c7b93;
 
     &:hover {
