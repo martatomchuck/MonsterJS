@@ -22,15 +22,15 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'Monster Village has been haunted by Ghost. Help monsters to track down the Ghost by using ', bold:false},
+            {id:1, text:'Monster Village has been haunted by a ghost. Help monsters to track down the ghost by using ', bold:false},
             {id:2, text:'getElementById()', bold:true},
-            {id:3, text:' method:', bold:false}
+            {id:3, text:' method.', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
                 {id:1, text:'With ', bold:false},
                 {id:2, text:'getElementById()', bold:true},
-                {id:3, text:' you can catch the element whose id property matches the "string" you typed in brackets,', bold:false}
+                {id:3, text:' you can catch the element which id property matches the string you typed in brackets,', bold:false}
             ]},
             {id:2, bullet: [
                 {id:1, text:'There is ', bold:false},
@@ -61,7 +61,7 @@ export default [
             },
             {
                 id: 2,
-                class: "alien",
+                class: "monster10",
                 disappear: false,
                 tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
             },
@@ -117,7 +117,7 @@ export default [
             {id:1, bullet: [
                 {id:1, text:'With ', bold:false},
                 {id:2, text:'getElementById()', bold:true},
-                {id:3, text:' you can catch the element whose id property matches the "string" you typed in brackets,', bold:false}
+                {id:3, text:' you can catch the element which id property matches the string you typed in brackets,', bold:false}
             ]},
             {id:2, bullet: [
                 {id:1, text:'There is ', bold:false},
@@ -146,7 +146,7 @@ export default [
             },
             {
                 id: 2,
-                class: "alien",
+                class: "monster10",
                 disappear: false,
                 tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
             },
@@ -176,9 +176,9 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:"Look! There is more and more of Ghosts haunting the Monster Village. The monsters need your JavaScript superpower. Find the Ghosts with ", bold:false},
+            {id:1, text:"Look! There is more and more of ghosts haunting the Monster Village. The monsters need your JavaScript superpower. Find the ghosts with ", bold:false},
             {id:2, text:'getElementsByTagName()', bold:true},
-            {id:3, text:' method:', bold:false}
+            {id:3, text:' method.', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -210,7 +210,7 @@ export default [
         elements: [
             {
                 id: 1,
-                class: "alien",
+                class: "monster10",
                 disappear: false,
                 tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
             },
@@ -266,7 +266,7 @@ export default [
         task_description: [
             {id:1, text:'Use ', bold:false},
             {id:2, text:'getElementsByTagName()', bold:true},
-            {id:3, text:' again to track down the Ghosts haunting the Monster Village. You are the only hope for little fearfull monsters.', bold:false}
+            {id:3, text:' again to track down the ghosts haunting the Monster Village. You are the only hope for little fearfull monsters.', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -314,14 +314,14 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'The Ghosts are gone but the Monsters are facing a new challenge -  an unsafe coronavirus spreading around the Monster Village. You have to act quickly. Use the method ', bold:false},
+            {id:1, text:'The ghosts are gone but the Monsters are facing a new challenge -  an unsafe coronavirus spreading around the Monster Village. You have to act quickly. Fight the virus with the method ', bold:false},
             {id:2, text:'querySelector()', bold:true},
-            {id:3, text:' to fight the virus. Use an ID to define a selector.', bold: false}
+            {id:3, text:' . Use an ID to define a selector.', bold: false}
         ],
         instructions: [
             {id:1, bullet: [
                 {id:1, text:'REMEMBER! This selector ', bold:false},
-                {id:2, text:'requires an # (octothorp)', bold:true},
+                {id:2, text:'requires an octothorp (#) and an id name', bold:true},
                 {id:3, text:' to denote an ID,', bold:false}
             ]},
             {id:2, bullet: [
@@ -372,7 +372,7 @@ export default [
             },
             {
                 id: 5,
-                class: "alien",
+                class: "monster10",
                 disappear: false,
                 tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
             },
@@ -384,14 +384,14 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'The coronavirus appeared again in the public space of Monster Village. Use ', bold:false},
+            {id:1, text:'The coronavirus appeared again in the public space of Monster Village. Fight the virus again by using ', bold:false},
             {id:2, text:'querySelector()', bold:true},
-            {id:3, text:' again to fight the virus. This time, use class to define a selector.', bold: false}
+            {id:3, text:' . This time, use class to define a selector.', bold: false}
         ],
         instructions: [
             {id:1, bullet: [
                 {id:1, text:'REMEMBER! This selector ', bold:false},
-                {id:2, text:'requires a . (period)', bold:true},
+                {id:2, text:'requires a dot ( . ) and a class name', bold:true},
                 {id:3, text:' to denote class,', bold:false}
             ]},
             {id:2, bullet: [
@@ -436,7 +436,7 @@ export default [
             },
             {
                 id: 4,
-                class: "alien",
+                class: "monster10",
                 disappear: false,
                 tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
             },
@@ -474,14 +474,19 @@ export default [
         task_description: [
             {id:1, text:'Previous methods did not help in the long run. New Monsters are getting sick because of the coronavirus. Use ', bold:false},
             {id:2, text:'querySelector()', bold:true},
-            {id:3, text:' again to fight the virus. This time, use a tag to define a selector.', bold: false}
+            {id:3, text:' again to fight the virus, by using a tag to define a selector.', bold: false}
         ],
         instructions: [
             {id:1, bullet: [
+                {id:1, text:'REMEMBER! This selector ', bold:false},
+                {id:2, text:'requires a tag name', bold:true},
+                {id:3, text:' to denote a tag,', bold:false}
+            ]},
+            {id:2, bullet: [
                 {id:1, text:'This selector works with all CSS selectors but it will only ever ', bold:false},
                 {id:2, text:'return one element', bold:true}
             ]},
-            {id:2, bullet: [
+            {id:3, bullet: [
                 {id:1, text:'BE CAREFULL! ', bold:false},
                 {id:2, text:'Only the first element', bold:false},
                 {id:1, text:' matching the passed-in string will be returned.', bold:false}
