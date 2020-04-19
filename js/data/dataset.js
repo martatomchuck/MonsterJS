@@ -183,7 +183,7 @@ export default [
         instructions:[
             {id:1, bullet: [
                 {id:1, text:'The method ', bold:false},
-                {id:2, text:'getElementsByTagName()', bold:true},
+                {id:2, text:'getElementsByTagName()', bold:false},
                 {id:3, text:' will search for tags that match the passed-in string,', bold:false}
             ]},
             {id:2, bullet: [
@@ -271,7 +271,7 @@ export default [
         instructions:[
             {id:1, bullet: [
                 {id:1, text:'The method ', bold:false},
-                {id:2, text:'getElementsByTagName()', bold:true},
+                {id:2, text:'getElementsByTagName()', bold:false},
                 {id:3, text:' will search for tags that match the passed-in string,', bold:false}
             ]},
             {id:2, bullet: [
@@ -290,5 +290,210 @@ export default [
         default_input: 'const enemy = document.',
         expected_input1: 'getElementsByTagName("ghostnomore")',
         expected_input2: "getElementsByTagName('ghostnomore')"
+    },
+    {
+        level: 5,
+        elements: [
+            {
+                id: 1,
+                class: "monster7",
+                disappear: false,
+                tooltip: '< monster class = "brown fatso" id = "Mathias" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 2,
+                class: "monster6",
+                disappear: false,
+                tooltip: '< monster class = "pink crazy-lady" id = "Martha" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 3,
+                class: "coronavirus",
+                disappear: true,
+                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Virus! </ virus >'
+            }
+        ],
+        task_description: [
+            {id:1, text:'The Ghosts are gone but the Monsters are facing a new challenge -  an unsafe coronavirus spreading around the Monster Village. You have to act quickly. Use the method ', bold:false},
+            {id:2, text:'querySelector()', bold:true},
+            {id:3, text:' to fight the virus. Use an ID to define a selector.', bold: false}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'REMEMBER! This selector ', bold:false},
+                {id:2, text:'requires an # (octothorp)', bold:true},
+                {id:3, text:' to denote an ID,', bold:false}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'This selector works with all CSS selectors but it will only ever ', bold:false},
+                {id:2, text:'return one element', bold:true}
+            ]},
+            {id:3, bullet: [
+                {id:1, text:'BE CAREFULL! ', bold:false},
+                {id:2, text:'Only the first element', bold:false},
+                {id:1, text:' matching the passed-in string will be returned.', bold:false}
+            ]}
+        ],
+        example: [
+            {id:1, text:'EXAMPLE: ', bold:false},
+            {id:2, text:'document.querySelector("#id");', bold:true},
+            {id:3, text:' will access the first element with the specified id.', bold:false}
+        ],
+        default_input: 'const enemy = document.querySelector',
+        expected_input1: '("#COVID-19")',
+        expected_input2: "('#COVID-19')"
+    },
+    {
+        level: 6,
+        elements: [
+            {
+                id: 1,
+                class: "monster8",
+                disappear: false,
+                tooltip: '< monster class = "green one-eyed" id = "Frank" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 2,
+                class: "monster1",
+                disappear: false,
+                tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 3,
+                class: "monster6",
+                disappear: false,
+                tooltip: '< monster class = "pink crazy-lady" id = "Martha" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 4,
+                class: "coronavirus",
+                disappear: true,
+                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Virus! </ virus >'
+            },
+            {
+                id: 5,
+                class: "alien",
+                disappear: false,
+                tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 6,
+                class: "monster7",
+                disappear: false,
+                tooltip: '< monster class = "brown fatso" id = "Mathias" > Hello, I am a Monster! </ monster >'
+            }
+        ],
+        task_description: [
+            {id:1, text:'The coronavirus appeared again in the public space of Monster Village. Use ', bold:false},
+            {id:2, text:'querySelector()', bold:true},
+            {id:3, text:' again to fight the virus. This time, use class to define a selector.', bold: false}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'REMEMBER! This selector ', bold:false},
+                {id:2, text:'requires a . (period)', bold:true},
+                {id:3, text:' to denote class,', bold:false}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'This selector works with all CSS selectors but it will only ever ', bold:false},
+                {id:2, text:'return one element', bold:true}
+            ]},
+            {id:3, bullet: [
+                {id:1, text:'BE CAREFULL! ', bold:false},
+                {id:2, text:'Only the first element', bold:false},
+                {id:1, text:' matching the passed-in string will be returned.', bold:false}
+            ]}
+        ],
+        example: [
+            {id:1, text:'EXAMPLE: ', bold:false},
+            {id:2, text:'document.querySelector(".class");', bold:true},
+            {id:3, text:' will access the first element with the specified class.', bold:false}
+        ],
+        default_input: 'const enemy = document.querySelector',
+        expected_input1: '(".dangerous")',
+        expected_input2: "('.dangerous')"
+    },
+    {
+        level: 7,
+        elements: [
+            {
+                id: 1,
+                class: "monster9",
+                disappear: false,
+                tooltip: '< monster class = "light-purple buka" id = "Alice" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 2,
+                class: "monster6",
+                disappear: false,
+                tooltip: '< monster class = "pink crazy-lady" id = "Martha" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 3,
+                class: "coronavirus",
+                disappear: true,
+                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Virus! </ virus >'
+            },
+            {
+                id: 4,
+                class: "alien",
+                disappear: false,
+                tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 5,
+                class: "monster3",
+                disappear: false,
+                tooltip: '< monster class = "yellow notched" id = "Clark" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 6,
+                class: "monster8",
+                disappear: false,
+                tooltip: '< monster class = "green one-eyed" id = "Frank" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 7,
+                class: "monster4",
+                disappear: false,
+                tooltip: '< monster class = "turquoise dotted" id = "Thomas" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 8,
+                class: "monster5",
+                disappear: false,
+                tooltip: '< monster class = "dark-blue tentacles" id = "Julia" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 9,
+                class: "monster1",
+                disappear: false,
+                tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
+            }
+        ],
+        task_description: [
+            {id:1, text:'Previous methods did not help in the long run. New Monsters are getting sick because of the coronavirus. Use ', bold:false},
+            {id:2, text:'querySelector()', bold:true},
+            {id:3, text:' again to fight the virus. This time, use a tag to define a selector.', bold: false}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'This selector works with all CSS selectors but it will only ever ', bold:false},
+                {id:2, text:'return one element', bold:true}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'BE CAREFULL! ', bold:false},
+                {id:2, text:'Only the first element', bold:false},
+                {id:1, text:' matching the passed-in string will be returned.', bold:false}
+            ]}
+        ],
+        example: [
+            {id:1, text:'EXAMPLE: ', bold:false},
+            {id:2, text:'document.querySelector("tag");', bold:true},
+            {id:3, text:' will access the first element with the specified tag.', bold:false}
+        ],
+        default_input: 'const enemy = document.querySelector',
+        expected_input1: '("virus")',
+        expected_input2: "('virus')"
     }
 ];
