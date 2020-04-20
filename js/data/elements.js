@@ -48,7 +48,7 @@ let elements = [
         tooltip: '< monster class = "green one-eyed" id = "Frank"> Hello, I am a Monster! </ monster >'
     },
     {
-        id: 1,
+        id: 0,
         class: "monster9",
         disappear: false,
         tooltip: '< monster class = "light-purple buka" id = "Alice" > Hello, I am a Monster! </ monster >'
