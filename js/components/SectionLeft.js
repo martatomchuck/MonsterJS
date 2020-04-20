@@ -62,7 +62,7 @@ const Game = ({elements}) => {
                     )
                 })}
             </div>
-            <h4 className="game-hint">Hover the element to peek its HTML structure.
+            <h4 className="game-hint">Hover or tap the element to peek its HTML structure.
             <span>Images made by Freepik & Smashicons from flaticon.com</span></h4>
         </>
     )

@@ -30,7 +30,8 @@ body {
 @media(max-width: 1000px) {
     .container {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
+
     }
 }
 
