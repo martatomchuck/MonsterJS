@@ -1,0 +1,65 @@
+// WELCOME
+.welcome {
+    width: 900px;
+    height: 600px;
+    background-image: linear-gradient(90deg, #FF8704, #ff2e63);
+    border-radius: 30px;
+    position: absolute;
+    z-index: 99999;
+    top: calc(50% - 300px);
+    left: calc(50% - 450px);
+    padding: 0 50px;
+    text-align: center;
+
+    h1 {
+        margin: 20px 0;
+    }
+
+    p {
+        line-height: 20px;
+        display: block;
+        margin: 0;        
+
+        &:first-of-type {
+            font-size: 25px;
+            line-height: 27px;
+            margin: 25px 0;
+        }
+
+        &:nth-of-type(2),
+        &:last-of-type {
+            text-align: justify;
+            color: #2d2f35;
+            font-size: 17px;
+            margin: 20px;
+        }
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    h3 {
+        padding: 30px;
+    }
+
+    .monsters {
+        display: flex;
+        justify-content: center;
+
+        div {
+            width: 80px;
+            height: 80px;
+            background-color: #ffc2c2;
+            margin: 5px;
+        }
+    }
+}
+
+.welcome-close-btn {
+    background-color: #96d3e0;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

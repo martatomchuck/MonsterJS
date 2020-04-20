@@ -12,9 +12,9 @@ const Welcome = ({handleWelcomeClose}) => {
                 <div>2</div>
                 <div>3</div>
             </div>
-            <p><b>LEARNING OBJECTIVES: </b>The game will teach you how to find HTML elements using predefined JavaScript functions. 
+            <p><span>LEARNING OBJECTIVES: </span>The game will teach you how to find HTML elements using predefined JavaScript functions. 
             Read the instructions carefully and type your code to the console. Happy hacking!</p>
-            <p><b>PREREQUISITES: </b>For all JavaScript learners. Familiarity with the basics of HTML and JavaScript fundamentals is a plus but not required.</p>
+            <p><span>PREREQUISITES: </span>For all JavaScript learners. Familiarity with the basics of HTML and JavaScript fundamentals is a plus but not required.</p>
             <h3>Make the Monster Village a better place.</h3>
         </div>
     )

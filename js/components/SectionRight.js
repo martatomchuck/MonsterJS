@@ -91,7 +91,7 @@ const OutputCode = () => {
     const {isCorrect} = useContext(AnswerContext);
 
     return (
-        <p className={"console-output"} style={isCorrect ? {backgroundColor: "green"} : {backgroundColor: "#DB0049"}}>{isCorrect ? "Good job! The Monster Village is safe now!" : "Sorry, incorrect result. Try again."}</p>
+        <p className={"console-output"} style={isCorrect ? {backgroundColor: "#388e3c"} : {backgroundColor: "#DB0049"}}>{isCorrect ? "Good job! The Monster Village is safe now!" : "Sorry, incorrect result. Try again."}</p>
     )
 }
 
