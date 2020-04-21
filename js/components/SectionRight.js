@@ -25,10 +25,13 @@ const Name = () => {
 const Instructions = ({description, instructions, example}) => {
     return (
         <div className="description">
+            <div>
                 {description.map((el) => {
                     return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
                 })} 
+            </div>
 
+            <div className="description-bullets">
                 <ul>
                     {instructions.map((el) => {
                         return <li key={el.id}>{el.bullet.map((el2) => {
@@ -36,10 +39,13 @@ const Instructions = ({description, instructions, example}) => {
                         })}</li>
                     })}
                 </ul>
+            </div>
 
+            <div>
                 {example.map((el) => {
                     return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
                 })}
+            </div>
         </div>
     )
 }
