@@ -327,7 +327,7 @@ export default [
             {id:3, bullet: [
                 {id:1, text:'BE CAREFULL! ', bold:false},
                 {id:2, text:'Only the first element', bold:false},
-                {id:1, text:' matching the passed-in string will be returned.', bold:false}
+                {id:3, text:' matching the passed-in string will be returned.', bold:false}
             ]}
         ],
         example: [
@@ -396,7 +396,7 @@ export default [
             {id:3, bullet: [
                 {id:1, text:'BE CAREFULL! ', bold:false},
                 {id:2, text:'Only the first element', bold:false},
-                {id:1, text:' matching the passed-in string will be returned.', bold:false}
+                {id:3, text:' matching the passed-in string will be returned.', bold:false}
             ]}
         ],
         example: [
@@ -483,7 +483,7 @@ export default [
             {id:3, bullet: [
                 {id:1, text:'BE CAREFULL! ', bold:false},
                 {id:2, text:'Only the first element', bold:false},
-                {id:1, text:' matching the passed-in string will be returned.', bold:false}
+                {id:3, text:' matching the passed-in string will be returned.', bold:false}
             ]}
         ],
         example: [

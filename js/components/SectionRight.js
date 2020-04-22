@@ -82,20 +82,22 @@ const Console = ({expectedInput}) => {
 const InputCode = () => {
     const {handleCheck, handleUnCheck} = useContext(CheckContext);
     const {verifyAnswer, clearAnswer} = useContext(AnswerContext);
+    const {counter} = useContext(LevelContext);
 
     const [answer, setAnswer] = useState("");
-    
+     
     const handleSubmit = (e) => {
         e.preventDefault();
         handleCheck();
         verifyAnswer(answer);
     }
 
+
     return (
         <form onSubmit={handleSubmit}>
             <div className="console-userinput">
                 <label>const enemy = document. </label>
-                <input type="text" spellCheck="false" placeholder="Type in your code" value={answer} onChange={(e) => setAnswer(e.target.value)} onClick={() => {handleUnCheck(); clearAnswer();}} />
+                <input type="text" spellCheck="false" placeholder="Type in your code" value={answer} onChange={(e) => setAnswer(e.target.value)} onClick={() => {handleUnCheck(); clearAnswer(answer);}} />
             </div>
 
             <input type="submit" className="btn check-btn" value="Check"></input>

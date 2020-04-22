@@ -48,7 +48,7 @@
 }
 
 .description-bullets {
-    background-color: rgba(#fff, 0.08);
+    background-color: rgba(#fff, 0.06);
     padding: 10px 20px 10px 35px;
     margin: 15px 15px 25px 15px;
     border-radius: 10px;
@@ -56,7 +56,7 @@
 
 .console {
     width: 100%;
-    height: 35%;
+    height: 40%;
     margin: 70px 0 20px 0;
     align-self: center;
     display: flex;
@@ -93,6 +93,7 @@
         font-size: 1rem;
         font-weight: 500;
         color: #000b22a1;
+        flex-grow: 1;
     }
 
     input[type="text"] {
@@ -175,7 +176,6 @@ form {
 .check-btn {
     background-color: #FF9721;
     margin: 15px 0;
-    outline: none;
     border: none;
     align-self: center;
 

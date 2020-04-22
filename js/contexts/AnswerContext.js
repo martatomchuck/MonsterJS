@@ -21,6 +21,7 @@ const AnswerContextProvider = (props) => {
         setIsCorrect(false);
     }
 
+
     return (
         <AnswerContext.Provider value={{isCorrect, verifyAnswer, clearAnswer}}>
             {props.children}
