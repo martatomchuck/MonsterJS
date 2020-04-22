@@ -4,13 +4,13 @@ import { LevelContext } from '../contexts/LevelContext';
 import { AnswerContext } from "../contexts/AnswerContext";
 import { CheckContext } from "../contexts/CheckContext";
 
-const SectionRight = ({description, instructions, example, defaultInput, expectedInput}) => {
+const SectionRight = ({description, instructions, example, expectedInput}) => {
 
     return (
         <section className="section-right">
             <Name/>
             <Instructions description={description} instructions={instructions} example={example}/>
-            <Console defaultInput={defaultInput} expectedInput={expectedInput}/>
+            <Console expectedInput={expectedInput}/>
             <div className="console-btn">
                 <BtnNext/>
             </div>
@@ -50,15 +50,25 @@ const Instructions = ({description, instructions, example}) => {
     )
 }
 
-const Console = ({defaultInput, expectedInput}) => {
+const Console = ({expectedInput}) => {
     const {answerSubmit} = useContext(CheckContext);
 
     return (
         <div className="console">
-            <div className="console-numbers">1 2 3 4 5 6 7 8</div>
+            <div className="console-numbers">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+            </div>
             <div className="console-task">
                 <div> 
-                    <InputCode defaultInput={defaultInput}/>
+                    <InputCode/>
                 </div>
                 {
                     answerSubmit &&
@@ -69,7 +79,7 @@ const Console = ({defaultInput, expectedInput}) => {
     )
 }
 
-const InputCode = ({defaultInput}) => {
+const InputCode = () => {
     const {handleCheck, handleUnCheck} = useContext(CheckContext);
     const {verifyAnswer, clearAnswer} = useContext(AnswerContext);
 
@@ -84,7 +94,7 @@ const InputCode = ({defaultInput}) => {
     return (
         <form onSubmit={handleSubmit}>
             <div className="console-userinput">
-                <label>{defaultInput}</label>
+                <label>const enemy = document. </label>
                 <input type="text" spellCheck="false" placeholder="Type in your code" value={answer} onChange={(e) => setAnswer(e.target.value)} onClick={() => {handleUnCheck(); clearAnswer();}} />
             </div>
 

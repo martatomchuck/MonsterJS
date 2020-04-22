@@ -16,7 +16,7 @@ const GameEngine = ({dataset}) => {
         <div className="container">
             <SectionLeft datasetLength={datasetLength} level={dataset[counter].level} elements={dataset[counter].elements}/>
             
-            <SectionRight description={dataset[counter].task_description} instructions={dataset[counter].instructions} example={dataset[counter].example} defaultInput={dataset[counter].default_input} expectedInput={dataset[counter].expected_input}/>
+            <SectionRight description={dataset[counter].task_description} instructions={dataset[counter].instructions} example={dataset[counter].example} expectedInput={dataset[counter].expected_input}/>
         </div>
     );
 }

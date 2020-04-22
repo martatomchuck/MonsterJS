@@ -12,24 +12,24 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 5px 30px 40px 40px;
+    padding: 5px 30px 20px 40px;
 }
 
 .title {
     color: #ff9d9d;
     // color: #FF8704;
     // color: #1ea6c5;
-    font-size: 2.2em;
+    font-size: 2.1em;
     font-weight: 700;
     margin-bottom: 15px;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 .description {
     color: #c5c4c4;
     line-height: 28px;
     font-size: 1rem;
-    width: 95%;
+    width: 98%;
     min-height: 35%;
 
     li {
@@ -38,7 +38,7 @@
 
     .bold {
         display: inline-block;
-        padding: 1px 10px;
+        padding: 0px 10px;
         background-color: rgba(#33bfdf, 0.15);
         border-radius: 5px;
         color: white;
@@ -50,13 +50,13 @@
 .description-bullets {
     background-color: rgba(#fff, 0.08);
     padding: 10px 20px 10px 35px;
-    margin: 15px;
+    margin: 15px 15px 25px 15px;
     border-radius: 10px;
 }
 
 .console {
     width: 100%;
-    height: 45%;
+    height: 35%;
     margin: 70px 0 20px 0;
     align-self: center;
     display: flex;
@@ -70,7 +70,11 @@
     font-size: 1.2em;
     font-weight: 600;
     padding: 15px 15px;
+    border: none;
     border-radius: 5px 0 0 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .console-task {
@@ -101,7 +105,7 @@
         border-radius: 5px;
         border: 1px solid white;
         background-color: rgba(221, 218, 218, 0.479);
-        width: 350px;
+        width: 70%;
     }
 }
 
@@ -113,14 +117,15 @@ form {
 .console-output {
     display: block;
     width: 90%;
-    height: 70px;
+    height: 80px;
     color: white;
     font-size: 25px;
     border-radius: 10px;
     margin-left: 5%;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    margin-top: 20px;
     text-align: center;
-    line-height: 70px;
+    line-height: 80px;
     border: 3px dashed #000b22;
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
@@ -161,7 +166,7 @@ form {
     border-radius: 8px;
     text-align: center;
     line-height: 45px;
-    margin: 0 30px 15px 30px;
+    margin: 0 30px 10px 30px;
     box-shadow: 2px 4px 7px 0px grey;
     cursor: pointer;
     transition: all 0.5s ease;
@@ -173,7 +178,6 @@ form {
     outline: none;
     border: none;
     align-self: center;
-    // background-color: #0c7b93;
 
     &:hover {
         background-color: #ffa41b;
@@ -195,6 +199,16 @@ form {
 @media (max-width: 1000px) {
     .section-right {
         width: 100%;
-        height: 55vh;
+        height: auto;
+    }
+
+    .next-btn {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .console-output {
+        font-size: 1.2em;
     }
 }

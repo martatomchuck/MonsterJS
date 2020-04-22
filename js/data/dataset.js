@@ -29,12 +29,12 @@ export default [
         instructions:[
             {id:1, bullet: [
                 {id:1, text:'With ', bold:false},
-                {id:2, text:'getElementById()', bold:true},
+                {id:2, text:'getElementById()', bold:false},
                 {id:3, text:' you can catch the element which id property matches the string you typed in brackets,', bold:false}
             ]},
             {id:2, bullet: [
                 {id:1, text:'There is ', bold:false},
-                {id:2, text:'no need for a #', bold:true},
+                {id:2, text:'no need for a hash (#)', bold:true},
                 {id:3, text:' to indicate element id,', bold:false}
             ]},
             {id:3, bullet: [
@@ -46,9 +46,8 @@ export default [
             {id:2, text:'document.getElementById("element_id");', bold:true},
             {id:3, text:' will access the element with #element_id.', bold:false}
         ],
-        default_input: 'const enemy = document.getElementById',
-        expected_input1: '("scary-ghost")',
-        expected_input2: "('scary-ghost')"
+        expected_input1: 'getElementById("scary-ghost")',
+        expected_input2: "getElementById('scary-ghost')"
     },
     {
         level: 2,
@@ -116,12 +115,12 @@ export default [
         instructions:[
             {id:1, bullet: [
                 {id:1, text:'With ', bold:false},
-                {id:2, text:'getElementById()', bold:true},
+                {id:2, text:'getElementById()', bold:false},
                 {id:3, text:' you can catch the element which id property matches the string you typed in brackets,', bold:false}
             ]},
             {id:2, bullet: [
                 {id:1, text:'There is ', bold:false},
-                {id:2, text:'no need for a #', bold:true},
+                {id:2, text:'no need for a hash (#)', bold:true},
                 {id:3, text:' to indicate element id,', bold:false}
             ]},
             {id:3, bullet: [
@@ -131,7 +130,6 @@ export default [
         example: [
             {id:1, text:'This time, try it yourself!', bold:false}
         ],
-        default_input: 'const enemy = document.',
         expected_input1: 'getElementById("watch-out-the-ghost")',
         expected_input2: "getElementById('watch-out-the-ghost')"
     },
@@ -201,9 +199,8 @@ export default [
             {id:2, text:'document.getElementsByTagName("element_tag");', bold:true},
             {id:3, text:' will access all the elements with <element_tag></element_tag>.', bold:false}
         ],
-        default_input: 'const enemy = document.getElementsByTagName',
-        expected_input1: '("ghost")',
-        expected_input2: "('ghost')"
+        expected_input1: 'getElementsByTagName("ghost")',
+        expected_input2: "getElementsByTagName('ghost')"
     },
     {
         level: 4,
@@ -287,7 +284,6 @@ export default [
         example: [
             {id:1, text:'Try it yourself!', bold:false}
         ],
-        default_input: 'const enemy = document.',
         expected_input1: 'getElementsByTagName("ghostnomore")',
         expected_input2: "getElementsByTagName('ghostnomore')"
     },
@@ -321,8 +317,8 @@ export default [
         instructions: [
             {id:1, bullet: [
                 {id:1, text:'REMEMBER! This selector ', bold:false},
-                {id:2, text:'requires an octothorp (#) and an id name', bold:true},
-                {id:3, text:' to denote an ID,', bold:false}
+                {id:2, text:'requires a hash (#)', bold:true},
+                {id:3, text:' and an id name to denote an ID,', bold:false}
             ]},
             {id:2, bullet: [
                 {id:1, text:'This selector works with all CSS selectors but it will only ever ', bold:false},
@@ -339,9 +335,8 @@ export default [
             {id:2, text:'document.querySelector("#id");', bold:true},
             {id:3, text:' will access the first element with the specified id.', bold:false}
         ],
-        default_input: 'const enemy = document.querySelector',
-        expected_input1: '("#COVID-19")',
-        expected_input2: "('#COVID-19')"
+        expected_input1: 'querySelector("#COVID-19")',
+        expected_input2: "querySelector('#COVID-19')"
     },
     {
         level: 6,
@@ -391,8 +386,8 @@ export default [
         instructions: [
             {id:1, bullet: [
                 {id:1, text:'REMEMBER! This selector ', bold:false},
-                {id:2, text:'requires a dot ( . ) and a class name', bold:true},
-                {id:3, text:' to denote class,', bold:false}
+                {id:2, text:'requires a dot ( . )', bold:true},
+                {id:3, text:' and a class name to denote class,', bold:false}
             ]},
             {id:2, bullet: [
                 {id:1, text:'This selector works with all CSS selectors but it will only ever ', bold:false},
@@ -409,9 +404,8 @@ export default [
             {id:2, text:'document.querySelector(".class");', bold:true},
             {id:3, text:' will access the first element with the specified class.', bold:false}
         ],
-        default_input: 'const enemy = document.querySelector',
-        expected_input1: '(".dangerous")',
-        expected_input2: "('.dangerous')"
+        expected_input1: 'querySelector(".dangerous")',
+        expected_input2: "querySelector('.dangerous')"
     },
     {
         level: 7,
@@ -497,8 +491,7 @@ export default [
             {id:2, text:'document.querySelector("tag");', bold:true},
             {id:3, text:' will access the first element with the specified tag.', bold:false}
         ],
-        default_input: 'const enemy = document.querySelector',
-        expected_input1: '("virus")',
-        expected_input2: "('virus')"
+        expected_input1: 'querySelector("virus")',
+        expected_input2: "querySelector('virus')"
     }
 ];
