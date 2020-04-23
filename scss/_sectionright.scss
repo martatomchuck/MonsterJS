@@ -44,13 +44,14 @@
         color: white;
         font-weight: 600;
         letter-spacing: 0.5px;
+        word-break: break-all;
     }
 }
 
 .description-bullets {
     background-color: rgba(#fff, 0.06);
     padding: 10px 20px 10px 35px;
-    margin: 15px 15px 25px 15px;
+    margin: 25px 15px 25px 15px;
     border-radius: 10px;
 }
 
