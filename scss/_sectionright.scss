@@ -56,7 +56,7 @@
 }
 
 .console {
-    width: 100%;
+    width: 98%;
     height: 40%;
     margin: 70px 0 20px 0;
     align-self: center;
@@ -212,6 +212,7 @@ form {
 
     .console {
         min-height: 320px;
+        box-shadow: none;
     }
 
     .console-output {
