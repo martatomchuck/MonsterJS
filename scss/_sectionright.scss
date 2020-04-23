@@ -116,9 +116,9 @@ form {
 }
 
 .console-output {
-    display: block;
+    display: inline-block;
     width: 90%;
-    height: 80px;
+    height: auto;
     color: white;
     font-size: 25px;
     border-radius: 10px;
@@ -126,7 +126,8 @@ form {
     margin-bottom: 25px;
     margin-top: 20px;
     text-align: center;
-    line-height: 80px;
+    line-height: 30px;
+    padding: 10px;
     border: 3px dashed #000b22;
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
@@ -204,21 +205,28 @@ form {
         padding: 10px;
     }
 
-    .next-btn {
-        display: none;
+    .title {
+        padding-left: 10px;
     }
 
     .console {
-        min-height: 300px;
+        min-height: 320px;
+    }
+
+    .console-output {
+        line-height: 30px;
+        padding: 10px;
     }
 
     .description {
         padding: 0 0 0 8px;
     }
 
-    .title {
-        padding-left: 10px;
+    .next-btn {
+        width: 100%;
+        margin: 10px;
     }
+
 }
 
 @media (max-width: 550px) {

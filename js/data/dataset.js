@@ -468,7 +468,7 @@ export default [
         task_description: [
             {id:1, text:'Previous methods did not help in the long run. New Monsters are getting sick because of the coronavirus. Use ', bold:false},
             {id:2, text:'querySelector()', bold:true},
-            {id:3, text:' again to fight the virus, by using a tag to define a selector.', bold: false}
+            {id:3, text:' again to fight the virus. Use a tag to define a selector.', bold: false}
         ],
         instructions: [
             {id:1, bullet: [
