@@ -174,7 +174,7 @@
     .game {
         width: 65%;
         margin: 30px;
-        cursor: pointer;
+        cursor: none;
     }
 
     .counter {
@@ -182,7 +182,7 @@
     }
 
     .tooltip {
-        top: 90px;
+        top: 70px;
         left: -50px;
         font-size: 0.8rem;
         width: 200px;

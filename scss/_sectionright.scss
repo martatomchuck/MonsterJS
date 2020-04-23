@@ -177,6 +177,7 @@ form {
     background-color: #FF9721;
     margin: 15px 0;
     border: none;
+    outline: none;
     align-self: center;
 
     &:hover {
@@ -200,6 +201,7 @@ form {
     .section-right {
         width: 100%;
         height: auto;
+        padding: 10px;
     }
 
     .next-btn {
