@@ -57,7 +57,7 @@
 
 .console {
     width: 98%;
-    height: 40%;
+    height: 42%;
     margin: 70px 0 20px 0;
     align-self: center;
     display: flex;
@@ -121,7 +121,7 @@ form {
     width: 90%;
     height: auto;
     color: white;
-    font-size: 25px;
+    font-size: 22px;
     border-radius: 10px;
     margin-left: 5%;
     margin-bottom: 25px;
@@ -166,6 +166,7 @@ form {
     color: white;
     font-weight: 700;
     font-size: 18px;
+    font-family: 'Baloo Paaji 2', sans-serif;
     border-radius: 8px;
     text-align: center;
     line-height: 45px;
@@ -227,7 +228,7 @@ form {
     .next-btn {
         width: 100%;
         margin: 10px;
-        box-shadow: none;
+        box-shadow: 0 0 20px 0 #000b228a;;
     }
 
 }

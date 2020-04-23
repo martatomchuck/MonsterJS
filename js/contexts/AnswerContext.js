@@ -6,6 +6,7 @@ export const AnswerContext = createContext();
 
 const AnswerContextProvider = (props) => {
     const [isCorrect, setIsCorrect] = useState(false);
+    const [isClicked, setIsClicked] = useState(false);
 
     const {counter} = useContext(LevelContext);
 
@@ -21,9 +22,13 @@ const AnswerContextProvider = (props) => {
         setIsCorrect(false);
     }
 
+    const handleClick = () => {
+        setIsClicked(!isClicked);
+    }
+
 
     return (
-        <AnswerContext.Provider value={{isCorrect, verifyAnswer, clearAnswer}}>
+        <AnswerContext.Provider value={{isCorrect, verifyAnswer, clearAnswer, handleClick, isClicked}}>
             {props.children}
         </AnswerContext.Provider>
     )

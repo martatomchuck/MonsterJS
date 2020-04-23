@@ -81,8 +81,7 @@ const Console = ({expectedInput}) => {
 
 const InputCode = () => {
     const {handleCheck, handleUnCheck} = useContext(CheckContext);
-    const {verifyAnswer, clearAnswer} = useContext(AnswerContext);
-    const {counter} = useContext(LevelContext);
+    const {verifyAnswer, clearAnswer, isClicked, handleClick} = useContext(AnswerContext);
 
     const [answer, setAnswer] = useState("");
      
@@ -92,6 +91,11 @@ const InputCode = () => {
         verifyAnswer(answer);
     }
 
+    if (isClicked && answer !== "") {
+        // console.log("clicked", isClicked);
+        setAnswer("");
+        handleClick();
+    }
 
     return (
         <form onSubmit={handleSubmit}>
@@ -116,12 +120,13 @@ const OutputCode = () => {
 const BtnNext = () => {
     const {handleNextBtn} = useContext(LevelContext);
     const {handleUnCheck} = useContext(CheckContext);
-    const {clearAnswer} = useContext(AnswerContext);
+    const {clearAnswer, handleClick} = useContext(AnswerContext);
 
     return <div className="btn next-btn" onClick={() => {
         handleNextBtn();
         handleUnCheck();
         clearAnswer();
+        handleClick();
     }}>Next</div>
 }
 

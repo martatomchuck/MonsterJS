@@ -17,7 +17,7 @@ const SectionLeft = ({datasetLength, level, elements}) => {
 const Counter = ({datasetLength, level}) => {
     const {handlePrevBtn, handleNextBtn} = useContext(LevelContext);
     const {handleUnCheck} = useContext(CheckContext);
-    const {clearAnswer} = useContext(AnswerContext);
+    const {clearAnswer, handleClick} = useContext(AnswerContext);
 
     return (
         <div className="counter">
@@ -25,12 +25,14 @@ const Counter = ({datasetLength, level}) => {
                 handlePrevBtn();
                 handleUnCheck();
                 clearAnswer();
+                handleClick();
             }}></div>
             <div id="counter-level">Level {level} of {datasetLength}</div>
             <div id="counter-next" onClick={() => {
                 handleNextBtn();
                 handleUnCheck();
                 clearAnswer();
+                handleClick();
             }}></div>
         </div>
     )

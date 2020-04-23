@@ -108,9 +108,9 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'Oh no! The Ghost is still haunting the Monster Village. Use ', bold:false},
+            {id:1, text:'Oh no! A ghost is still haunting the Monster Village. Use ', bold:false},
             {id:2, text:'getElementById()', bold:true},
-            {id:3, text:' again to help monsters catch the Ghost.', bold:false}
+            {id:3, text:' again to help monsters catch the ghost.', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
