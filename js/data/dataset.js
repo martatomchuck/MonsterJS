@@ -384,7 +384,7 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'The coronavirus appeared again in the public space of Monster Village. Fight the virus again by using ', bold:false},
+            {id:1, text:'The coronavirus appeared again in the public space of Monster Village. Fight the virus by using ', bold:false},
             {id:2, text:'querySelector()', bold:true},
             {id:3, text:' . This time, use class to define a selector.', bold: false}
         ],
@@ -472,9 +472,9 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'Previous methods did not help in the long run. New Monsters are getting sick because of the coronavirus. Use ', bold:false},
+            {id:1, text:'Previous methods did not help in the long run. New Monsters are getting sick because of the coronavirus. Make use of ', bold:false},
             {id:2, text:'querySelector()', bold:true},
-            {id:3, text:' again to fight the virus. Use a tag to define a selector.', bold: false}
+            {id:3, text:' one more time to fight the virus. Now, use a tag to define a selector.', bold: false}
         ],
         instructions: [
             {id:1, bullet: [

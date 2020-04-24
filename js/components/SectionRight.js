@@ -19,7 +19,11 @@ const SectionRight = ({description, instructions, example, expectedInput}) => {
 }
 
 const Name = () => {
-    return <div className="title">MonsterVillage( )</div>
+    return (
+        <>
+            <div className="title">Monster JS</div>
+        </>
+    )
 }
 
 const Instructions = ({description, instructions, example}) => {

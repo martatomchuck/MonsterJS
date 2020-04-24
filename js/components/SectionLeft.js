@@ -41,8 +41,8 @@ const Counter = ({datasetLength, level}) => {
 const Game = ({elements}) => {
     const [isHovering, setIsHovering] = useState(null);
 
-    const handleMouseHover = (key) => {
-        setIsHovering(key);
+    const handleMouseHover = (id) => {
+        setIsHovering(id);
     }
 
     const handleMouseHoverLeave = () => {
