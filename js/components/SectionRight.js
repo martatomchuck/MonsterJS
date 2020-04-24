@@ -4,13 +4,13 @@ import { LevelContext } from '../contexts/LevelContext';
 import { AnswerContext } from "../contexts/AnswerContext";
 import { CheckContext } from "../contexts/CheckContext";
 
-const SectionRight = ({description, instructions, example, expectedInput}) => {
+const SectionRight = ({description, instructions, example}) => {
 
     return (
         <section className="section-right">
             <Name/>
             <Instructions description={description} instructions={instructions} example={example}/>
-            <Console expectedInput={expectedInput}/>
+            <Console/>
             <div className="console-btn">
                 <BtnNext/>
             </div>
@@ -54,7 +54,7 @@ const Instructions = ({description, instructions, example}) => {
     )
 }
 
-const Console = ({expectedInput}) => {
+const Console = () => {
     const {answerSubmit} = useContext(CheckContext);
 
     return (
@@ -76,7 +76,7 @@ const Console = ({expectedInput}) => {
                 </div>
                 {
                     answerSubmit &&
-                    <OutputCode expectedInput={expectedInput}/>
+                    <OutputCode/>
                 }
             </div>
         </div>
