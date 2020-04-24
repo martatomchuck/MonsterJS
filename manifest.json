@@ -8,9 +8,9 @@
             "type": "image/svg"
         }
     ],
-    "theme_color": "#fff",
+    "theme_color": "#000b22",
     "background_color": "#000b22",
-    "display": "standalone",
+    "display": "fullscreen",
     "scope": "/",
-    "start_url": ""
+    "start_url": "/"
 }
