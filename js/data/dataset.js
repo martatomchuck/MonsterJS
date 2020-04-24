@@ -47,7 +47,8 @@ export default [
             {id:3, text:' will access the element with #element_id.', bold:false}
         ],
         expected_input1: 'getElementById("scary-ghost")',
-        expected_input2: "getElementById('scary-ghost')"
+        expected_input2: "getElementById('scary-ghost')",
+        expected_input3: "getElementById(`scary-ghost`)"
     },
     {
         level: 2,
@@ -131,7 +132,8 @@ export default [
             {id:1, text:'This time, try it yourself!', bold:false}
         ],
         expected_input1: 'getElementById("watch-out-the-ghost")',
-        expected_input2: "getElementById('watch-out-the-ghost')"
+        expected_input2: "getElementById('watch-out-the-ghost')",
+        expected_input3: "getElementById(`watch-out-the-ghost`)"
     },
     {
         level: 3,
@@ -200,7 +202,8 @@ export default [
             {id:3, text:' will access all the elements with <element_tag></element_tag>.', bold:false}
         ],
         expected_input1: 'getElementsByTagName("ghost")',
-        expected_input2: "getElementsByTagName('ghost')"
+        expected_input2: "getElementsByTagName('ghost')",
+        expected_input3: "getElementsByTagName(`ghost`)"
     },
     {
         level: 4,
@@ -225,9 +228,9 @@ export default [
             },
             {
                 id: 4,
-                class: "ghost",
-                disappear: true,
-                tooltip: '< ghostnomore class = "fairy enemy" id = "Elisabeth" > Hello, I am a Ghost! </ ghostnomore >'
+                class: "monster6",
+                disappear: false,
+                tooltip: '< monster class = "pink crazy-lady" id = "Martha" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 5,
@@ -285,7 +288,8 @@ export default [
             {id:1, text:'Try it yourself!', bold:false}
         ],
         expected_input1: 'getElementsByTagName("ghostnomore")',
-        expected_input2: "getElementsByTagName('ghostnomore')"
+        expected_input2: "getElementsByTagName('ghostnomore')",
+        expected_input3: "getElementsByTagName(`ghostnomore`)"
     },
     {
         level: 5,
@@ -336,7 +340,8 @@ export default [
             {id:3, text:' will access the first element with the specified id.', bold:false}
         ],
         expected_input1: 'querySelector("#COVID-19")',
-        expected_input2: "querySelector('#COVID-19')"
+        expected_input2: "querySelector('#COVID-19')",
+        expected_input3: "querySelector(`#COVID-19`)"
     },
     {
         level: 6,
@@ -405,7 +410,8 @@ export default [
             {id:3, text:' will access the first element with the specified class.', bold:false}
         ],
         expected_input1: 'querySelector(".dangerous")',
-        expected_input2: "querySelector('.dangerous')"
+        expected_input2: "querySelector('.dangerous')",
+        expected_input3: "querySelector(`.dangerous`)"
     },
     {
         level: 7,
@@ -492,6 +498,7 @@ export default [
             {id:3, text:' will access the first element with the specified tag.', bold:false}
         ],
         expected_input1: 'querySelector("virus")',
-        expected_input2: "querySelector('virus')"
+        expected_input2: "querySelector('virus')",
+        expected_input3: "querySelector(`virus`)"
     }
 ];

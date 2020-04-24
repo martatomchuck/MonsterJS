@@ -13,7 +13,7 @@ const AnswerContextProvider = (props) => {
     const verifyAnswer = (answer) => {
         // console.log(answer);
         // console.log(props.dataset[counter].expected_input);
-        if (answer == props.dataset[counter].expected_input1 || answer == props.dataset[counter].expected_input2) {
+        if (answer == props.dataset[counter].expected_input1 || answer == props.dataset[counter].expected_input2 || answer == props.dataset[counter].expected_input3) {
             setIsCorrect(true);
         } else {setIsCorrect(false)}
     }
