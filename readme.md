@@ -1,6 +1,6 @@
 # MonsterJS
 
-Welcome to **MonsterJS!**
+#### Welcome to **MonsterJS!**
 A selector game focused on mastering JavaScript skills while playing.
 
 > **GAME CONCEPT**: The family of friendly little Monsters have been harassed by unwelcomed guests, like ghosts and coronavirus spreading aroung the village. Only the JavaScript superpowers can help them to get rid of the obstacles.
@@ -30,12 +30,12 @@ Familiarity with the basics of HTML and JavaScript fundamentals is a plus but no
 ## 👌 FEATURES
 
 * Responsive Web Design (RWD)
-* Progressive Web Application (PWA) - to appear soon
+* Progressive Web Application (PWA) - <sub>to appear soon</sub>
 * Player progress is saved using localStorage
 * Language version: ENG
-* Language version: PL - to appear soon
-* Difficulty levels: beginner / intermediate - to appear soon
-* Reset progress - to appear soon
+* Language version: PL - <sub>to appear soon</sub>
+* Difficulty levels: beginner / intermediate - <sub>to appear soon</sub>
+* Reset progress - <sub>to appear soon</sub>
 
 ## 📓 TECHNOLOGIES
 
