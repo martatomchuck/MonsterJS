@@ -102,7 +102,7 @@ let elements = [
         class: "ufo",
         disappear: true,
         tooltip: '',
-        author: "Flat Icons"
+        author: "Smashicons"
     },
     {
         id: 0,
