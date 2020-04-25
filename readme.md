@@ -15,9 +15,10 @@ Click the link and play: https://mtomchuck.github.io/monster-village/dist/
 The game teaches how to access DOM three elements in an HTML webpage using predefined JavaScript functions:
 
 * getElementById(),
-* querySelector(),
 * GetElementsByTagName(),
 * getElementsByClassName(),
+* getElementsByName(),
+* querySelector(),
 * querySelectorAll().
 
 ## 📦 PREREQUISITES
@@ -39,9 +40,11 @@ Familiarity with the basics of HTML and JavaScript fundamentals is a plus but no
 
 ## 📓 TECHNOLOGIES
 
-* React framework
-* Context API
+* React.js with Hooks
+* React Context API
+* Yarn package manager
 * Webpack
+* Babel
 * SASS
 * CSS animations (eg. shake effect, auto-scroll)
 * localStorage
