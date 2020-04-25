@@ -23,7 +23,9 @@ The game teaches how to access DOM three elements in an HTML webpage using prede
 
 ## 📦 PREREQUISITES
 
-**For all JavaScript learners.** Familiarity with the basics of HTML and JavaScript fundamentals is a plus but not required.
+**For all JavaScript learners.**
+
+Familiarity with the basics of HTML and JavaScript fundamentals is a plus but not required.
 
 ## 👌 FEATURES
 
@@ -46,5 +48,5 @@ The game teaches how to access DOM three elements in an HTML webpage using prede
 
 ## 👏 CONTRIBUTE
 
-* Icons made by Smashicons & Freepik
-* Vibration effect (mobile) - to appear soon
+* Icons made by Smashicons & Freepik from flaticon.com
+* Vibration effect (mobile) - <sub>to appear soon</sub>
