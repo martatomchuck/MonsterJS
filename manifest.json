@@ -1,6 +1,6 @@
 {
-    "name": "Welcome to MonsterJS",
     "short_name": "MonsterJS",
+    "name": "Welcome to MonsterJS",
     "icons": [
         {
             "src": "./images/monster8.svg",
@@ -11,6 +11,6 @@
     "theme_color": "#000b22",
     "background_color": "#000b22",
     "display": "fullscreen",
-    "scope": "/",
-    "start_url": "/"
+    "scope": "/app/",
+    "start_url": "/index.html"
 }
