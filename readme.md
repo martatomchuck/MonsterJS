@@ -27,7 +27,12 @@ For all JavaScript learners. Familiarity with the basics of HTML and JavaScript 
 ## FEATURES
 
 * Responsive Web Design (RWD)
-* Progressive Web Application (PWA)
+* Progressive Web Application (PWA) - to appear soon
+* Player progress is saved using localStorage
+* Language version: ENG
+* Language version: PL - to appear soon
+* Difficulty levels: beginner / intermediate - to appear soon
+* Reset progress - to appear soon
 
 ## TECHNOLOGIES
 
@@ -39,3 +44,6 @@ For all JavaScript learners. Familiarity with the basics of HTML and JavaScript 
 * localStorage
 
 ## CONTRIBUTE
+
+* Icons made by Smashicons & Freepik
+* Vibration effect (mobile) - to appear soon
