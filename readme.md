@@ -1,8 +1,8 @@
-# Welcome to **MonsterJS!**
+# Welcome to MonsterJS!
 
-### A selector game focused on mastering JavaScript skills while playing.
+#### A game focused on mastering JavaScript while playing.
 
-> **GAME CONCEPT**: The family of friendly little Monsters have been harassed by unwelcomed guests, like ghosts and coronavirus spreading aroung the village. Only the JavaScript superpowers can help them to get rid of the obstacles.
+> **GAME CONCEPT**: The family of friendly little Monsters have been harassed by unwelcomed guests, like ghosts and coronavirus spreading aroung the Monster Village. Only the JavaScript superpowers can help them to get rid of the obstacles.
 
 ## 🦄 DEMO
 
