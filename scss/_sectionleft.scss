@@ -65,20 +65,48 @@
 
 .game-hint {
     color: white;
-    opacity: 0.7;
+    opacity: 0.9;
     font-size: 20px;
     font-weight: 500;
-    margin: 0 30px 10px 30px;
+    margin: 0 30px 5px 30px;
     text-align: center;
 
     span {
         display: block;
         text-align: center;
         color: white;
-        opacity: 0.5;
-        font-size: 12px;
+        opacity: 0.3;
+        font-size: 11px;
         font-weight: 400;
-        margin-top: 25px
+        margin-top: 10px;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background-color: rgba(white, 0.2);
+            border-radius: 3px;
+            margin: 0 6px;
+            padding: 4px 9px;
+        }
+
+        div {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 4px -5px 4px;
+            background-image: url("../images/heart.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    span:first-child {
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 45px;
+        opacity: 0.6;
     }
 }
 

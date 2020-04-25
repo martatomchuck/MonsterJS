@@ -65,6 +65,7 @@ const Game = ({elements}) => {
                 })}
             </div>
             <h4 className="game-hint">Hover or tap the element to peek its HTML structure.
+            <span>Designed with <div></div> by <a href={"https://github.com/mtomchuck"}>mtomchuck</a> &bull; <a href={"https://github.com/mtomchuck/monster-village"}>GitHub</a></span>
             <span>Images made by Freepik & Smashicons & Dimitry Miroliubov from flaticon.com</span></h4>
         </>
     )
