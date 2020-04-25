@@ -4,13 +4,11 @@
 
 > **GAME CONCEPT**: The family of friendly little Monsters have been harassed by unwelcomed guests, like ghosts and coronavirus spreading aroung the village. Only the JavaScript superpowers can help them to get rid of the obstacles.
 
-
 ## 🦄 DEMO
 
 Click the link and play: https://mtomchuck.github.io/monster-village/dist/
 
 **Happy hacking!**
-
 
 ## 🐤 LEARNING OBJECTIVES
 
@@ -22,13 +20,11 @@ The game teaches how to access DOM three elements in an HTML webpage using prede
 * getElementsByClassName(),
 * querySelectorAll().
 
-
 ## 📦 PREREQUISITES
 
 **For all JavaScript learners.**
 
 Familiarity with the basics of HTML and JavaScript fundamentals is a plus but not required.
-
 
 ## 👌 FEATURES
 
@@ -41,7 +37,6 @@ Familiarity with the basics of HTML and JavaScript fundamentals is a plus but no
 * Reset progress <sub>to appear soon</sub>
 * Vibration effect (mobile) <sub>to appear soon</sub>
 
-
 ## 📓 TECHNOLOGIES
 
 * React framework
@@ -50,7 +45,6 @@ Familiarity with the basics of HTML and JavaScript fundamentals is a plus but no
 * SASS
 * CSS animations (eg. shake effect, auto-scroll)
 * localStorage
-
 
 ## 👏 CONTRIBUTE
 
