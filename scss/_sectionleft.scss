@@ -210,7 +210,7 @@
     }
 
     .tooltip {
-        top: 70px;
+        top: 90px;
         left: -50px;
         font-size: 0.7rem;
         width: 180px;
@@ -228,5 +228,10 @@
     .element {
         width: 60px;
         height: 60px;
+    }
+
+    .tooltip {
+        top: 70px;
+        left: -50px;
     }
 }
