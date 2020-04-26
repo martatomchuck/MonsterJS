@@ -45,7 +45,7 @@
       ],
     "theme_color": "#000b22",
     "background_color": "#000b22",
-    "display": "standalone",
+    "display": "fullscreen",
     "scope": "/",
     "start_url": "https://mtomchuck.github.io/monster-village/dist/index.html"
 }
