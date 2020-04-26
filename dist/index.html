@@ -32,7 +32,7 @@
         // sprawdzamy czy przeglądarka posiada wsparcie dla service workera
         if ('serviceWorker' in navigator) {
             // próba instalacji
-            navigator.serviceWorker.register('/service-worker.js').then(function () {
+            navigator.serviceWorker.register('/public/service-worker.js').then(function () {
                 console.log('Service worker zainstalowany');
             }).catch(function (err) {
                 // jeśli coś pójdzie nie tak- konsola nam powie co trzeba poprawić
@@ -40,5 +40,5 @@
             });
         }
     </script>
-<script type="text/javascript" src="main.bundle.js?8ff637da202890cae1d1"></script></body>
+<script type="text/javascript" src="main.bundle.js?8c0183c622fff36f0f85"></script></body>
 </html>
