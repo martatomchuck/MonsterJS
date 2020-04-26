@@ -8,6 +8,8 @@
 
 Click the link and play: https://mtomchuck.github.io/monster-village/dist/
 
+![demo](demo_screen_level1.png)
+
 **Happy hacking!**
 
 ## 🐤 LEARNING OBJECTIVES
