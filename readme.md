@@ -30,7 +30,7 @@ Familiarity with the basics of HTML and JavaScript fundamentals is a plus but no
 ## 👌 FEATURES
 
 * Responsive Web Design (RWD)
-* Progressive Web Application (PWA) <sub>to appear soon</sub>
+* Progressive Web Application (PWA)
 * Player progress is saved using localStorage
 * Language version: ENG
 * Language version: PL <sub>to appear soon</sub>
