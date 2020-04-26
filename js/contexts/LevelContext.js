@@ -9,7 +9,11 @@ const LevelContextProvider = (props) => {
     });
 
     useEffect(() => {
+        clearTimeout(timeout); 
         localStorage.setItem('currentLevel', JSON.stringify(counter));
+        let timeout = setTimeout(() => {
+            localStorage.removeItem('currentLevel');
+        }, 1000*60*60*12);
     }, [counter]);
 
     const handlePrevBtn = () => {
