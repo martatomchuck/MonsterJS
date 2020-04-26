@@ -1,9 +1,13 @@
-import React, { createContext, useState } from 'react';
+import React, { createContext, useState, useEffect } from 'react';
 
 export const LevelContext = createContext();
 
 const LevelContextProvider = (props) => {
-    const [counter, setCounter] = useState(0);
+    const [counter, setCounter] = useState(localStorage.getItem('currentLevel'));
+
+    useEffect(() => {
+        localStorage.setItem('currentLevel', JSON.stringify(counter))
+    }, [counter]);
 
     const handlePrevBtn = () => {
         if (counter === 0) {
