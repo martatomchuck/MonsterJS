@@ -23,13 +23,13 @@ export default [
         ],
         task_description: [
             {id:1, text:'Monster Village has been haunted by a ghost. Help monsters to track down the ghost by using ', bold:false},
-            {id:2, text:'getElementById()', bold:true},
+            {id:2, text:'getElementById( )', bold:true},
             {id:3, text:' method.', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
                 {id:1, text:'With ', bold:false},
-                {id:2, text:'getElementById()', bold:false},
+                {id:2, text:'getElementById( )', bold:false},
                 {id:3, text:' you can catch the element which id property matches the string you typed in brackets,', bold:false}
             ]},
             {id:2, bullet: [
@@ -110,13 +110,13 @@ export default [
         ],
         task_description: [
             {id:1, text:'Oh no! A ghost is still haunting the Monster Village. Use ', bold:false},
-            {id:2, text:'getElementById()', bold:true},
+            {id:2, text:'getElementById( )', bold:true},
             {id:3, text:' again to help monsters catch the ghost.', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
                 {id:1, text:'With ', bold:false},
-                {id:2, text:'getElementById()', bold:false},
+                {id:2, text:'getElementById( )', bold:false},
                 {id:3, text:' you can catch the element which id property matches the string you typed in brackets,', bold:false}
             ]},
             {id:2, bullet: [
@@ -177,13 +177,13 @@ export default [
         ],
         task_description: [
             {id:1, text:"Look! There is more and more of ghosts haunting the Monster Village. The monsters need your JavaScript superpower. Find the ghosts with ", bold:false},
-            {id:2, text:'getElementsByTagName()', bold:true},
+            {id:2, text:'getElementsByTagName( )', bold:true},
             {id:3, text:' method.', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
                 {id:1, text:'The method ', bold:false},
-                {id:2, text:'getElementsByTagName()', bold:false},
+                {id:2, text:'getElementsByTagName( )', bold:false},
                 {id:3, text:' will search for tags that match the passed-in string,', bold:false}
             ]},
             {id:2, bullet: [
@@ -265,13 +265,13 @@ export default [
         ],
         task_description: [
             {id:1, text:'Use ', bold:false},
-            {id:2, text:'getElementsByTagName()', bold:true},
+            {id:2, text:'getElementsByTagName( )', bold:true},
             {id:3, text:' again to track down the ghosts haunting the Monster Village. You are the only hope for little fearfull monsters.', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
                 {id:1, text:'The method ', bold:false},
-                {id:2, text:'getElementsByTagName()', bold:false},
+                {id:2, text:'getElementsByTagName( )', bold:false},
                 {id:3, text:' will search for tags that match the passed-in string,', bold:false}
             ]},
             {id:2, bullet: [
@@ -315,7 +315,7 @@ export default [
         ],
         task_description: [
             {id:1, text:'The ghosts are gone but the Monsters are facing a new challenge -  an unsafe coronavirus spreading around the Monster Village. You have to act quickly. Fight the virus with the method ', bold:false},
-            {id:2, text:'querySelector()', bold:true},
+            {id:2, text:'querySelector( )', bold:true},
             {id:3, text:' . Use an ID to define a selector.', bold: false}
         ],
         instructions: [
@@ -385,7 +385,7 @@ export default [
         ],
         task_description: [
             {id:1, text:'The coronavirus appeared again in the public space of Monster Village. Fight the virus by using ', bold:false},
-            {id:2, text:'querySelector()', bold:true},
+            {id:2, text:'querySelector( )', bold:true},
             {id:3, text:' . This time, use class to define a selector.', bold: false}
         ],
         instructions: [
@@ -473,7 +473,7 @@ export default [
         ],
         task_description: [
             {id:1, text:'Previous methods did not help in the long run. New Monsters are getting sick because of the coronavirus. Make use of ', bold:false},
-            {id:2, text:'querySelector()', bold:true},
+            {id:2, text:'querySelector( )', bold:true},
             {id:3, text:' one more time to fight the virus. Now, use a tag to define a selector.', bold: false}
         ],
         instructions: [

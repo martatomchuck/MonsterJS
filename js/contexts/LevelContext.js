@@ -3,10 +3,13 @@ import React, { createContext, useState, useEffect } from 'react';
 export const LevelContext = createContext();
 
 const LevelContextProvider = (props) => {
-    const [counter, setCounter] = useState(localStorage.getItem('currentLevel'));
+    const [counter, setCounter] = useState(() => {
+        const localData = localStorage.getItem('currentLevel');
+        return localData ? JSON.parse(localData) : 0;
+    });
 
     useEffect(() => {
-        localStorage.setItem('currentLevel', JSON.stringify(counter))
+        localStorage.setItem('currentLevel', JSON.stringify(counter));
     }, [counter]);
 
     const handlePrevBtn = () => {
