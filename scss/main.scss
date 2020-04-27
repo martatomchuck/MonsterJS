@@ -24,8 +24,25 @@ a {
     text-decoration: none;
 }
 
+// SCROLLBAR
+::-webkit-scrollbar {
+    width: 11px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000b22;
+    margin: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(white, 0.6);
+    border-radius: 5px;
+    border: 3px solid #000b22;
+}
+
+// FLEX
 .container {
-    width: calc(100vw - 20px);
+    width: calc(100vw - 30px);
     min-height: 800px;
     padding: 0;
     margin: 0 auto;
