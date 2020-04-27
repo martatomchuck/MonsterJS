@@ -51,6 +51,7 @@ a {
 
 @media(max-width: 1000px) {
     .container {
+        width: 100vw;
         display: flex;
         flex-direction: column;
         height: auto;
