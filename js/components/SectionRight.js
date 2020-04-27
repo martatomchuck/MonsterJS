@@ -14,6 +14,10 @@ const SectionRight = ({description, instructions, example}) => {
             <div className="console-btn">
                 <BtnNext/>
             </div>
+            <div className="footer-mobile">
+                <span>Created with <div></div> by <a href={"https://github.com/mtomchuck"} target={"_blank"}>mtomchuck</a> &bull; <a href={"https://github.com/mtomchuck/monster-village"} target={"_blank"}>GitHub</a></span>
+                <span>Images made by Freepik & Smashicons & Dimitry Miroliubov from flaticon.com</span>
+            </div>
         </section>
     )
 }
