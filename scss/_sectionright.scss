@@ -1,41 +1,35 @@
 // SECTION RIGHT
 .section-right {
     width: 55%;
+    // margin: auto 0;
     // background-color: #000b22;
     // background-color: rgb(1, 10, 67);
     background-color: #142850;
     box-shadow: 0px 0 20px 2px #020235;
     box-shadow: 0 0 20px 2px #000b22;
     box-sizing: border-box;
+    border-radius: 10px;
+    padding: 15px 30px 45px 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 5px 30px 20px 40px;
 }
 
 .title {
     color: #ff9d9d;
     // color: #FF8704;
     // color: #1ea6c5;
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
-
-.subtitle {
-    color: #fc8888;
-    opacity: 0.8;
-    font-size: 1.2em;
-    font-weight: 500;
+    margin-top: 10px;
     margin-bottom: 25px;
 }
 
 .description {
     color: #c5c4c4;
     line-height: 28px;
-    font-size: 1rem;
+    font-size: 1.1em;
     width: 98%;
     min-height: 35%;
 
@@ -65,8 +59,8 @@
 .console {
     width: 98%;
     // height: 42%;
-    min-height: 270px;
-    margin: 70px 0 20px 0;
+    min-height: 320px;
+    margin: 50px 0 20px 0;
     align-self: center;
     display: flex;
     box-shadow: 5px 5px 40px 10px #000b22;
@@ -99,14 +93,13 @@
     margin: 8px 10px 10px 15px;
 
     label {
-        font-size: 1rem;
+        font-size: 1.1em;
         font-weight: 500;
         color: #000b22a1;
-        flex-grow: 1;
     }
 
     input[type="text"] {
-        font-size: 1rem;
+        font-size: 1em;
         font-family: 'Roboto', sans-serif;
         color: #000b22;
         margin: 0 5px;
@@ -136,7 +129,7 @@ form {
     margin-top: 20px;
     text-align: center;
     line-height: 30px;
-    padding: 10px;
+    padding: 15px 10px;
     border: 3px dashed #000b22;
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
@@ -201,11 +194,36 @@ form {
 .next-btn {
     background-color: #ff2e62b7;
     box-shadow: 4px 4px 10px 0px #000b22;
-    margin-right: 48px;
+    margin: 20px 48px 40px 0;
 
     &:hover {
         background-color: #ff2e63;
         transition: all 0.5s ease;
+    }
+}
+
+@media (max-width: 1600px) {
+    .description {
+        font-size: 1em;
+    }
+
+    .console {
+        min-height: 300px;
+    }
+
+    .next-btn {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1380px) {
+    .console {
+        min-height: 250px;
+        margin-top: 40px;
+    }
+
+    .next-btn {
+        margin-bottom: 0;
     }
 }
 

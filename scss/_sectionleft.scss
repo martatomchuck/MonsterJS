@@ -1,7 +1,6 @@
 // SECTION LEFT
 .section-left {
     width: 45%;
-    // height: 100vh;
     background-image: radial-gradient(#092563 15%, #011541 70%);
     display: flex;
     flex-direction: column;
@@ -17,7 +16,7 @@
     justify-content: space-between;
     text-align: center;
     line-height: 38px;
-    margin: 15px 0 30px 0;
+    margin-bottom: 30px;
 }
 
 #counter-prev {
@@ -68,7 +67,7 @@
     opacity: 0.9;
     font-size: 20px;
     font-weight: 500;
-    margin: 50px 30px 25px 30px;
+    margin: 40px 30px 10px 30px;
     text-align: center;
 
     span {
@@ -105,18 +104,19 @@
     span:first-child {
         font-size: 13px;
         font-weight: 400;
-        margin-top: 45px;
+        margin-top: 55px;
         opacity: 0.8;
     }
 }
 
 .game {
     width: 85%;
-    height: 80%;
+    min-height: 500px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: 20px 0;
     cursor: url('../images/magnifying-glass64.png'), auto;
 }
 
@@ -128,7 +128,7 @@
     background-position: center;
     background-size: contain;
     box-shadow: 0 5px 25px 5px #000b22;
-    margin: 15px 30px;
+    margin: 25px 30px;
     position: relative;
     transition: transform 2.5s ease;
 
@@ -158,6 +158,15 @@
 }
 
 @media (max-width: 1660px) {
+    .counter {
+        margin-bottom: 0; 
+    }
+    
+    .game {
+        height: auto;
+        margin: 10px 0;
+    }
+    
     .element {
         width: 120px;
         height: 120px;
@@ -168,10 +177,15 @@
         top: 110px;
         left: 110px;
     }
+
+    .game-hint {
+        margin-top: 0;
+    }
 }
-@media (max-width: 1260px) {
+
+@media (max-width: 1380px) {
     .game {
-        width: 83%;
+        width: 75%;
     }
 
     .element {
@@ -200,7 +214,7 @@
     }
 
     .game {
-        width: 65%;
+        width: 50%;
         margin: 30px;
         cursor: none;
     }
@@ -220,9 +234,17 @@
     }
 }
 
+@media (max-width: 765px) {
+    .game {
+        width: 65%;
+    }
+}
+
 @media (max-width: 560px) {
     .game {
         width: 80%;
+        margin: 30px;
+        min-height: 350px;
     }
 
     .element {
