@@ -12,7 +12,8 @@ const LevelContextProvider = (props) => {
         clearTimeout(timeout); 
         localStorage.setItem('currentLevel', JSON.stringify(counter));
         let timeout = setTimeout(() => {
-            localStorage.removeItem('currentLevel');
+            // localStorage.removeItem('currentLevel');
+            localStorage.clear();
         }, 1000*60*60*12);
     }, [counter]);
 
