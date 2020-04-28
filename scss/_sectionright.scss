@@ -31,7 +31,7 @@
     line-height: 28px;
     font-size: 1.1em;
     width: 98%;
-    min-height: 35%;
+    height: 350px;
 
     li {
         margin: 2px 0;
@@ -58,9 +58,8 @@
 
 .console {
     width: 98%;
-    // height: 42%;
     min-height: 320px;
-    margin: 50px 0 20px 0;
+    margin: 10px 0 20px 0;
     align-self: center;
     display: flex;
     box-shadow: 5px 5px 40px 10px #000b22;
@@ -72,7 +71,7 @@
     color: #000b229d;
     font-size: 1.2em;
     font-weight: 600;
-    padding: 15px 15px;
+    padding: 20px 15px;
     border: none;
     border-radius: 5px 0 0 5px;
     display: flex;
@@ -87,6 +86,11 @@
     flex-direction: column;
     background-color: white;
     border-radius: 0 5px 5px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 .console-userinput {
@@ -112,11 +116,6 @@
     }
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
 .console-output {
     display: inline-block;
     width: 90%;
@@ -125,8 +124,8 @@ form {
     font-size: 22px;
     border-radius: 10px;
     margin-left: 5%;
-    margin-bottom: 25px;
-    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
     text-align: center;
     line-height: 30px;
     padding: 15px 10px;
@@ -194,7 +193,7 @@ form {
 .next-btn {
     background-color: #ff2e62b7;
     box-shadow: 4px 4px 10px 0px #000b22;
-    margin: 20px 48px 40px 0;
+    margin: 10px 48px 20px 0;
 
     &:hover {
         background-color: #ff2e63;
@@ -204,7 +203,9 @@ form {
 
 @media (max-width: 1600px) {
     .description {
+        height: 350px;
         font-size: 1em;
+        line-height: 25px;
     }
 
     .console {
@@ -217,13 +218,31 @@ form {
 }
 
 @media (max-width: 1380px) {
+    .description {
+        height: 310px;
+        font-size: 0.9em;
+        line-height: 22px;
+    }
+
     .console {
-        min-height: 250px;
-        margin-top: 40px;
+        min-height: 270px;
+        margin-top: 10px;
+    }
+
+    .console-output {
+        padding: 8px;
     }
 
     .next-btn {
         margin-bottom: 0;
+    }
+}
+
+@media (max-width: 1260px) {
+    .description {
+        min-height: 320px;
+        height: auto;
+        margin-bottom: 30px;
     }
 }
 
@@ -249,7 +268,10 @@ form {
     }
 
     .description {
+        min-height: auto;
+        height: auto;
         padding: 0 0 0 8px;
+        margin-bottom: 30px;
     }
 
     .next-btn {
@@ -260,7 +282,7 @@ form {
 
 }
 
-@media (max-width: 550px) {
+@media (max-width: 570px) {
     .console-output {
         font-size: 1.2em;
     }
