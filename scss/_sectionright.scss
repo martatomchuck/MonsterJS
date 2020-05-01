@@ -31,7 +31,7 @@
     line-height: 28px;
     font-size: 1.1em;
     width: 98%;
-    height: 350px;
+    height: 370px;
 
     li {
         margin: 2px 0;
@@ -39,8 +39,9 @@
 
     .bold {
         display: inline-block;
-        padding: 0px 10px;
-        background-color: rgba(#33bfdf, 0.15);
+        padding: 0px 8px;
+        margin: 0 3px;
+        background-color: rgba(#33bfdf, 0.12);
         border-radius: 5px;
         color: white;
         font-weight: 600;
@@ -49,11 +50,33 @@
     }
 }
 
-.description-bullets {
-    background-color: rgba(#fff, 0.06);
-    padding: 10px 20px 10px 35px;
-    margin: 25px 15px 25px 15px;
+.description-task {
+    margin: 8px 0 5px 0;
+    padding: 0 25px 5px 0;
+    // background-color: rgba(#fff, 0.09);
     border-radius: 10px;
+    color: white;
+    // box-shadow: -3px 3px 20px 5px #000b2250;
+    // background-color: rgba(#33bfdf, 0.1);
+}
+
+.your-task {
+    font-weight: 700;
+    font-size: 125%;
+    color: #ffc2c2;
+    color: lightcoral;
+    margin-right: 7px;
+}
+
+.description-bullets {
+    background-color: rgba(#fff, 0.03);
+    padding: 10px 20px 10px 35px;
+    margin: 10px 15px 20px 15px;
+    border-radius: 10px;
+    box-shadow: -3px 3px 20px 5px #000b2250;
+    background-color: rgba(#33bfdf, 0.08);
+    font-size: 85%;
+    line-height: 25px;
 }
 
 .console {
@@ -62,7 +85,7 @@
     margin: 10px 0 20px 0;
     align-self: center;
     display: flex;
-    box-shadow: 5px 5px 40px 10px #000b22;
+    box-shadow: 5px 5px 20px 10px #000b22;
 }
 
 .console-numbers {
@@ -203,7 +226,7 @@ form {
 
 @media (max-width: 1600px) {
     .description {
-        height: 350px;
+        height: 360px;
         font-size: 1em;
         line-height: 25px;
     }
@@ -219,7 +242,7 @@ form {
 
 @media (max-width: 1380px) {
     .description {
-        height: 310px;
+        height: 360px;
         font-size: 0.9em;
         line-height: 22px;
     }
@@ -240,7 +263,7 @@ form {
 
 @media (max-width: 1260px) {
     .description {
-        min-height: 320px;
+        min-height: 330px;
         height: auto;
         margin-bottom: 30px;
     }

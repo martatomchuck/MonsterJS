@@ -4,12 +4,12 @@ import { LevelContext } from '../contexts/LevelContext';
 import { AnswerContext } from "../contexts/AnswerContext";
 import { CheckContext } from "../contexts/CheckContext";
 
-const SectionRight = ({description, instructions, example}) => {
+const SectionRight = ({description, task, instructions, example}) => {
 
     return (
         <section className="section-right">
             <Name/>
-            <Instructions description={description} instructions={instructions} example={example}/>
+            <Instructions description={description} task={task} instructions={instructions} example={example}/>
             <Console/>
             <div className="console-btn">
                 <BtnNext/>
@@ -30,13 +30,19 @@ const Name = () => {
     )
 }
 
-const Instructions = ({description, instructions, example}) => {
+const Instructions = ({description, task, instructions, example}) => {
     return (
         <div className="description">
             <div>
                 {description.map((el) => {
                     return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
                 })} 
+            </div>
+
+            <div className="description-task">
+                <span className={"your-task"}>YOUR TASK: </span> {task.map((el) => {
+                    return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
+                })}
             </div>
 
             <div className="description-bullets">
