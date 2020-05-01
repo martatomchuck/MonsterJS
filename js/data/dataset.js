@@ -479,7 +479,7 @@ export default [
             {id:1, text:'The ghosts are gone but the Monsters are facing a new challenge -  an unsafe coronavirus spreading around the Monster Village.', bold:false}
         ],
         task: [
-            {id:1, text:'Fight the virus with the ', bold:false},
+            {id:1, text:'Catch the virus with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
             {id:3, text:' method. Use an ID to define a selector.', bold:false}
         ],
@@ -557,7 +557,7 @@ export default [
             {id:1, text:'The coronavirus appeared again in the public space of Monster Village. You have to act quickly.', bold:false}
         ],
         task: [
-            {id:1, text:'Fight the virus with the ', bold:false},
+            {id:1, text:'Catch the virus with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
             {id:3, text:' method. Use class to define a selector.', bold:false}
         ],
@@ -653,7 +653,7 @@ export default [
             {id:1, text:'Previous methods did not help in the long run. New Monsters are getting sick because of the coronavirus.', bold:false},
         ],
         task: [
-            {id:1, text:'Fight the virus with the ', bold:false},
+            {id:1, text:'Catch the virus with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
             {id:3, text:' method. Use a tag to define a selector.', bold:false}
         ],
