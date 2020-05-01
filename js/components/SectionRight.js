@@ -25,7 +25,7 @@ const SectionRight = ({description, task, instructions, example}) => {
 const Name = () => {
     return (
         <>
-            <div className="title">Welcome to MonsterJS</div>
+            <div className="title">MonsterJS</div>
         </>
     )
 }

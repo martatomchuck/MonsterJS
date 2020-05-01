@@ -318,13 +318,12 @@ form {
         font-size: 1.2em;
     }
 
-    .console-userinput input[type="text"] {
-        width: 45%;
-    }
-}
+    .console-userinput {
+        margin-top: 20px;
 
-@media (max-width: 464px) {
-    .console-userinput input[type="text"] {
-        width: 35%;
+        input[type="text"] {
+            width: 98%;
+            margin-left: -2px;
+        }
     }
 }
