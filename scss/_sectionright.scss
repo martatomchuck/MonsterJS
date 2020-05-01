@@ -80,7 +80,7 @@
 
 .console {
     width: 98%;
-    min-height: 320px;
+    min-height: 250px;
     margin: 10px 0 20px 0;
     align-self: center;
     display: flex;
@@ -134,7 +134,7 @@ form {
         border-radius: 5px;
         border: 1px solid white;
         background-color: rgba(221, 218, 218, 0.479);
-        width: 70%;
+        width: 60%;
     }
 }
 
@@ -232,7 +232,7 @@ form {
     }
 
     .console {
-        min-height: 300px;
+        min-height: 250px;
     }
 
     .next-btn {
@@ -267,6 +267,10 @@ form {
         height: auto;
         margin-bottom: 30px;
     }
+
+    .console-userinput input[type="text"] {
+        width: 45%;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -281,8 +285,12 @@ form {
     }
 
     .console {
-        min-height: 320px;
+        min-height: 280px;
         box-shadow: none;
+    }
+
+    .console-userinput input[type="text"] {
+        width: 57%;
     }
 
     .console-output {
@@ -308,5 +316,15 @@ form {
 @media (max-width: 570px) {
     .console-output {
         font-size: 1.2em;
+    }
+
+    .console-userinput input[type="text"] {
+        width: 45%;
+    }
+}
+
+@media (max-width: 464px) {
+    .console-userinput input[type="text"] {
+        width: 35%;
     }
 }
