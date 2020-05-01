@@ -31,7 +31,7 @@
     line-height: 28px;
     font-size: 1.1em;
     width: 98%;
-    height: 370px;
+    height: 390px;
 
     li {
         margin: 2px 0;
@@ -39,8 +39,10 @@
 
     .bold {
         display: inline-block;
-        padding: 0px 3px;
+        padding: 1px 10px;
+        margin: 0 3px;
         // background-color: rgba(#33bfdf, 0.12);
+        background-color: rgba(#fff, 0.2);
         border-radius: 5px;
         color: white;
         font-weight: 600;
@@ -69,9 +71,9 @@
 }
 
 .description-bullets {
-    background-color: rgba(#fff, 0.1);
+    background-color: rgba(#fff, 0.08);
     padding: 10px 20px 10px 35px;
-    margin: 8px 20px 15px 20px;
+    margin: 8px 20px 20px 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px 5px #000b2250;
     // background-color: rgba(#33bfdf, 0.04);
@@ -226,7 +228,7 @@ form {
 
 @media (max-width: 1600px) {
     .description {
-        height: 360px;
+        height: 370px;
         font-size: 1em;
         line-height: 25px;
     }
