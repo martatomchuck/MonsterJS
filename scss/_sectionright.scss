@@ -39,9 +39,8 @@
 
     .bold {
         display: inline-block;
-        padding: 0px 8px;
-        margin: 0 3px;
-        background-color: rgba(#33bfdf, 0.12);
+        padding: 0px 3px;
+        // background-color: rgba(#33bfdf, 0.12);
         border-radius: 5px;
         color: white;
         font-weight: 600;
@@ -51,9 +50,10 @@
 }
 
 .description-task {
-    margin: 8px 0 5px 0;
-    padding: 0 25px 5px 0;
-    // background-color: rgba(#fff, 0.09);
+    margin: 5px 0 5px 0;
+    padding: 10px 25px;
+    // background-color: rgba(white, 0.1);
+    // background-color: rgba(#33bfdf, 0.04);
     border-radius: 10px;
     color: white;
     // box-shadow: -3px 3px 20px 5px #000b2250;
@@ -69,13 +69,13 @@
 }
 
 .description-bullets {
-    background-color: rgba(#fff, 0.03);
+    background-color: rgba(#fff, 0.1);
     padding: 10px 20px 10px 35px;
-    margin: 10px 15px 20px 15px;
+    margin: 15px 20px 30px 20px;
     border-radius: 10px;
-    box-shadow: -3px 3px 20px 5px #000b2250;
-    background-color: rgba(#33bfdf, 0.08);
-    font-size: 85%;
+    box-shadow: 0 0 20px 5px #000b2250;
+    // background-color: rgba(#33bfdf, 0.04);
+    font-size: 88%;
     line-height: 25px;
 }
 
