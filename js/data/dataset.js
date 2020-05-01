@@ -438,7 +438,7 @@ export default [
             ]},
             {id:3, bullet: [
                 {id:1, text:'BE CAREFULL! It means that the native array methods will not work unless you ', bold:false},
-                {id:2, text:'convert them into an array', bold:true},
+                {id:2, text:'convert them into an array', bold:false},
             ]}
         ],
         example: [
