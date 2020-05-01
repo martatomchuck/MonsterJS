@@ -39,33 +39,31 @@
 
     .bold {
         display: inline-block;
-        padding: 1px 10px;
+        padding: 2px 15px;
         margin: 0 3px;
-        // background-color: rgba(#33bfdf, 0.12);
         background-color: rgba(#fff, 0.2);
-        border-radius: 5px;
+        border-radius: 8px;
         color: white;
         font-weight: 600;
         letter-spacing: 0.5px;
         word-break: break-all;
+
+        &:hover {
+            background-image: linear-gradient(45deg, #ff2e63, #FF9721);
+        }
     }
 }
 
 .description-task {
     margin: 5px 0 5px 0;
     padding: 10px 25px;
-    // background-color: rgba(white, 0.1);
-    // background-color: rgba(#33bfdf, 0.04);
     border-radius: 10px;
     color: white;
-    // box-shadow: -3px 3px 20px 5px #000b2250;
-    // background-color: rgba(#33bfdf, 0.1);
 }
 
 .your-task {
     font-weight: 700;
     font-size: 125%;
-    color: #ffc2c2;
     color: lightcoral;
     margin-right: 7px;
 }
@@ -76,7 +74,6 @@
     margin: 8px 20px 20px 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px 5px #000b2250;
-    // background-color: rgba(#33bfdf, 0.04);
     font-size: 88%;
     line-height: 25px;
 }
@@ -196,13 +193,13 @@ form {
     text-align: center;
     line-height: 45px;
     margin: 0 30px 10px 30px;
-    box-shadow: 2px 4px 7px 0px grey;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 
 .check-btn {
     background-color: #FF9721;
+    box-shadow: 2px 3px 7px 0px gray;
     margin: 15px 0;
     border: none;
     outline: none;
@@ -211,6 +208,7 @@ form {
 
     &:hover {
         background-color: #ffa41b;
+        // background-image: linear-gradient(45deg, #ff2e63, #FF9721);
         transition: all 0.5s ease;
     }
 }
