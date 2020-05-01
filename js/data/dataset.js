@@ -476,14 +476,12 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'The ghosts are gone but the Monsters are facing a new challenge -  an unsafe coronavirus spreading around the Monster Village. You have to act quickly. Fight the virus with the method ', bold:false},
-            {id:2, text:'querySelector( )', bold:true},
-            {id:3, text:' . Use an ID to define a selector.', bold: false}
+            {id:1, text:'The ghosts are gone but the Monsters are facing a new challenge -  an unsafe coronavirus spreading around the Monster Village.', bold:false}
         ],
         task: [
-            {id:1, text:'Catch the ghost with the ', bold:false},
-            {id:2, text:'getElementById( )', bold:true},
-            {id:3, text:' method.', bold:false}
+            {id:1, text:'Fight the virus with the ', bold:false},
+            {id:2, text:'querySelector( )', bold:true},
+            {id:3, text:' method. Use an ID to define a selector.', bold:false}
         ],
         instructions: [
             {id:1, bullet: [
@@ -506,9 +504,14 @@ export default [
             {id:2, text:'document.querySelector("#id");', bold:true},
             {id:3, text:' will access the first element with the specified id.', bold:false}
         ],
-        expected_input1: 'querySelector("#COVID-19")',
-        expected_input2: "querySelector('#COVID-19')",
-        expected_input3: "querySelector(`#COVID-19`)"
+        expected_input: [
+            'querySelector("#COVID-19")',
+            "querySelector('#COVID-19')",
+            "querySelector(`#COVID-19`)",
+            'querySelector("#COVID-19");',
+            "querySelector('#COVID-19');",
+            "querySelector(`#COVID-19`);"
+        ]
     },
     {
         level: 8,
@@ -551,14 +554,12 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'The coronavirus appeared again in the public space of Monster Village. Fight the virus by using ', bold:false},
-            {id:2, text:'querySelector( )', bold:true},
-            {id:3, text:' . This time, use class to define a selector.', bold: false}
+            {id:1, text:'The coronavirus appeared again in the public space of Monster Village. You have to act quickly.', bold:false}
         ],
         task: [
-            {id:1, text:'Catch the ghost with the ', bold:false},
-            {id:2, text:'getElementById( )', bold:true},
-            {id:3, text:' method.', bold:false}
+            {id:1, text:'Fight the virus with the ', bold:false},
+            {id:2, text:'querySelector( )', bold:true},
+            {id:3, text:' method. Use class to define a selector.', bold:false}
         ],
         instructions: [
             {id:1, bullet: [
@@ -581,9 +582,14 @@ export default [
             {id:2, text:'document.querySelector(".class");', bold:true},
             {id:3, text:' will access the first element with the specified class.', bold:false}
         ],
-        expected_input1: 'querySelector(".dangerous")',
-        expected_input2: "querySelector('.dangerous')",
-        expected_input3: "querySelector(`.dangerous`)"
+        expected_input: [
+            'querySelector(".dangerous")',
+            "querySelector('.dangerous')",
+            "querySelector(`.dangerous`)",
+            'querySelector(".dangerous");',
+            "querySelector('.dangerous');",
+            "querySelector(`.dangerous`);"
+        ]
     },
     {
         level: 9,
@@ -644,14 +650,12 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'Previous methods did not help in the long run. New Monsters are getting sick because of the coronavirus. Make use of ', bold:false},
-            {id:2, text:'querySelector( )', bold:true},
-            {id:3, text:' one more time to fight the virus. Now, use a tag to define a selector.', bold: false}
+            {id:1, text:'Previous methods did not help in the long run. New Monsters are getting sick because of the coronavirus.', bold:false},
         ],
         task: [
-            {id:1, text:'Catch the ghost with the ', bold:false},
-            {id:2, text:'getElementById( )', bold:true},
-            {id:3, text:' method.', bold:false}
+            {id:1, text:'Fight the virus with the ', bold:false},
+            {id:2, text:'querySelector( )', bold:true},
+            {id:3, text:' method. Use a tag to define a selector.', bold:false}
         ],
         instructions: [
             {id:1, bullet: [
@@ -672,10 +676,15 @@ export default [
         example: [
             {id:1, text:'EXAMPLE: ', bold:false},
             {id:2, text:'document.querySelector("tag");', bold:true},
-            {id:3, text:' will access the first element with the specified tag.', bold:false}
+            {id:3, text:' will access the first element with a specified tag.', bold:false}
         ],
-        expected_input1: 'querySelector("virus")',
-        expected_input2: "querySelector('virus')",
-        expected_input3: "querySelector(`virus`)"
+        expected_input: [
+            'querySelector("virus")',
+            "querySelector('virus')",
+            "querySelector(`virus`)",
+            'querySelector("virus");',
+            "querySelector('virus');",
+            "querySelector(`virus`);"
+        ]
     }
 ];
