@@ -490,7 +490,7 @@ export default [
                 {id:3, text:' and an id name to denote an ID,', bold:false}
             ]},
             {id:2, bullet: [
-                {id:1, text:'This selector works with all CSS selectors but it will only ever ', bold:false},
+                {id:1, text:'This method works with all CSS selectors but it will only ever ', bold:false},
                 {id:2, text:'return one element', bold:true}
             ]},
             {id:3, bullet: [
@@ -568,7 +568,7 @@ export default [
                 {id:3, text:' and a class name to denote class,', bold:false}
             ]},
             {id:2, bullet: [
-                {id:1, text:'This selector works with all CSS selectors but it will only ever ', bold:false},
+                {id:1, text:'This method works with all CSS selectors but it will only ever ', bold:false},
                 {id:2, text:'return one element', bold:true}
             ]},
             {id:3, bullet: [
@@ -664,7 +664,7 @@ export default [
                 {id:3, text:' to denote a tag,', bold:false}
             ]},
             {id:2, bullet: [
-                {id:1, text:'This selector works with all CSS selectors but it will only ever ', bold:false},
+                {id:1, text:'This method works with all CSS selectors but it will only ever ', bold:false},
                 {id:2, text:'return one element', bold:true}
             ]},
             {id:3, bullet: [
