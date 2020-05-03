@@ -314,8 +314,21 @@ form {
 }
 
 @media (max-width: 570px) {
+    .description-task {
+        padding: 10px 1px;
+    }
+    
+    .description-bullets {
+        margin: 8px 0px 20px 0px;
+    }
+
+    .console {
+        min-height: 300px;
+    }
+    
     .console-output {
         font-size: 1.2em;
+        padding: 5px 10px;
     }
 
     .console-userinput {
