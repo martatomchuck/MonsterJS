@@ -1,14 +1,10 @@
 // SECTION RIGHT
 .section-right {
     width: 55%;
-    // margin: auto 0;
-    // background-color: #000b22;
-    // background-color: rgb(1, 10, 67);
     background-color: #142850;
-    // box-shadow: 0px 0 20px 2px #020235;
     box-shadow: 0 0 20px 2px #000b22;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 0 0 10px 10px;
     padding: 15px 30px 45px 40px;
     display: flex;
     flex-direction: column;
@@ -17,13 +13,12 @@
 }
 
 .title {
-    color: #ff9d9d;
-    // color: #FF8704;
-    // color: #1ea6c5;
+    color: #fff;
+    opacity: 0.3;
+    align-self: center;
     font-size: 2.2em;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 25px;
+    font-weight: 500;
+    margin: 15px 20px 5px 0;
 }
 
 .description {
@@ -32,6 +27,7 @@
     font-size: 1.1em;
     width: 98%;
     height: 390px;
+    margin-top: 20px;
 
     li {
         margin: 2px 0;
@@ -39,13 +35,13 @@
 
     .bold {
         display: inline-block;
-        padding: 2px 15px;
+        padding: 1px 8px;
         margin: 0 3px;
-        background-color: rgba(#fff, 0.2);
-        border-radius: 8px;
+        background-color: rgba(#fff, 0.1);
+        border-radius: 3px;
         color: white;
-        font-weight: 600;
-        letter-spacing: 0.5px;
+        font-weight: 500;
+        letter-spacing: 0.7px;
         word-break: break-all;
 
         &:hover {
@@ -57,12 +53,16 @@
 .description-task {
     margin: 5px 0 5px 0;
     padding: 5px 0 10px 0;
-    border-radius: 10px;
+    border-radius: 12px;
     line-height: 24px;
+    font-weight: 700;
+    padding: 15px;
+    // background-color: rgba(#fff,0.1);
     // color: white;
 }
 
 .your-task {
+    display: block;
     font-weight: 700;
     font-size: 125%;
     color: lightcoral;
@@ -74,7 +74,7 @@
     padding: 10px 20px 10px 35px;
     margin: 8px 20px 24px 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px 5px #000b2250;
+    box-shadow: -3px 0 20px 5px #000b2250;
     font-size: 88%;
     line-height: 25px;
 }
@@ -85,7 +85,7 @@
     margin: 10px 0 20px 0;
     align-self: center;
     display: flex;
-    box-shadow: 5px 5px 20px 10px #000b22;
+    box-shadow: -5px 5px 20px 0px #000b22;
 }
 
 .console-numbers {
@@ -200,7 +200,7 @@ form {
 
 .check-btn {
     background-color: #FF9721;
-    box-shadow: 2px 3px 7px 0px gray;
+    box-shadow: -2px 3px 7px 0px gray;
     margin: 15px 0;
     border: none;
     outline: none;
@@ -216,7 +216,7 @@ form {
 
 .next-btn {
     background-color: #ff2e62b7;
-    box-shadow: 4px 4px 10px 0px #000b22;
+    box-shadow: -4px 4px 10px 0px #000b22;
     margin: 10px 48px 20px 0;
 
     &:hover {

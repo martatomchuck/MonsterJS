@@ -8,7 +8,9 @@ import { AnswerContext } from "../contexts/AnswerContext";
 const SectionLeft = ({datasetLength, level, elements}) => {
     return (
         <section className="section-left">
+            <div className={"header-title"}>MonsterJS</div>
             <Counter datasetLength={datasetLength} level={level}/>
+            <div className={"task"}>Select the coronavirus with getElementById( )</div>
             <Game elements={elements}/>
         </section>
     )

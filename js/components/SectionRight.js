@@ -25,7 +25,7 @@ const SectionRight = ({description, task, instructions, example}) => {
 const Name = () => {
     return (
         <>
-            <div className="title">MonsterJS</div>
+            <div className="title">Welcome to Monster Village!</div>
         </>
     )
 }
@@ -49,7 +49,7 @@ const Instructions = ({description, task, instructions, example}) => {
                 <ul>
                     {instructions.map((el) => {
                         return <li key={el.id}>{el.bullet.map((el2) => {
-                            return <span key={el2.id} className={el2.bold ? "bold" : ""}>{el2.text}</span>
+                            return <span key={el2.id} className={el2.bold ? "" : ""}>{el2.text}</span>
                         })}</li>
                     })}
                 </ul>
