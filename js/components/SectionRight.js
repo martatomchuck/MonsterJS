@@ -33,14 +33,11 @@ const Name = () => {
 const Instructions = ({description, task, instructions, example}) => {
     return (
         <div className="description">
-            <div>
+            <div className={"description-task"}>
                 {description.map((el) => {
                     return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
                 })} 
-            </div>
-
-            <div className="description-task">
-                <span className={"your-task"}>YOUR TASK: </span> {task.map((el) => {
+                {task.map((el) => {
                     return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
                 })}
             </div>

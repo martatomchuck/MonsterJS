@@ -16,7 +16,7 @@
     color: #fff;
     opacity: 0.3;
     align-self: center;
-    font-size: 2.2em;
+    font-size: 1.5em;
     font-weight: 500;
     margin: 15px 20px 5px 0;
 }
@@ -35,13 +35,13 @@
 
     .bold {
         display: inline-block;
-        padding: 1px 8px;
-        margin: 0 3px;
+        padding: 1px 10px;
+        margin: 0 5px;
         background-color: rgba(#fff, 0.1);
         border-radius: 3px;
         color: white;
-        font-weight: 500;
-        letter-spacing: 0.7px;
+        font-weight: 400;
+        letter-spacing: 0.9px;
         word-break: break-all;
 
         &:hover {
@@ -52,13 +52,10 @@
 
 .description-task {
     margin: 5px 0 5px 0;
-    padding: 5px 0 10px 0;
+    padding: 5px 0 15px 0;
     border-radius: 12px;
     line-height: 24px;
-    font-weight: 700;
-    padding: 15px;
-    // background-color: rgba(#fff,0.1);
-    // color: white;
+    font-weight: 500;
 }
 
 .your-task {
@@ -70,12 +67,12 @@
 }
 
 .description-bullets {
-    background-color: rgba(#fff, 0.08);
+    background-color: rgba(#fff, 0.04);
     padding: 10px 20px 10px 35px;
     margin: 8px 20px 24px 20px;
     border-radius: 10px;
     box-shadow: -3px 0 20px 5px #000b2250;
-    font-size: 88%;
+    font-size: 95%;
     line-height: 25px;
 }
 
