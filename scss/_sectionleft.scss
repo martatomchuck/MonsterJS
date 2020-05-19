@@ -14,23 +14,23 @@
     opacity: 0.45;
     font-size: 1.2em;
     font-weight: 600;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 5px;
     align-self: flex-start;
 }
 
 .counter {
     width: 230px;
-    height: 32px;
+    height: 35px;
     color: #092563;
     display: flex;
     justify-content: space-between;
     text-align: center;
-    line-height: 32px;
-    margin: 10px;
+    line-height: 35px;
+    margin-top: -30px;
+    margin-right: -100%;
     z-index: 999;
     box-shadow: -2px 3px 10px 0 #000b22;
-    display: none;
 }
 
 #counter-prev {
