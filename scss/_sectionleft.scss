@@ -14,9 +14,21 @@
     opacity: 0.45;
     font-size: 1.2em;
     font-weight: 600;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 5px;
     align-self: flex-start;
+
+    &::before {
+        content: url("../images/monster8.svg");
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin: 8px;
+        opacity: 1;
+        position: relative;
+        top: 5px;
+        left: 0;
+    }
 }
 
 .counter {
@@ -27,9 +39,9 @@
     justify-content: space-between;
     text-align: center;
     line-height: 35px;
-    margin-top: -30px;
+    margin-top: -35px;
     margin-right: -100%;
-    z-index: 999;
+    z-index: 99999;
     box-shadow: -2px 3px 10px 0 #000b22;
 }
 
@@ -44,7 +56,7 @@
     opacity: 80%;
     transition: all 0.3s ease;
     cursor: pointer;
-    position: relative;
+    // box-shadow: -2px 3px 10px 0 #000b22;
 
     &:hover {
         opacity: 100%;
@@ -58,7 +70,7 @@
     font-size: 1.3rem;
     font-weight: 600;
     border-radius: 2px;
-    box-shadow: -2px 3px 10px 0 #000b22;
+    // box-shadow: -2px 3px 10px 0 #000b22;
 }
 
 #counter-next {
@@ -72,7 +84,7 @@
     opacity: 80%;
     transition: all 0.3s ease;
     cursor: pointer;
-    box-shadow: -2px 3px 10px 0 #000b22;
+    // box-shadow: -2px 3px 10px 0 #000b22;
     
     &:hover {
         opacity: 100%;
@@ -91,7 +103,7 @@
     border-radius: 12px;
     // border: 0.5px solid rgba(#ff9d9d, 0.2);
     text-align: center;
-    margin: 30px 10px;
+    margin: 40px 10px 30px 10px;
     padding: 15px 10px;
     transition: background-image 2s ease;
 
@@ -103,7 +115,6 @@
 
 .game {
     width: 85%;
-    // min-height: 500px;
     height: 65%;
     display: flex;
     flex-wrap: wrap;
