@@ -22,12 +22,12 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'Monster Village has been haunted by a ghost. Help the Monsters to track down the ghost and chase it away from the village.', bold:false}
-        ],
-        task: [
-            {id:1, text:'Catch the ghost using the method ', bold:false},
+            {id:1, text:'Monster Village has been haunted by a ghost. Help the Monsters to track down the ghost and chase it away from the village. Catch the ghost using the method ', bold:false},
             {id:2, text:'getElementById( )', bold:true},
             {id:3, text:' with appropriate id attribute.', bold:false}
+        ],
+        task: [
+            {id:1, text:'Select the ghost using getElementById( )', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -91,12 +91,12 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'Look! There is another one! A ghost is still haunting the Monster Village. Try again to catch it.', bold:false}
-        ],
-        task: [
-            {id:1, text:'Catch the ghost using the method ', bold:false},
+            {id:1, text:'Look! There is another one! A ghost is still haunting the Monster Village. Try again to catch it. Catch the ghost using the method ', bold:false},
             {id:2, text:'getElementById( )', bold:true},
             {id:3, text:' with appropriate id attribute.', bold:false}
+        ],
+        task: [
+            {id:1, text:'Select the ghost using getElementById( )', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -186,12 +186,12 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:"Oh no! The ghost seems to settle down in the Monster Village. Let's try one more time to chase it away.", bold:false}
-        ],
-        task: [
-            {id:1, text:'Catch the ghost using the method ', bold:false},
+            {id:1, text:"Oh no! The ghost seems to settle down in the Monster Village. Let's try one more time to chase it away. Catch the ghost using the method ", bold:false},
             {id:2, text:'getElementById( )', bold:true},
             {id:3, text:' with appropriate id attribute.', bold:false}
+        ],
+        task: [
+            {id:1, text:'Select the ghost using getElementById( )', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -244,12 +244,12 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:"Look! The ghost family came to the rescue! The Monster looks terrified of ghosts around him.", bold:false}
-        ],
-        task: [
-            {id:1, text:'Catch all the ghosts in one shot using the method ', bold:false},
+            {id:1, text:"Look! The ghost family came to the rescue! The Monster looks terrified of ghosts around him. Catch all the ghosts in one shot using the method ", bold:false},
             {id:2, text:'getElementsByTagName( )', bold:true},
             {id:3, text:' with appropriate tag name.', bold:false}
+        ],
+        task: [
+            {id:1, text:'Select all the ghosts in one shot using getElementsByTagName( )', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -322,12 +322,12 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:"Oh no! There is more and more of ghosts in the Monster Village. The Monsters need your JavaScript superpower again!", bold:false}
-        ],
-        task: [
-            {id:1, text:'Catch all the ghosts in one shot using the method ', bold:false},
+            {id:1, text:"Oh no! There is more and more of ghosts in the Monster Village. The Monsters need your JavaScript superpower again! Catch all the ghosts using the method ", bold:false},
             {id:2, text:'getElementsByTagName( )', bold:true},
             {id:3, text:' with appropriate tag name.', bold:false}
+        ],
+        task: [
+            {id:1, text:'Select all the ghosts in one shot using getElementsByTagName( )', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -418,12 +418,12 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'Try again to track down the ghosts haunting the Monster Village. You are the only hope for the little fearfull Monsters.', bold:false}
-        ],
-        task: [
-            {id:1, text:'Catch all the ghosts in one shot using the method ', bold:false},
+            {id:1, text:'Try again to track down the ghosts haunting the Monster Village. You are the only hope for the little fearfull Monsters. Catch all the ghosts in one shot using the method ', bold:false},
             {id:2, text:'getElementsByTagName( )', bold:true},
             {id:3, text:' with appropriate tag name.', bold:false}
+        ],
+        task: [
+            {id:1, text:'Select all the ghosts in one shot using getElementsByTagName( )', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -476,12 +476,12 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'The ghosts are gone but the Monsters are facing a new challenge -  an unsafe coronavirus spreading around the Monster Village.', bold:false}
-        ],
-        task: [
-            {id:1, text:'Catch the virus with the ', bold:false},
+            {id:1, text:'The ghosts are gone but the Monsters are facing a new challenge -  an unsafe coronavirus spreading around the Monster Village. Catch the virus with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
             {id:3, text:' method. Use an ID to define a selector.', bold:false}
+        ],
+        task: [
+            {id:1, text:'Select the virus with querySelector( )', bold:false}
         ],
         instructions: [
             {id:1, bullet: [
@@ -554,12 +554,12 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'The coronavirus appeared again in the public space of Monster Village. You have to act quickly.', bold:false}
-        ],
-        task: [
-            {id:1, text:'Catch the virus with the ', bold:false},
+            {id:1, text:'The coronavirus appeared again in the public space of Monster Village. You have to act quickly. Catch the virus with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
             {id:3, text:' method. Use class to define a selector.', bold:false}
+        ],
+        task: [
+            {id:1, text:'Select the virus with querySelector( )', bold:false}
         ],
         instructions: [
             {id:1, bullet: [
@@ -650,12 +650,12 @@ export default [
             }
         ],
         task_description: [
-            {id:1, text:'Previous methods did not help in the long run. New Monsters are getting sick because of the coronavirus.', bold:false},
-        ],
-        task: [
-            {id:1, text:'Catch the virus with the ', bold:false},
+            {id:1, text:'Previous methods did not help in the long run. New Monsters are getting sick because of the coronavirus. Catch the virus with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
             {id:3, text:' method. Use a tag to define a selector.', bold:false}
+        ],
+        task: [
+            {id:1, text:'Select the virus with querySelector( )', bold:false}
         ],
         instructions: [
             {id:1, bullet: [

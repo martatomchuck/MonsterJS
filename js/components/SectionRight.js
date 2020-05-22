@@ -37,9 +37,9 @@ const Instructions = ({description, task, instructions, example}) => {
                 {description.map((el) => {
                     return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
                 })} 
-                {task.map((el) => {
+                {/* {task.map((el) => {
                     return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
-                })}
+                })} */}
             </div>
 
             <div className="description-bullets">

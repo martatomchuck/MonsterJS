@@ -5,12 +5,12 @@ import { CheckContext } from "../contexts/CheckContext";
 import { AnswerContext } from "../contexts/AnswerContext";
 
 // SECTION LEFT
-const SectionLeft = ({datasetLength, level, elements}) => {
+const SectionLeft = ({datasetLength, level, task, elements}) => {
     return (
         <section className="section-left">
             <div className={"header-title"}>MonsterJS</div>
             <Counter datasetLength={datasetLength} level={level}/>
-            <div className={"task"}>Select the coronavirus with getElementById( )</div>
+            <Task task={task}/>
             <Game elements={elements}/>
         </section>
     )
@@ -36,6 +36,16 @@ const Counter = ({datasetLength, level}) => {
                 clearAnswer();
                 handleClick();
             }}></div>
+        </div>
+    )
+}
+
+const Task = ({task}) => {
+    return (
+        <div className={"task"}>
+            {task.map((el) => {
+                return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
+            })}
         </div>
     )
 }
