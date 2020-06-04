@@ -4,6 +4,7 @@ import { LevelContext } from '../contexts/LevelContext';
 import { AnswerContext } from "../contexts/AnswerContext";
 import { CheckContext } from "../contexts/CheckContext";
 
+
 const SectionRight = ({description, task, instructions, example}) => {
 
     return (
@@ -30,19 +31,21 @@ const Name = () => {
     )
 }
 
-const Instructions = ({description, task, instructions, example}) => {
+const Instructions = ({story, description, task, instructions, example}) => {
     return (
         <div className="description">
+            <div className={"story"}>
+            Monster Village has been haunted by a ghost. Help the Monsters to track down the ghost and chase it away from the village.
+            </div>
             <div className={"description-task"}>
+                <span style={{fontWeight: 600, color: "white"}}>Your task </span>
+                <br/>
                 {description.map((el) => {
                     return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
-                })} 
-                {/* {task.map((el) => {
-                    return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
-                })} */}
+                })}
             </div>
 
-            <div className="description-bullets">
+            {/* <div className="description-bullets">
                 <ul>
                     {instructions.map((el) => {
                         return <li key={el.id}>{el.bullet.map((el2) => {
@@ -50,9 +53,11 @@ const Instructions = ({description, task, instructions, example}) => {
                         })}</li>
                     })}
                 </ul>
-            </div>
+            </div> */}
 
-            <div>
+            <div className={"description-task"}>
+                <span style={{fontWeight: 600, color: "white"}}>Example </span>
+                <br/>
                 {example.map((el) => {
                     return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
                 })}

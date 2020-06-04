@@ -35,14 +35,14 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(223, 223, 223, 0.4);
+    background: rgba(240, 239, 239, 0.644);
     border-radius: 5px;
-    border: 3px solid #000b22;
+    border: 4px solid #000b22;
 }
 
 // FLEX
 .container {
-    width: calc(100vw - 30px);
+    width: calc(100vw - 50px);
     min-height: 800px;
     padding: 0;
     margin: 0 auto;

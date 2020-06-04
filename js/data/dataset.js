@@ -1,6 +1,9 @@
 export default [
     {
         level: 1,
+        task: [
+            {id:1, text:'Select the ghost', bold:false}
+        ],
         elements: [
             {
                 id: 1,
@@ -21,13 +24,11 @@ export default [
                 tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
             }
         ],
+        story: "Monster Village has been haunted by a ghost. Help the Monsters to track down the ghost and chase it away from the village.",
         task_description: [
-            {id:1, text:'Monster Village has been haunted by a ghost. Help the Monsters to track down the ghost and chase it away from the village. Catch the ghost using the method ', bold:false},
+            {id:1, text:'Catch the ghost using the method ', bold:false},
             {id:2, text:'getElementById( )', bold:true},
             {id:3, text:' with appropriate id attribute.', bold:false}
-        ],
-        task: [
-            {id:1, text:'Select the ghost using getElementById( )', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -43,9 +44,8 @@ export default [
             ]}
         ],
         example: [
-            {id:1, text:'EXAMPLE: ', bold:false},
-            {id:2, text:'document.getElementById("element_id");', bold:true},
-            {id:3, text:' will access the element with an id = "element_id"', bold:false}
+            {id:1, text:'document.getElementById("element_id");', bold:true},
+            {id:2, text:' will access the element with an id = "element_id"', bold:false}
         ],
         expected_input: [
             'getElementById("scary-ghost")',
@@ -58,6 +58,9 @@ export default [
     },
     {
         level: 2,
+        task: [
+            {id:1, text:'Select the ghost', bold:false}
+        ],
         elements: [
             {
                 id: 1,
@@ -90,13 +93,11 @@ export default [
                 tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
             }
         ],
+        story: "Look! There is another one! A ghost is still haunting the Monster Village. Try again to catch it.",
         task_description: [
-            {id:1, text:'Look! There is another one! A ghost is still haunting the Monster Village. Try again to catch it. Catch the ghost using the method ', bold:false},
+            {id:1, text:'Catch the ghost using the method ', bold:false},
             {id:2, text:'getElementById( )', bold:true},
             {id:3, text:' with appropriate id attribute.', bold:false}
-        ],
-        task: [
-            {id:1, text:'Select the ghost using getElementById( )', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -114,9 +115,8 @@ export default [
             ]}
         ],
         example: [
-            {id:1, text:'EXAMPLE: ', bold:false},
-            {id:2, text:'document.getElementById("element_id");', bold:true},
-            {id:3, text:' will access the element with an id = "element_id"', bold:false}
+            {id:1, text:'document.getElementById("element_id");', bold:true},
+            {id:2, text:' will access the element with an id = "element_id"', bold:false}
         ],
         expected_input: [
             'getElementById("look-at-me")',
@@ -129,6 +129,9 @@ export default [
     },
     {
         level: 3,
+        task: [
+            {id:1, text:'Select the ghost', bold:false}
+        ],
         elements: [
             {
                 id: 1,
@@ -185,13 +188,11 @@ export default [
                 tooltip: '< monster class = "pink crazy-lady" id = "Martha" > Hello, I am a Monster! </ monster >'
             }
         ],
+        story: "Oh no! The ghost seems to settle down in the Monster Village. Let's try one more time to chase it away.",
         task_description: [
-            {id:1, text:"Oh no! The ghost seems to settle down in the Monster Village. Let's try one more time to chase it away. Catch the ghost using the method ", bold:false},
+            {id:1, text:"Catch the ghost using the method ", bold:false},
             {id:2, text:'getElementById( )', bold:true},
             {id:3, text:' with appropriate id attribute.', bold:false}
-        ],
-        task: [
-            {id:1, text:'Select the ghost using getElementById( )', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -222,6 +223,9 @@ export default [
     },
     {
         level: 4,
+        task: [
+            {id:1, text:'Select all the ghosts in one shot', bold:false}
+        ],
         elements: [
             {
                 id: 1,
@@ -243,13 +247,11 @@ export default [
                 tooltip: '< ghost class = "ghost fairy enemy" id = "Juliette" > Hello, I am a Ghost! </ ghost >'
             }
         ],
+        story: "Look! The ghost family came to the rescue! The Monster looks terrified of ghosts around him.",
         task_description: [
-            {id:1, text:"Look! The ghost family came to the rescue! The Monster looks terrified of ghosts around him. Catch all the ghosts in one shot using the method ", bold:false},
+            {id:1, text:"Catch all the ghosts in one shot using the method ", bold:false},
             {id:2, text:'getElementsByTagName( )', bold:true},
             {id:3, text:' with appropriate tag name.', bold:false}
-        ],
-        task: [
-            {id:1, text:'Select all the ghosts in one shot using getElementsByTagName( )', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -268,9 +270,8 @@ export default [
             ]}
         ],
         example: [
-            {id:1, text:'EXAMPLE: ', bold:false},
-            {id:2, text:'document.getElementsByTagName("element");', bold:true},
-            {id:3, text:' will access all the elements with a tag named "element".', bold:false}
+            {id:1, text:'document.getElementsByTagName("element");', bold:true},
+            {id:2, text:' will access all the elements with a tag named "element".', bold:false}
         ],
         expected_input: [
             'getElementsByTagName("ghost")',
@@ -283,6 +284,9 @@ export default [
     },
     {
         level: 5,
+        task: [
+            {id:1, text:'Select all the ghosts in one shot', bold:false}
+        ],
         elements: [
             {
                 id: 1,
@@ -321,13 +325,11 @@ export default [
                 tooltip: '< ghostfamily class = "ghost enemy" id = "Anastasia" > Hello, I am a Ghost! </ ghostfamily >'
             }
         ],
+        story: "Oh no! There is more and more of ghosts in the Monster Village. The Monsters need your JavaScript superpower again!",
         task_description: [
-            {id:1, text:"Oh no! There is more and more of ghosts in the Monster Village. The Monsters need your JavaScript superpower again! Catch all the ghosts using the method ", bold:false},
+            {id:1, text:"Catch all the ghosts using the method ", bold:false},
             {id:2, text:'getElementsByTagName( )', bold:true},
             {id:3, text:' with appropriate tag name.', bold:false}
-        ],
-        task: [
-            {id:1, text:'Select all the ghosts in one shot using getElementsByTagName( )', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -346,9 +348,8 @@ export default [
             ]}
         ],
         example: [
-            {id:1, text:'EXAMPLE: ', bold:false},
-            {id:2, text:'document.getElementsByTagName("element");', bold:true},
-            {id:3, text:' will access all the elements with a tag named "element".', bold:false}
+            {id:1, text:'document.getElementsByTagName("element");', bold:true},
+            {id:2, text:' will access all the elements with a tag named "element".', bold:false}
         ],
         expected_input: [
             'getElementsByTagName("ghostfamily")',
@@ -361,6 +362,9 @@ export default [
     },
     {
         level: 6,
+        task: [
+            {id:1, text:'Select all the ghosts in one shot', bold:false}
+        ],
         elements: [
             {
                 id: 1,
@@ -417,13 +421,11 @@ export default [
                 tooltip: '< ghostnomore class = "fairy enemy" id = "Catarina" > Hello, I am a Ghost! </ ghostnomore >'
             }
         ],
+        story: "Try again to track down the ghosts haunting the Monster Village. You are the only hope for the little fearfull Monsters.",
         task_description: [
-            {id:1, text:'Try again to track down the ghosts haunting the Monster Village. You are the only hope for the little fearfull Monsters. Catch all the ghosts in one shot using the method ', bold:false},
+            {id:1, text:'Catch all the ghosts in one shot using the method ', bold:false},
             {id:2, text:'getElementsByTagName( )', bold:true},
             {id:3, text:' with appropriate tag name.', bold:false}
-        ],
-        task: [
-            {id:1, text:'Select all the ghosts in one shot using getElementsByTagName( )', bold:false}
         ],
         instructions:[
             {id:1, bullet: [
@@ -455,6 +457,9 @@ export default [
     },
     {
         level: 7,
+        task: [
+            {id:1, text:'Select the virus', bold:false}
+        ],
         elements: [
             {
                 id: 1,
@@ -475,13 +480,11 @@ export default [
                 tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Virus! </ virus >'
             }
         ],
+        story: "The ghosts are gone but the Monsters are facing a new challenge -  an unsafe coronavirus spreading around the Monster Village.",
         task_description: [
-            {id:1, text:'The ghosts are gone but the Monsters are facing a new challenge -  an unsafe coronavirus spreading around the Monster Village. Catch the virus with the ', bold:false},
+            {id:1, text:'Catch the virus with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
             {id:3, text:' method. Use an ID to define a selector.', bold:false}
-        ],
-        task: [
-            {id:1, text:'Select the virus with querySelector( )', bold:false}
         ],
         instructions: [
             {id:1, bullet: [
@@ -500,9 +503,8 @@ export default [
             ]}
         ],
         example: [
-            {id:1, text:'EXAMPLE: ', bold:false},
-            {id:2, text:'document.querySelector("#id");', bold:true},
-            {id:3, text:' will access the first element with the specified id.', bold:false}
+            {id:1, text:'document.querySelector("#id");', bold:true},
+            {id:2, text:' will access the first element with the specified id.', bold:false}
         ],
         expected_input: [
             'querySelector("#COVID-19")',
@@ -515,6 +517,9 @@ export default [
     },
     {
         level: 8,
+        task: [
+            {id:1, text:'Select the virus', bold:false}
+        ],
         elements: [
             {
                 id: 1,
@@ -553,13 +558,11 @@ export default [
                 tooltip: '< monster class = "brown fatso" id = "Mathias" > Hello, I am a Monster! </ monster >'
             }
         ],
+        story: "The coronavirus appeared again in the public space of Monster Village. You have to act quickly.",
         task_description: [
-            {id:1, text:'The coronavirus appeared again in the public space of Monster Village. You have to act quickly. Catch the virus with the ', bold:false},
+            {id:1, text:'Catch the virus with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
             {id:3, text:' method. Use class to define a selector.', bold:false}
-        ],
-        task: [
-            {id:1, text:'Select the virus with querySelector( )', bold:false}
         ],
         instructions: [
             {id:1, bullet: [
@@ -578,9 +581,8 @@ export default [
             ]}
         ],
         example: [
-            {id:1, text:'EXAMPLE: ', bold:false},
-            {id:2, text:'document.querySelector(".class");', bold:true},
-            {id:3, text:' will access the first element with the specified class.', bold:false}
+            {id:1, text:'document.querySelector(".class");', bold:true},
+            {id:2, text:' will access the first element with the specified class.', bold:false}
         ],
         expected_input: [
             'querySelector(".dangerous")',
@@ -593,6 +595,9 @@ export default [
     },
     {
         level: 9,
+        task: [
+            {id:1, text:'Select the virus', bold:false}
+        ],
         elements: [
             {
                 id: 1,
@@ -649,13 +654,11 @@ export default [
                 tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
             }
         ],
+        story: "Previous methods did not help in the long run. New Monsters are getting sick because of the coronavirus.",
         task_description: [
-            {id:1, text:'Previous methods did not help in the long run. New Monsters are getting sick because of the coronavirus. Catch the virus with the ', bold:false},
+            {id:1, text:'Catch the virus with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
             {id:3, text:' method. Use a tag to define a selector.', bold:false}
-        ],
-        task: [
-            {id:1, text:'Select the virus with querySelector( )', bold:false}
         ],
         instructions: [
             {id:1, bullet: [
@@ -674,9 +677,8 @@ export default [
             ]}
         ],
         example: [
-            {id:1, text:'EXAMPLE: ', bold:false},
-            {id:2, text:'document.querySelector("tag");', bold:true},
-            {id:3, text:' will access the first element with a specified tag.', bold:false}
+            {id:1, text:'document.querySelector("tag");', bold:true},
+            {id:2, text:' will access the first element with a specified tag.', bold:false}
         ],
         expected_input: [
             'querySelector("virus")',
