@@ -40,7 +40,13 @@ a {
     border: 4px solid #000b22;
 }
 
-// FLEX
+// THE APP
+.header {
+    width: 100%;
+    height: 100px; 
+    background-image: linear-gradient(#000b22, transparent);
+}
+
 .container {
     width: calc(100vw - 50px);
     min-height: 800px;

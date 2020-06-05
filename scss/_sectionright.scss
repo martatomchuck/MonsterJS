@@ -4,7 +4,7 @@
     background-color: #142850;
     box-shadow: 0 0 20px 2px #000b22;
     box-sizing: border-box;
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px;
     padding: 15px 20px 15px 40px;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
 .title {
     color: #ffc2c2;
     opacity: 0.6;
-    align-self: flex-end;
+    align-self: center;
     font-size: 1.5em;
     font-weight: 500;
     margin: 5px 3px 50px 0;
@@ -22,7 +22,7 @@
 
 .story {
     color: white;
-    background-color: rgba(#fff, 0.05);
+    background-color: rgba(#fff, 0.04);
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -59,9 +59,9 @@
         letter-spacing: 1px;
         word-break: break-all;
 
-        // &:hover {
-        //     background-image: linear-gradient(45deg, #ff2e63, #FF9721);
-        // }
+        &:hover {
+            background-image: linear-gradient(45deg, #ff2e63, #FF9721);
+        }
     }
 }
 
@@ -70,7 +70,7 @@
     font-weight: 400;
     font-weight: 300;
     font-size: 0.9em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding: 10px;
 
     span:first-child {
@@ -93,7 +93,7 @@
 .console {
     width: 98%;
     min-height: 250px;
-    margin: 30px 0 20px 0;
+    margin: 10px 0 20px 0;
     display: flex;
     box-shadow: -5px 5px 30px 5px #000b22;
     margin-top: 80px;

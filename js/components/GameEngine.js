@@ -14,11 +14,24 @@ const GameEngine = ({dataset}) => {
     const datasetLength = dataset.length;
 
     return (
-        <div className="container">
-            <SectionLeft datasetLength={datasetLength} level={dataset[counter].level} task={dataset[counter].task} elements={dataset[counter].elements}/>
-            <SectionRight story={dataset[counter].story} description={dataset[counter].task_description} task={dataset[counter].task} instructions={dataset[counter].instructions} example={dataset[counter].example} />
-        </div>
+        <>
+            <Header level={dataset[counter].level}/>
+
+            <div className="container">
+                <SectionLeft datasetLength={datasetLength} level={dataset[counter].level} task={dataset[counter].task} elements={dataset[counter].elements}/>
+
+                <SectionRight story={dataset[counter].story} description={dataset[counter].task_description} task={dataset[counter].task} instructions={dataset[counter].instructions} example={dataset[counter].example} />
+            </div>
+        </>
     );
+}
+
+const Header = ({}) => {
+    return (
+        <header className={"header"}>
+            
+        </header>
+    )
 }
 
 export default GameEngine;
