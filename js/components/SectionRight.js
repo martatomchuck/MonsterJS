@@ -24,8 +24,7 @@ const Instructions = ({story, description, example}) => {
         <div className="description">
             <div className={"story"}> {story} </div>
             <div className={"description-task"}>
-                <span style={{fontWeight: 600, color: "white"}}>Your task </span>
-                <br/>
+                <h4>Your task </h4>
                 {description.map((el) => {
                     return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
                 })}
@@ -42,8 +41,7 @@ const Instructions = ({story, description, example}) => {
             </div> */}
 
             <div className={"description-task"}>
-                <span style={{fontWeight: 600, color: "white"}}>Example </span>
-                <br/>
+                <h4>Example </h4>
                 {example.map((el) => {
                     return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
                 })}

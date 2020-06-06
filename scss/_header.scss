@@ -88,4 +88,25 @@
     text-align: end;
     display: flex;
     justify-content: flex-end;
+
+    p {
+        display: block;
+        margin-top: 18px;
+        margin-right: 5px;
+    }
+
+    div {
+        margin: 13px 4px;
+        position: relative;
+        width: 24px;
+        height: 24px;
+    }
+
+    .header-twitter {
+        background-image: url('../images/twitter24.png');
+    }
+
+    .header-facebook {
+        background-image: url('../images/facebook24.png');
+    }
 }

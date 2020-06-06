@@ -14,26 +14,11 @@
 
 .title {
     color: #ffc2c2;
-    opacity: 0.8;
+    opacity: 0.9;
     align-self: center;
     font-size: 1.8em;
     font-weight: 500;
     margin: 25px 3px 30px 0;
-}
-
-.story {
-    color: white;
-    background-color: rgba(#fff, 0.04);
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: -3px 0 20px 5px #000b2250;
-    margin-bottom: 10px;
-    padding: 15px 20px;
-    margin-bottom: 20px;
-    font-size: 1.2em;
-    font-weight: 400;
-    text-align: center;
 }
 
 .description {
@@ -51,10 +36,9 @@
 
     .bold {
         display: inline-block;
-        padding: 1px 10px;
-        margin: 0 5px;
+        padding: 2px 12px;
         background-color: rgba(#fff, 0.1);
-        border-radius: 3px;
+        border-radius: 5px;
         color: white;
         font-weight: 500;
         letter-spacing: 1px;
@@ -66,17 +50,33 @@
     }
 }
 
+.story {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(#fff, 0.04);
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: -3px 0 20px 5px #000b2250;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    font-size: 1.15em;
+    font-weight: 400;
+    text-align: center;
+}
+
 .description-task {
     line-height: 24px;
-    font-weight: 400;
     font-weight: 300;
     font-size: 0.9em;
-    margin-bottom: 10px;
-    padding: 10px;
+    margin-bottom: 30px;
+    padding: 0 20px;
 
-    span:first-child {
-        font-size: 1.2em;
+    h4 {
+        font-size: 1.3em;
         font-family: 'Baloo Paaji 2', cursive;
+        margin-bottom: 7px;
+        color: rgba(255, 255, 255, 0.9);
     }
 }
 
@@ -94,11 +94,9 @@
 .console {
     width: 98%;
     min-height: 250px;
-    margin: 10px 0 20px 0;
     display: flex;
     box-shadow: -5px 5px 30px 5px #000b22;
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin: 20px 20px 20px 0;
 }
 
 .console-numbers {
