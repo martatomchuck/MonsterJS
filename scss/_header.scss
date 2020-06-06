@@ -1,9 +1,10 @@
-.header-title {
+.header .header-title {
+    width: 140px;
     color: white;
     opacity: 0.6;
     font-size: 1.2em;
     font-weight: 600;
-    margin: 10px;
+    margin: 10px 0 10px 20px;
 
     &::before {
         content: url("../images/monster8.svg");
@@ -39,13 +40,13 @@
     background-size: 18px;
     width: 15%;
     border-radius: 8px 2px 2px 8px;
-    opacity: 80%;
+    opacity: 100%;
     transition: all 0.3s ease;
     cursor: pointer;
     // box-shadow: -2px 3px 10px 0 #000b22;
 
     &:hover {
-        opacity: 100%;
+        opacity: 80%;
         transition: all 0.3s ease;
     }
 }
@@ -67,23 +68,25 @@
     background-size: 18px;
     width: 15%;
     border-radius: 2px 8px 8px 2px;
-    opacity: 80%;
+    opacity: 100%;
     transition: all 0.3s ease;
     cursor: pointer;
     // box-shadow: -2px 3px 10px 0 #000b22;
     
     &:hover {
-        opacity: 100%;
+        opacity: 80%;
         transition: all 0.3s ease;
     }
 }
 
-.header-share {
+.header .header-share {
+    width: 140px;
     color: white;
     opacity: 0.6;
     font-size: 1.2em;
-    font-weight: 600;
-    margin: 10px;
+    font-weight: 500;
+    margin: 10px 20px 10px 0;
+    text-align: end;
 
     &::after {
         content: url("../images/monster8.svg");
