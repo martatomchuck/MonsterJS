@@ -9,7 +9,11 @@ const Header = ({datasetLength, level}) => {
         <header className={"header"}>
             <div className={"header-title"}>MonsterJS</div>
             <Counter datasetLength={datasetLength} level={level}/>
-            <div className={"header-share"}>Share</div>
+            <div className={"header-share"}>
+                <p>Share</p>
+                <a><img src='../images/twitter24.png'></img></a>
+                <a><img src='../images/facebook24.png'></img></a>    
+            </div>
         </header>
     )
 }

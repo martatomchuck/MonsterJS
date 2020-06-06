@@ -12,7 +12,6 @@
         width: 25px;
         height: 25px;
         margin: 8px;
-        opacity: 1;
         position: relative;
         top: 5px;
         left: 0;
@@ -84,19 +83,9 @@
     color: white;
     opacity: 0.6;
     font-size: 1.2em;
-    font-weight: 500;
+    font-weight: 600;
     margin: 10px 20px 10px 0;
     text-align: end;
-
-    &::after {
-        content: url("../images/monster8.svg");
-        display: inline-block;
-        width: 25px;
-        height: 25px;
-        margin: 8px;
-        opacity: 1;
-        position: relative;
-        top: 5px;
-        left: 0;
-    }
+    display: flex;
+    justify-content: flex-end;
 }
