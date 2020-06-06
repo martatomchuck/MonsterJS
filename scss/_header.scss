@@ -1,0 +1,99 @@
+.header-title {
+    color: white;
+    opacity: 0.6;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 10px;
+
+    &::before {
+        content: url("../images/monster8.svg");
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin: 8px;
+        opacity: 1;
+        position: relative;
+        top: 5px;
+        left: 0;
+    }
+}
+
+.counter {
+    width: 250px;
+    height: 40px;
+    color: #000b22;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    line-height: 40px;
+    z-index: 99999;
+    box-shadow: -2px 3px 20px 5px #000b22;
+    margin-top: 20px;
+}
+
+#counter-prev {
+    background-color: #ff9d9d;
+    background-image: url('../images/back.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    width: 15%;
+    border-radius: 8px 2px 2px 8px;
+    opacity: 80%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    // box-shadow: -2px 3px 10px 0 #000b22;
+
+    &:hover {
+        opacity: 100%;
+        transition: all 0.3s ease;
+    }
+}
+
+#counter-level {
+    width: 65%;
+    background-color: #ffc2c2;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 2px;
+    // box-shadow: -2px 3px 10px 0 #000b22;
+}
+
+#counter-next {
+    background-color: #ff9d9d;
+    background-image: url('../images/next.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 18px;
+    width: 15%;
+    border-radius: 2px 8px 8px 2px;
+    opacity: 80%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    // box-shadow: -2px 3px 10px 0 #000b22;
+    
+    &:hover {
+        opacity: 100%;
+        transition: all 0.3s ease;
+    }
+}
+
+.header-share {
+    color: white;
+    opacity: 0.6;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 10px;
+
+    &::after {
+        content: url("../images/monster8.svg");
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        margin: 8px;
+        opacity: 1;
+        position: relative;
+        top: 5px;
+        left: 0;
+    }
+}

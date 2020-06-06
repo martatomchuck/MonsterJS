@@ -4,6 +4,7 @@
 
 @import 'elements';
 @import 'welcome';
+@import 'header';
 @import 'sectionleft';
 @import 'sectionright';
 
@@ -43,8 +44,10 @@ a {
 // THE APP
 .header {
     width: 100%;
-    height: 100px; 
+    height: 110px; 
     background-image: linear-gradient(#000b22, transparent);
+    display: flex;
+    justify-content: space-between;
 }
 
 .container {

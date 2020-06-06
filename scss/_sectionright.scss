@@ -1,10 +1,10 @@
 // SECTION RIGHT
 .section-right {
-    width: 53%;
+    width: 49%;
     background-color: #142850;
     box-shadow: 0 0 20px 2px #000b22;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 15px 20px 15px 40px;
     display: flex;
     flex-direction: column;
@@ -13,11 +13,11 @@
 
 .title {
     color: #ffc2c2;
-    opacity: 0.6;
+    opacity: 0.8;
     align-self: center;
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: 500;
-    margin: 5px 3px 50px 0;
+    margin: 25px 3px 30px 0;
 }
 
 .story {

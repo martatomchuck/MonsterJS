@@ -5,7 +5,7 @@ import { AnswerContext } from "../contexts/AnswerContext";
 import { CheckContext } from "../contexts/CheckContext";
 
 
-const SectionRight = ({description, task, instructions, example}) => {
+const SectionRight = ({story, description, task, instructions, example}) => {
 
     return (
         <section className="section-right">
@@ -36,6 +36,7 @@ const Instructions = ({story, description, task, instructions, example}) => {
         <div className="description">
             <div className={"story"}>
             Monster Village has been haunted by a ghost. Help the Monsters to track down the ghost and chase it away from the village.
+            {story}
             </div>
             <div className={"description-task"}>
                 <span style={{fontWeight: 600, color: "white"}}>Your task </span>

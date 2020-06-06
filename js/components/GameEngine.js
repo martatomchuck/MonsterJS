@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 
+import Header from './Header';
 import SectionLeft from './SectionLeft';
 import SectionRight from './SectionRight';
 
@@ -15,23 +16,13 @@ const GameEngine = ({dataset}) => {
 
     return (
         <>
-            <Header level={dataset[counter].level}/>
-
+            <Header datasetLength={datasetLength} level={dataset[counter].level}/>
             <div className="container">
-                <SectionLeft datasetLength={datasetLength} level={dataset[counter].level} task={dataset[counter].task} elements={dataset[counter].elements}/>
-
+                <SectionLeft task={dataset[counter].task} elements={dataset[counter].elements}/>
                 <SectionRight story={dataset[counter].story} description={dataset[counter].task_description} task={dataset[counter].task} instructions={dataset[counter].instructions} example={dataset[counter].example} />
             </div>
         </>
     );
-}
-
-const Header = ({}) => {
-    return (
-        <header className={"header"}>
-            
-        </header>
-    )
 }
 
 export default GameEngine;
