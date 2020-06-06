@@ -9,35 +9,20 @@ const SectionRight = ({story, description, task, instructions, example}) => {
 
     return (
         <section className="section-right">
-            <Name/>
-            <Instructions description={description} task={task} instructions={instructions} example={example}/>
+            <div className="title">Welcome to Monster Village!</div>
+            <Instructions story={story} description={description} task={task} instructions={instructions} example={example}/>
             <Console/>
             <div className="console-btn">
                 <BtnNext/>
-            </div>
-            <div className="footer-mobile">
-                <span>Created with <div></div> by <a href={"https://github.com/mtomchuck"} target={"_blank"}>mtomchuck</a> &bull; <a href={"https://github.com/mtomchuck/monster-village"} target={"_blank"}>GitHub</a></span>
-                <span>Images made by Freepik & Smashicons & Dimitry Miroliubov from flaticon.com</span>
             </div>
         </section>
     )
 }
 
-const Name = () => {
-    return (
-        <>
-            <div className="title">Welcome to Monster Village!</div>
-        </>
-    )
-}
-
-const Instructions = ({story, description, task, instructions, example}) => {
+const Instructions = ({story, description, example}) => {
     return (
         <div className="description">
-            <div className={"story"}>
-            Monster Village has been haunted by a ghost. Help the Monsters to track down the ghost and chase it away from the village.
-            {story}
-            </div>
+            <div className={"story"}> {story} </div>
             <div className={"description-task"}>
                 <span style={{fontWeight: 600, color: "white"}}>Your task </span>
                 <br/>

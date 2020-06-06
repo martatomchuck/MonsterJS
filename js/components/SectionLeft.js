@@ -49,10 +49,6 @@ const Game = ({elements}) => {
                 })}
             </div>
             <h4 className="game-hint">Hover or tap the element to peek its HTML structure.</h4>
-            <div className="footer">
-                <span>Created with <div></div> by <a href={"https://github.com/mtomchuck"} target={"_blank"}>mtomchuck</a> &bull; <a href={"https://github.com/mtomchuck/monster-village"} target={"_blank"}>GitHub</a></span>
-                <span>Images made by Freepik & Smashicons & Dimitry Miroliubov from flaticon.com</span>
-            </div>
         </>
     )
 }

@@ -1,0 +1,44 @@
+.footer > div {
+    text-align: center;
+    color: white;
+    opacity: 0.3;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.footer .footer-copyright {
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    opacity: 0.8;
+
+    .footer-heart {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        margin: 0 4px -5px 3px;
+        background-image: url("../images/heart.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: 1;
+    }
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background-color: rgba(white, 0.2);
+        border-radius: 3px;
+        margin: 0 6px;
+        padding: 4px 9px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer > div {
+        margin-left: 20px;
+        margin-right: 20px; 
+    }
+}
