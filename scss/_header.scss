@@ -1,5 +1,4 @@
 .header .header-title {
-    width: 140px;
     color: white;
     opacity: 0.6;
     font-size: 1.2em;
@@ -29,6 +28,9 @@
     z-index: 99999;
     box-shadow: -2px 3px 20px 5px #000b22;
     margin-top: 20px;
+    position: absolute;
+    left: calc(50% - 125px);
+    top: 0;
 }
 
 #counter-prev {
@@ -79,7 +81,6 @@
 }
 
 .header .header-share {
-    width: 140px;
     color: white;
     opacity: 0.6;
     font-size: 1.2em;
@@ -108,5 +109,11 @@
 
     .header-facebook {
         background-image: url('../images/facebook24.png');
+    }
+}
+
+@media (max-width: 765px) {
+    .counter {
+        top: 60px;
     }
 }
