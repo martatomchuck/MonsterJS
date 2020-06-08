@@ -90,8 +90,8 @@
     }
     
     .element {
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 130px;
         margin: 5px 20px;
     }
 
@@ -108,14 +108,21 @@
     }
 
     .element {
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
         margin: 5px 10px;
     }
 
     .tooltip {
         top: 90px;
         left: 90px;
+    }
+}
+
+@media (max-width: 1224px) {
+    .element {
+        width: 100px;
+        height: 100px;
     }
 }
 

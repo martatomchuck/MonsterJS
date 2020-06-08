@@ -247,7 +247,7 @@ export default [
                 tooltip: '< ghost class = "ghost fairy enemy" id = "Juliette" > Hello, I am a Ghost! </ ghost >'
             }
         ],
-        story: "Look! The ghost family came to the rescue! The Monster looks terrified of ghosts around him.",
+        story: "The ghost family came to the rescue! The Monster looks terrified of ghosts around him.",
         task_description: [
             {id:1, text:"Catch all the ghosts in one shot using the method ", bold:false},
             {id:2, text:'getElementsByTagName( )', bold:true},

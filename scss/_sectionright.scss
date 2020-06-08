@@ -1,6 +1,6 @@
 // SECTION RIGHT
 .section-right {
-    width: 49%;
+    width: 50%;
     background-color: #142850;
     box-shadow: 0 0 20px 2px #000b22;
     box-sizing: border-box;
@@ -14,19 +14,19 @@
 
 .title {
     color: #ffc2c2;
-    opacity: 0.9;
     align-self: center;
     font-size: 1.8em;
     font-weight: 500;
     margin: 25px 3px 30px 0;
+    text-align: center;
 }
 
 .description {
-    color: rgba(255, 255, 255, 0.815);
+    color: rgba(255, 255, 255, 0.7);
     line-height: 28px;
-    font-size: 1.1em;
+    font-size: 1.15em;
     font-weight: 300;
-    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto', sans-serif;
     width: 98%;
     height: auto;
 
@@ -51,7 +51,7 @@
 }
 
 .story {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.8);
     background-color: rgba(#fff, 0.04);
     width: 100%;
     height: auto;
@@ -203,8 +203,7 @@ form {
     font-family: 'Baloo Paaji 2', sans-serif;
     border-radius: 8px;
     text-align: center;
-    line-height: 45px;
-    margin: 0 30px 10px 30px;
+    line-height: 45px; 
     cursor: pointer;
     transition: all 0.5s ease;
 }
@@ -212,7 +211,7 @@ form {
 .check-btn {
     background-color: #FF9721;
     box-shadow: -2px 3px 7px 0px gray;
-    margin: 15px 0;
+    margin: 15px 0px;
     border: none;
     outline: none;
     align-self: center;
@@ -239,7 +238,7 @@ form {
 @media (max-width: 1600px) {
     .description {
         // height: 370px;
-        font-size: 1em;
+        font-size: 1.1em;
         line-height: 25px;
     }
 
@@ -254,8 +253,7 @@ form {
 
 @media (max-width: 1380px) {
     .description {
-        // height: 360px;
-        font-size: 0.9em;
+        font-size: 1em;
         line-height: 22px;
     }
 
@@ -277,7 +275,7 @@ form {
     .description {
         min-height: 330px;
         height: auto;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .console-userinput input[type="text"] {
@@ -287,13 +285,25 @@ form {
 
 @media (max-width: 1000px) {
     .section-right {
-        width: 100%;
+        width: 98%;
         height: auto;
-        padding: 10px;
+        margin: 0 auto;
     }
 
     .title {
-        padding-left: 10px;
+        font-size: 2em;
+    }
+
+    .story {
+        font-size: 1.1em;
+    }
+
+    .description {
+        min-height: auto;
+        height: auto;
+        padding: 0 0 0 8px;
+        margin-bottom: 30px;
+        font-size: 1.3em;
     }
 
     .console {
@@ -310,22 +320,23 @@ form {
         padding: 10px;
     }
 
-    .description {
-        min-height: auto;
-        height: auto;
-        padding: 0 0 0 8px;
-        margin-bottom: 30px;
+    .console-btn {
+        justify-content: flex-start;
     }
 
     .next-btn {
-        width: 100%;
-        margin: 10px;
-        box-shadow: 0 0 20px 0 #000b228a;;
+        width: 98%;
+        box-shadow: 0 0 20px 0 #000b228a;
+        margin: 10px 0;
     }
 
 }
 
 @media (max-width: 570px) {
+    .section-right {
+        padding: 15px 20px 15px 25px;
+    }
+
     .description-task {
         padding: 10px 1px;
     }
