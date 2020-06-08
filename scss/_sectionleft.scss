@@ -96,8 +96,8 @@
     }
 
     .tooltip {
-        top: 110px;
-        left: 110px;
+        top: 120px;
+        left: 120px;
     }
 }
 
@@ -110,12 +110,12 @@
     .element {
         width: 120px;
         height: 120px;
-        margin: 5px 10px;
+        margin: 20px 10px;
     }
 
     .tooltip {
-        top: 90px;
-        left: 90px;
+        top: 110px;
+        left: 110px;
     }
 }
 
@@ -123,6 +123,11 @@
     .element {
         width: 100px;
         height: 100px;
+    }
+
+    .tooltip {
+        top: 90px;
+        left: 90px;
     }
 }
 
@@ -140,7 +145,7 @@
     .game {
         width: 50%;
         margin: 30px;
-        cursor: none;
+        // cursor: none;
     }
 
     .element {
@@ -150,8 +155,8 @@
     }
 
     .tooltip {
-        top: 90px;
-        left: -50px;
+        top: 85px;
+        left: -40px;
         font-size: 0.7rem;
         width: 180px;
         height: 70px;
@@ -182,9 +187,14 @@
     }
 
     .game {
-        width: 80%;
+        width: 78%;
         margin: 30px;
         min-height: 220px;
+    }
+
+    .game-hint {
+        font-size: 1em;
+        margin-top: 10px;
     }
 
     .element {
@@ -193,7 +203,7 @@
     }
 
     .tooltip {
-        top: 70px;
+        top: 65px;
         left: -50px;
     }
 }
