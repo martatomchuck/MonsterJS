@@ -22,7 +22,7 @@ const SectionRight = ({story, description, task, instructions, example}) => {
 const Instructions = ({story, description, example}) => {
     return (
         <div className="description">
-            <div className={"story"}> {story} </div>
+            <div className={"description-story"}> {story} </div>
             <div className={"description-task"}>
                 <h4>Your task </h4>
                 {description.map((el) => {

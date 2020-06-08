@@ -1,7 +1,7 @@
 // SECTION LEFT
 .section-left {
     width: 50%;
-    background-image: radial-gradient(#13357e 10%, #011541 70%);
+    background-image: radial-gradient(#13357e 5%, #011541 80%);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -17,7 +17,7 @@
     background-image: linear-gradient(135deg, #032b803f, rgba(255, 255, 255, 0.19), #032b803f, rgba(255, 255, 255, 0.19));
     border-radius: 12px;
     text-align: center;
-    margin: 20px 10px 30px 10px;
+    margin: 5px 10px 0px 10px;
     padding: 20px 30px;
 
     &:hover {
@@ -32,7 +32,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 10px 0;
+    margin: 5px 0;
     cursor: url('../images/magnifying-glass64.png'), auto;
 }
 
@@ -40,6 +40,7 @@
     width: 140px;
     height: 140px;
     border-radius: 10px;
+    border: 3px solid transparent;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -79,7 +80,7 @@
     opacity: 0.9;
     font-size: 20px;
     font-weight: 500;
-    margin: 40px 30px 40px 30px;
+    margin: 30px 30px 20px 30px;
     text-align: center;
 }
 
@@ -132,16 +133,20 @@
         padding: 0 20px 20px 20px;
     }
 
-    .element {
-        width: 80px;
-        height: 80px;
-        margin: 15px 15px;
+    .task {
+        margin-top: 40px;
     }
 
     .game {
         width: 50%;
         margin: 30px;
         cursor: none;
+    }
+
+    .element {
+        width: 80px;
+        height: 80px;
+        margin: 15px 15px;
     }
 
     .tooltip {
@@ -161,7 +166,7 @@
 
 @media (max-width: 765px) {
     .task {
-        margin-top: 50px;
+        margin-top: 70px;
     }
     
     .game {
@@ -173,6 +178,7 @@
     .task {
         padding: 10px 15px;
         font-size: 1.6em;
+        margin-top: 100px;
     }
 
     .game {

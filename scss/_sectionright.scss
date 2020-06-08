@@ -15,7 +15,7 @@
 .title {
     color: #ffc2c2;
     align-self: center;
-    font-size: 1.8em;
+    font-size: 1.9em;
     font-weight: 500;
     margin: 25px 3px 30px 0;
     text-align: center;
@@ -29,6 +29,7 @@
     // font-family: 'Roboto', sans-serif;
     width: 98%;
     height: auto;
+    padding: 0 30px;
 
     li {
         margin: 2px 0;
@@ -50,16 +51,15 @@
     }
 }
 
-.story {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(#fff, 0.04);
+.description-story {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(#fff, 0.09);
     width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: -3px 0 20px 5px #000b2250;
-    margin-bottom: 10px;
     padding: 15px 20px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-size: 1.15em;
     font-weight: 400;
     text-align: center;
@@ -253,8 +253,9 @@ form {
 
 @media (max-width: 1380px) {
     .description {
-        font-size: 1em;
-        line-height: 22px;
+        font-size: 1.1em;
+        line-height: 25px;
+        padding: 0 10px;
     }
 
     .console {
@@ -276,6 +277,10 @@ form {
         min-height: 330px;
         height: auto;
         margin-bottom: 10px;
+    }
+
+    .description-story {
+        margin-bottom: 40px;
     }
 
     .console-userinput input[type="text"] {

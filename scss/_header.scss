@@ -85,7 +85,7 @@
     opacity: 0.6;
     font-size: 1.2em;
     font-weight: 600;
-    margin: 10px 20px 10px 0;
+    margin: 12px 20px 10px 0;
     text-align: end;
     display: flex;
     justify-content: flex-end;
@@ -115,5 +115,16 @@
 @media (max-width: 765px) {
     .counter {
         top: 60px;
+    }
+
+    .header .header-share,
+    .header .header-title {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 560px) {
+    .counter {
+        top: 90px;
     }
 }
