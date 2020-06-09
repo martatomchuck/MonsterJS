@@ -8,7 +8,7 @@
 
 Click the link and play: http://monsterjs.com
 
-![](/images/demo_screen_level1.png)
+![](/images/demo_screen_level9.png)
 
 **Happy hacking!**
 
