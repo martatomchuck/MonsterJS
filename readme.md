@@ -6,7 +6,7 @@
 
 ## 🦄 DEMO
 
-Click the link and play: https://mtomchuck.github.io/monster-village/dist/
+Click the link and play: http://monsterjs.com
 
 ![](/images/demo_screen_level1.png)
 
