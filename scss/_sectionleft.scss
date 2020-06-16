@@ -2,6 +2,7 @@
 .section-left {
     width: 50%;
     background-image: radial-gradient(#13357e 5%, #011541 80%);
+    background-image: radial-gradient(closest-side at 50% 50%, #183b86, #011541);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
