@@ -17,7 +17,7 @@
     align-self: center;
     font-size: 1.9em;
     font-weight: 500;
-    margin: 25px 3px 30px 0;
+    margin: 30px 3px 35px 0;
     text-align: center;
 }
 
@@ -59,8 +59,8 @@
     border-radius: 10px;
     box-shadow: -3px 0 20px 5px #000b2250;
     padding: 15px 20px;
-    margin-bottom: 50px;
-    font-size: 1.15em;
+    margin-bottom: 45px;
+    font-size: 1.1em;
     font-weight: 400;
     text-align: center;
 }
@@ -69,11 +69,11 @@
     line-height: 24px;
     font-weight: 300;
     font-size: 0.9em;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     padding: 0 20px;
 
     h4 {
-        font-size: 1.3em;
+        font-size: 1.2em;
         font-family: 'Baloo Paaji 2', cursive;
         margin-bottom: 7px;
         color: rgba(255, 255, 255, 0.9);
@@ -227,7 +227,7 @@ form {
 .next-btn {
     background-color: #ff2e62b7;
     box-shadow: -4px 4px 10px 0px #000b22;
-    margin: 10px 48px 20px 0;
+    margin: 10px 48px 15px 0;
 
     &:hover {
         background-color: #ff2e63;
@@ -237,9 +237,16 @@ form {
 
 @media (max-width: 1600px) {
     .description {
-        // height: 370px;
         font-size: 1.1em;
         line-height: 25px;
+    }
+
+    .description-story {
+        margin-bottom: 30px;
+    }
+
+    .description-task {
+        margin-bottom: 20px;
     }
 
     .console {
@@ -299,16 +306,21 @@ form {
         font-size: 2em;
     }
 
-    .story {
-        font-size: 1.1em;
+    .description-story {
+        font-size: 1.15em;
     }
 
     .description {
         min-height: auto;
         height: auto;
         padding: 0 0 0 8px;
+        padding: 0;
         margin-bottom: 30px;
-        font-size: 1.3em;
+        font-size: 1.2em;
+    }
+
+    .description-task {
+        margin-bottom: 30px;
     }
 
     .console {

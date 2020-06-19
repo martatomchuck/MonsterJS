@@ -67,7 +67,14 @@ a {
     padding-top: 30px;
 }
 
-@media(max-width: 1000px) {    
+
+@media (max-width: 1600px) {
+    .container {
+        min-height: 780px;
+    }
+}
+
+@media (max-width: 1000px) {    
     .container {
         width: 100vw;
         display: flex;

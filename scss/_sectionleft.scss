@@ -18,7 +18,7 @@
     background-image: linear-gradient(135deg, #032b803f, rgba(255, 255, 255, 0.19), #032b803f, rgba(255, 255, 255, 0.19));
     border-radius: 12px;
     text-align: center;
-    margin: 5px 10px 0px 10px;
+    margin: 0px 10px 10px 10px;
     padding: 20px 30px;
 
     &:hover {
@@ -28,12 +28,12 @@
 
 .game {
     width: 85%;
-    height: 65%;
+    height: 70%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 5px 0;
+    margin: 0;
     cursor: url('../images/magnifying-glass64.png'), auto;
 }
 
@@ -46,7 +46,7 @@
     background-position: center;
     background-size: contain;
     box-shadow: -5px 5px 25px 5px #000b22;
-    margin: 25px 30px;
+    margin: 15px 30px;
     position: relative;
     transition: transform 2.5s ease;
 
@@ -87,13 +87,13 @@
 
 @media (max-width: 1660px) {
     .game {
-        height: 60%;
+        height: 55%;
     }
     
     .element {
         width: 130px;
         height: 130px;
-        margin: 5px 20px;
+        margin: 15px 20px;
     }
 
     .tooltip {
@@ -144,25 +144,25 @@
     }
 
     .game {
-        width: 50%;
+        width: 55%;
         margin: 30px;
         // cursor: none;
     }
 
     .element {
-        width: 80px;
-        height: 80px;
+        width: 95px;
+        height: 95px;
         margin: 15px 15px;
     }
 
     .tooltip {
-        top: 85px;
+        top: 100px;
         left: -40px;
-        font-size: 0.7rem;
-        width: 180px;
-        height: 70px;
-        padding: 10px 15px 5px 10px;
-        line-height: 17px;
+        font-size: 0.9rem;
+        width: 220px;
+        height: 75px;
+        padding: 10px 15px 5px 12px;
+        line-height: 19px;
     }
 
     .game-hint {
@@ -178,6 +178,23 @@
     .game {
         width: 75%;
     }
+
+    .element {
+        width: 80px;
+        height: 80px;
+        margin: 15px 15px;
+    }
+
+    
+    .tooltip {
+        top: 85px;
+        left: -40px;
+        font-size: 0.7rem;
+        width: 180px;
+        height: 70px;
+        padding: 10px 15px 5px 10px;
+        line-height: 17px;
+    }
 }
 
 @media (max-width: 560px) {
@@ -188,7 +205,7 @@
     }
 
     .game {
-        width: 78%;
+        width: 82%;
         margin: 30px;
         min-height: 220px;
     }
@@ -199,12 +216,12 @@
     }
 
     .element {
-        width: 60px;
-        height: 60px;
+        width: 70px;
+        height: 70px;
     }
 
     .tooltip {
-        top: 65px;
+        top: 72px;
         left: -50px;
     }
 }
