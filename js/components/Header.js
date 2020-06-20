@@ -11,9 +11,9 @@ const Header = ({datasetLength, level}) => {
             <Counter datasetLength={datasetLength} level={level}/>
             <div className={"header-share"}>
                 <p>Share</p>
-                <a href="https://twitter.com/intent/tweet?url=http://monsterjs.com&text=Learning JS while playing&via=martatomc" target="_blank"><div className="header-twitter"></div></a>
+                <a type="twitter" href="https://twitter.com/intent/tweet?url=http://monsterjs.com&text=Learning JavaScript? Check out this game to master JS selectors -> &hashtags=javascript,selectors,monsterjs&via=martatomc" target="_blank"><div className="header-twitter"></div></a>
                 
-                <a href="https://www.facebook.com/sharer/sharer.php?u=http://monsterjs.com/" target="_blank"><div className="header-facebook"></div></a>
+                <a type="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://monsterjs.com/" target="_blank"><div className="header-facebook"></div></a>
             </div>
         </header>
     )
