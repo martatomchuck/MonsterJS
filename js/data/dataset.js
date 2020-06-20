@@ -458,7 +458,7 @@ export default [
     {
         level: 7,
         task: [
-            {id:1, text:'Select the virus', bold:false}
+            {id:1, text:'Select the coronavirus', bold:false}
         ],
         elements: [
             {
@@ -477,7 +477,7 @@ export default [
                 id: 3,
                 class: "coronavirus",
                 disappear: true,
-                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Virus! </ virus >'
+                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Coronavirus! </ virus >'
             }
         ],
         story: "The ghosts are gone but the Monsters are facing a new challenge -  an unsafe coronavirus spreading around the Monster Village.",
@@ -518,7 +518,7 @@ export default [
     {
         level: 8,
         task: [
-            {id:1, text:'Select the virus', bold:false}
+            {id:1, text:'Select the coronavirus', bold:false}
         ],
         elements: [
             {
@@ -543,7 +543,7 @@ export default [
                 id: 4,
                 class: "coronavirus",
                 disappear: true,
-                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Virus! </ virus >'
+                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Coronavirus! </ virus >'
             },
             {
                 id: 5,
@@ -596,7 +596,7 @@ export default [
     {
         level: 9,
         task: [
-            {id:1, text:'Select the virus', bold:false}
+            {id:1, text:'Select the coronavirus', bold:false}
         ],
         elements: [
             {
@@ -615,7 +615,7 @@ export default [
                 id: 3,
                 class: "coronavirus",
                 disappear: true,
-                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Virus! </ virus >'
+                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Coronavirus! </ virus >'
             },
             {
                 id: 4,

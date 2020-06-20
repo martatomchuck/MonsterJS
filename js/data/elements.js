@@ -80,14 +80,14 @@ let elements = [
         id: 0,
         class: "coronavirus",
         disappear: true,
-        tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Virus! </ virus >',
+        tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Coronavirus! </ virus >',
         author: "Freepik"
     },
     {
         id: 0,
-        class: "spreading-virus",
+        class: "infected",
         disappear: true,
-        tooltip: '',
+        tooltip: ' < infected class = "spreading virus"> I am sick with Coronavirus! </ infected > ',
         author: "Freepik"
     },
     {
@@ -110,5 +110,47 @@ let elements = [
         disappear: true,
         tooltip: ' < frankenstein > </ frankenstein >',
         author: "Dimitry Miroliubov"
+    },
+    {
+        id: 0,
+        class: "fire",
+        disappear: true,
+        tooltip: ' < fire > </ fire >',
+        aut,hor: "Freepik"
+    },
+    {
+        id: 0,
+        class: "water",
+        disappear: true,
+        tooltip: ' < water > </ water >',
+        aut,hor: "Freepik"
+    },
+    {
+        id: 0,
+        class: "volcano",
+        disappear: true,
+        tooltip: ' < volcano > </ volcano >',
+        aut,hor: "Freepik"
+    },
+    {
+        id: 0,
+        class: "tornado",
+        disappear: true,
+        tooltip: ' < tornado > </ tornado >',
+        aut,hor: "Freepik"
+    },
+    {
+        id: 0,
+        class: "troll",
+        disappear: true,
+        tooltip: ' < troll > </ troll >',
+        aut,hor: "Freepik"
+    },
+    {
+        id: 0,
+        class: "mummy",
+        disappear: true,
+        tooltip: ' < mummy > </ mummy >',
+        aut,hor: "Freepik"
     }
 ];

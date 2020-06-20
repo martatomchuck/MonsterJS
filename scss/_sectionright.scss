@@ -4,7 +4,7 @@
     background-color: #142850;
     box-shadow: 0 0 20px 2px #000b22;
     box-sizing: border-box;
-    border-radius: 20px;
+    // border-radius: 20px;
     padding: 15px 20px 15px 40px;
     display: flex;
     flex-direction: column;
@@ -56,7 +56,7 @@
     background-color: rgba(#fff, 0.09);
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: -3px 0 20px 5px #000b2250;
     padding: 15px 20px;
     margin-bottom: 45px;
@@ -75,7 +75,7 @@
     h4 {
         font-size: 1.2em;
         font-family: 'Baloo Paaji 2', cursive;
-        margin-bottom: 7px;
+        margin-bottom: 9px;
         color: rgba(255, 255, 255, 0.9);
     }
 }
