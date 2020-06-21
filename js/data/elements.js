@@ -94,7 +94,7 @@ let elements = [
         id: 0,
         class: "hand",
         disappear: true,
-        tooltip: ' < hand class = "spreading virus"> I am sick with Coronavirus! </ hand > ',
+        tooltip: ' < hands class = "spreading virus"> I am not washing my hands! </ hands > ',
         author: "Freepik"
     },
     {
