@@ -325,7 +325,7 @@ export default [
                 tooltip: '< ghostfamily class = "ghost enemy" id = "Anastasia" > Hello, I am a Ghost! </ ghostfamily >'
             }
         ],
-        story: "Oh no! There is more and more of ghosts in the Monster Village. The Monsters need your JavaScript superpower again!",
+        story: "There is more and more of ghosts in the Monster Village. The Monsters need your JavaScript superpower again!",
         task_description: [
             {id:1, text:"Catch all the ghosts using the method ", bold:false},
             {id:2, text:'getElementsByTagName( )', bold:true},
@@ -458,6 +458,82 @@ export default [
     {
         level: 7,
         task: [
+            {id:1, text:'Select all the monsters together', bold:false}
+        ],
+        elements: [
+            {
+                id: 1,
+                class: "monster7",
+                disappear: true,
+                tooltip: '< monster class = "brown fatso" id = "Mathias" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 2,
+                class: "monster10",
+                disappear: true,
+                tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 3,
+                class: "volcano",
+                disappear: false,
+                tooltip: ' < volcano class = "nature lava" id = "Agung" > Do not mess with the Volcano! </ volcano >'
+            },
+            {
+                id: 4,
+                class: "monster8",
+                disappear: true,
+                tooltip: '< monster class = "green one-eyed" id = "Frank" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 5,
+                class: "monster1",
+                disappear: true,
+                tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
+            }
+        ],
+        story: "The volcano nearby is going to erupt very soon. Gather all the monsters together and evacuate the Monster Village. Hurry up!",
+        task_description: [
+            {id:1, text:'Catch all the monsters with the ', bold:false},
+            {id:2, text:'getElementsByTagName( )', bold:true},
+            {id:3, text:' method.', bold:false}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'The method ', bold:false},
+                {id:2, text:'getElementsByTagName( )', bold:false},
+                {id:3, text:' will search for tags that match the passed-in string,', bold:false}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'Notice ', bold:false},
+                {id:2, text:'the “S”', bold:true},
+                {id:3, text:' in elements — this selector returns multiples in an array-like structure', bold:false} 
+            ]},
+            {id:3, bullet: [
+                {id:1, text:'REMEMBER! It means that the native array methods will not work unless you ', bold:false},
+                {id:2, text:'convert them into an array', bold:false},
+            ]}
+        ],
+        example: [
+            {id:1, text:'Try it yourself!', bold:false}
+        ],
+        expected_input: [
+            'getElementsByTagName("monster")',
+            "getElementsByTagName('monster')",
+            "getElementsByTagName(`monster`)",
+            'getElementsByTagName("monster");',
+            "getElementsByTagName('monster');",
+            "getElementsByTagName(`monster`);",
+        ]
+    },
+
+
+
+
+
+    {
+        level: 8,
+        task: [
             {id:1, text:'Select the coronavirus', bold:false}
         ],
         elements: [
@@ -516,7 +592,7 @@ export default [
         ]
     },
     {
-        level: 8,
+        level: 9,
         task: [
             {id:1, text:'Select the coronavirus', bold:false}
         ],
@@ -594,7 +670,7 @@ export default [
         ]
     },
     {
-        level: 9,
+        level: 10,
         task: [
             {id:1, text:'Select the coronavirus', bold:false}
         ],
