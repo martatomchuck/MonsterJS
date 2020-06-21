@@ -1018,5 +1018,162 @@ export default [
             "querySelectorAll('.virus');",
             "querySelectorAll(`.virus`);",
         ]
+    },
+    {
+        level: 14,
+        task: [
+            {id:1, text:'Select the monsters with infected hands', bold:false}
+        ],
+        elements: [
+            {
+                id: 1,
+                class: "monster6",
+                disappear: false,
+                tooltip: '< monster class = "pink crazy-lady" id = "Martha" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 2,
+                class: "hand",
+                disappear: true,
+                tooltip: ' < hands class = "spreading virus" id = "COVID-19" > I am not washing my hands! </ hands > '
+            },
+            {
+                id: 3,
+                class: "monster10",
+                disappear: false,
+                tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 4,
+                class: "hand",
+                disappear: true,
+                tooltip: ' < hands class = "hand hygiene"> I am not washing my hands! </ hands > '
+            },
+            {
+                id: 5,
+                class: "monster1",
+                disappear: false,
+                tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 6,
+                class: "monster8",
+                disappear: false,
+                tooltip: '< monster class = "green one-eyed" id = "Frank"> Hello, I am a Monster! </ monster >'
+            },
+        ],
+        story: "Every monster should sanitize hands to avoid getting infected with coronavirus. Track the monsters that do not wash their hands.",
+        task_description: [
+            {id:1, text:'Catch all the monsters that do not sanitize their hands using the ', bold:false},
+            {id:2, text:'querySelectorAll( )', bold:true},
+            {id:3, text:'. Use an appropriate selector.', bold:false}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:true}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:false},
+                {id:3, text:'', bold:false}
+            ]}
+        ],
+        example: [
+            {id:1, text:'document.querySelectorAll("tag")', bold:true},
+            {id:2, text:' will access all the elements with a specified tag.', bold:false}
+        ],
+        expected_input: [
+            'querySelectorAll("hands")',
+            "querySelectorAll('hands')",
+            "querySelectorAll(`hands`)",
+            'querySelectorAll("hands");',
+            "querySelectorAll('hands');",
+            "querySelectorAll(`hands`);",
+        ]
+    },
+    {
+        level: 15,
+        task: [
+            {id:1, text:'Select the dragon', bold:false}
+        ],
+        elements: [
+            {
+                id: 1,
+                class: "monster8",
+                disappear: false,
+                tooltip: '< monster class = "green one-eyed" id = "Frank" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 2,
+                class: "monster1",
+                disappear: false,
+                tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 3,
+                class: "monster6",
+                disappear: false,
+                tooltip: '< monster class = "pink crazy-lady" id = "Martha" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 4,
+                class: "dragon",
+                disappear: true,
+                tooltip: ' < dragon class = "chinese dragon" id = "oriental" > Hi, I am a Dragon! </ dragon >'
+            },
+            {
+                id: 5,
+                class: "monster10",
+                disappear: false,
+                tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 6,
+                class: "monster7",
+                disappear: false,
+                tooltip: '< monster class = "brown fatso" id = "Mathias" > Hello, I am a Monster! </ monster >'
+            }
+        ],
+        story: "The virus has gone. Just after opening borders, a dragon appeared in the village. Catch this colorful creature and send it back where it belongs.",
+        task_description: [
+            {id:1, text:'Catch the dragon with the ', bold:false},
+            {id:2, text:'querySelector( )', bold:true},
+            {id:3, text:'method. Use class to define a selector.', bold:false}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'REMEMBER! This selector ', bold:false},
+                {id:2, text:'requires a dot ( . )', bold:true},
+                {id:3, text:' and a class name to denote class,', bold:false}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'This method works with all CSS selectors but it will only ever ', bold:false},
+                {id:2, text:'return one element', bold:true}
+            ]},
+            {id:3, bullet: [
+                {id:1, text:'BE CAREFULL! ', bold:false},
+                {id:2, text:'Only the first element', bold:false},
+                {id:3, text:' matching the passed-in string will be returned.', bold:false}
+            ]}
+        ],
+        example: [
+            {id:1, text:'document.querySelector(".class")', bold:true},
+            {id:2, text:' will access the first element with the specified class.', bold:false}
+        ],
+        expected_input: [
+            'querySelector(".chinese")',
+            "querySelector('.chinese')",
+            "querySelector(`.chinese`)",
+            'querySelector(".chinese");',
+            "querySelector('.chinese');",
+            "querySelector(`.chinese`);",
+            'querySelector(".dragon")',
+            "querySelector('.dragon')",
+            "querySelector(`.dragon`)",
+            'querySelector(".dragon");',
+            "querySelector('.dragon');",
+            "querySelector(`.dragon`);"
+        ]
     }
 ];
