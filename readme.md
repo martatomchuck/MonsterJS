@@ -54,6 +54,6 @@ Familiarity with the basics of HTML and JavaScript fundamentals is a plus but no
 ## 👏 CONTRIBUTE
 
 Icons from flaticon.com made by:
-* Smashicons: https://www.flaticon.com/packs/monsters-3 + https://www.flaticon.com/packs/alien-ufo-9 + https://www.flaticon.com/packs/fantastic-characters-32
-* Freepik: https://www.flaticon.com/packs/coronavirus-25 + https://www.flaticon.com/packs/nature-38
+* Smashicons: https://www.flaticon.com/packs/monsters-3 + https://www.flaticon.com/packs/alien-ufo-9
+* Freepik: https://www.flaticon.com/packs/coronavirus-25 + https://www.flaticon.com/packs/nature-38 + https://www.flaticon.com/packs/fantastic-characters-32
 * Dimitry Miroliubov: https://www.flaticon.com/packs/halloween-29
