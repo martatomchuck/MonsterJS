@@ -92,6 +92,13 @@ let elements = [
     },
     {
         id: 0,
+        class: "hand",
+        disappear: true,
+        tooltip: ' < hand class = "spreading virus"> I am sick with Coronavirus! </ hand > ',
+        author: "Freepik"
+    },
+    {
+        id: 0,
         class: "dragon",
         disappear: true,
         tooltip: '',
@@ -100,6 +107,13 @@ let elements = [
     {
         id: 0,
         class: "ufo",
+        disappear: true,
+        tooltip: '',
+        author: "Smashicons"
+    },
+    {
+        id: 0,
+        class: "alien",
         disappear: true,
         tooltip: '',
         author: "Smashicons"
@@ -116,41 +130,83 @@ let elements = [
         class: "fire",
         disappear: true,
         tooltip: ' < fire > </ fire >',
-        aut,hor: "Freepik"
+        author: "Freepik"
     },
     {
         id: 0,
         class: "water",
         disappear: true,
         tooltip: ' < water > </ water >',
-        aut,hor: "Freepik"
+        author: "Freepik"
     },
     {
         id: 0,
         class: "volcano",
         disappear: true,
-        tooltip: ' < volcano > </ volcano >',
-        aut,hor: "Freepik"
+        tooltip: ' < volcano class = "nature lava" id = "Agung" > Do not mess with the Volcano! </ volcano >',
+        author: "Freepik"
     },
     {
         id: 0,
         class: "tornado",
         disappear: true,
         tooltip: ' < tornado > </ tornado >',
-        aut,hor: "Freepik"
+        author: "Freepik"
+    },
+    {
+        id: 0,
+        class: "flood",
+        disappear: true,
+        tooltip: ' < flood > </ flood >',
+        author: "Freepik"
+    },
+    {
+        id: 0,
+        class: "fish",
+        disappear: true,
+        tooltip: ' < fish > </ fish >',
+        author: "Freepik"
+    },
+    {
+        id: 0,
+        class: "whale",
+        disappear: true,
+        tooltip: ' < whale > </ whale >',
+        author: "Freepik"
+    },
+    {
+        id: 0,
+        class: "orc",
+        disappear: true,
+        tooltip: ' < orc > </ orc >',
+        author: "Freepik"
+    },
+    {
+        id: 0,
+        class: "vampire",
+        disappear: true,
+        tooltip: ' < vampire > </ vampire >',
+        author: "Freepik"
+    },
+    {
+        id: 0,
+        class: "witch",
+        disappear: true,
+        tooltip: ' < witch > </ witch >',
+        author: "Freepik"
     },
     {
         id: 0,
         class: "troll",
         disappear: true,
         tooltip: ' < troll > </ troll >',
-        aut,hor: "Freepik"
+        author: "Freepik"
     },
     {
         id: 0,
         class: "mummy",
         disappear: true,
         tooltip: ' < mummy > </ mummy >',
-        aut,hor: "Freepik"
+        author: "Freepik"
     }
 ];
