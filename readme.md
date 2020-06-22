@@ -1,6 +1,6 @@
 # Welcome to MonsterJS!
 
-#### A game for learning how to access HTML elements with JavaScript.
+#### A game for learning how to access HTML DOM elements with JavaScript DOM Selectors.
 
 > **GAME CONCEPT**: The family of friendly little Monsters has been facing tough times. They have to deal with unwelcomed guests, natural disasters and coronavirus spreading aroung the Monster Village. Only the JavaScript superpowers can help them to get rid of the obstacles.
 
@@ -8,7 +8,7 @@
 
 Click the link and play: http://monsterjs.com
 
-![](/images/demo_screen_level10.png)
+![demo screenshot](/images/demo_screen_level10.png)
 
 **Happy hacking!**
 
