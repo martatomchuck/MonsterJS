@@ -15,7 +15,7 @@ export default [
                 id: 2,
                 class: "ghost",
                 disappear: true,
-                tooltip: '< ghost class = "ghost fairy enemy" id = "scary-ghost" > Hello, I am a Ghost! </ ghost >'
+                tooltip: '< ghost class = "ghost fairy enemy" id = "scary-ghost" > Hello, I am a ghost! </ ghost >'
             },
             {
                 id: 3,
@@ -78,7 +78,7 @@ export default [
                 id: 3,
                 class: "ghost",
                 disappear: true,
-                tooltip: '< ghost class = "scary little-ghost" id = "look-at-me" > I am a Ghost! </ ghost >'
+                tooltip: '< ghost class = "scary little-ghost" id = "look-at-me" > I am a ghost! </ ghost >'
             },
             {
                 id: 4,
@@ -155,7 +155,7 @@ export default [
                 id: 4,
                 class: "ghost",
                 disappear: true,
-                tooltip: '< scaryghost class = "fairy" id = "watch-out-the-ghost" > I am a Ghost! </ scaryghost >'
+                tooltip: '< scaryghost class = "fairy" id = "watch-out-the-ghost" > I am a ghost! </ scaryghost >'
             },
             {
                 id: 5,
@@ -231,7 +231,7 @@ export default [
                 id: 1,
                 class: "ghost",
                 disappear: true,
-                tooltip: '< ghost class = "ghost fairy enemy" id = "Christopher" > Hello, I am a Ghost! </ ghost >'
+                tooltip: '< ghost class = "ghost fairy enemy" id = "Christopher" > Hello, I am a ghost! </ ghost >'
             },
             {
                 id: 2,
@@ -244,7 +244,7 @@ export default [
                 id: 3,
                 class: "ghost",
                 disappear: true,
-                tooltip: '< ghost class = "ghost fairy enemy" id = "Juliette" > Hello, I am a Ghost! </ ghost >'
+                tooltip: '< ghost class = "ghost fairy enemy" id = "Juliette" > Hello, I am a ghost! </ ghost >'
             }
         ],
         story: "The ghost family came to the rescue! The Monster looks terrified of ghosts around him.",
@@ -292,7 +292,7 @@ export default [
                 id: 1,
                 class: "ghost",
                 disappear: true,
-                tooltip: '< ghostfamily class = "fairy scary" id = "Marry" > Hello, I am a Ghost! </ ghostfamily >'
+                tooltip: '< ghostfamily class = "fairy scary" id = "Marry" > Hello, I am a ghost! </ ghostfamily >'
             },
             {
                 id: 2,
@@ -316,13 +316,13 @@ export default [
                 id: 5,
                 class: "ghost",
                 disappear: true,
-                tooltip: '< ghostfamily class = "little-ghost" id = "Andrea" > Hello, I am a Ghost! </ ghostfamily >'
+                tooltip: '< ghostfamily class = "little-ghost" id = "Andrea" > Hello, I am a ghost! </ ghostfamily >'
             },
             {
                 id: 6,
                 class: "ghost",
                 disappear: true,
-                tooltip: '< ghostfamily class = "ghost enemy" id = "Anastasia" > Hello, I am a Ghost! </ ghostfamily >'
+                tooltip: '< ghostfamily class = "ghost enemy" id = "Anastasia" > Hello, I am a ghost! </ ghostfamily >'
             }
         ],
         story: "There is more and more of ghosts in the Monster Village. The Monsters need your JavaScript superpower again!",
@@ -376,7 +376,7 @@ export default [
                 id: 2,
                 class: "ghost",
                 disappear: true,
-                tooltip: '< ghostnomore class = "fairy enemy" id = "Annabella" > Hello, I am a Ghost! </ ghostnomore >'
+                tooltip: '< ghostnomore class = "fairy enemy" id = "Annabella" > Hello, I am a ghost! </ ghostnomore >'
             },
             {
                 id: 3,
@@ -400,7 +400,7 @@ export default [
                 id: 6,
                 class: "ghost",
                 disappear: true,
-                tooltip: '< ghostnomore class = "fairy enemy" id = "Raphael" > Hello, I am a Ghost! </ ghostnomore >'
+                tooltip: '< ghostnomore class = "fairy enemy" id = "Raphael" > Hello, I am a ghost! </ ghostnomore >'
             },
             {
                 id: 7,
@@ -412,13 +412,13 @@ export default [
                 id: 8,
                 class: "ghost",
                 disappear: true,
-                tooltip: '< ghostnomore class = "fairy enemy" id = "Theodor" > Hello, I am a Ghost! </ ghostnomore >'
+                tooltip: '< ghostnomore class = "fairy enemy" id = "Theodor" > Hello, I am a ghost! </ ghostnomore >'
             },
             {
                 id: 9,
                 class: "ghost",
                 disappear: true,
-                tooltip: '< ghostnomore class = "fairy enemy" id = "Catarina" > Hello, I am a Ghost! </ ghostnomore >'
+                tooltip: '< ghostnomore class = "fairy enemy" id = "Catarina" > Hello, I am a ghost! </ ghostnomore >'
             }
         ],
         story: "Try again to track down the ghosts haunting the Monster Village. You are the only hope for the little fearfull Monsters.",
@@ -458,7 +458,7 @@ export default [
     {
         level: 7,
         task: [
-            {id:1, text:'Select all the monsters together', bold:false}
+            {id:1, text:'Select all the Monsters', bold:false}
         ],
         elements: [
             {
@@ -477,7 +477,7 @@ export default [
                 id: 3,
                 class: "volcano",
                 disappear: false,
-                tooltip: ' < volcano class = "nature lava" id = "Agung" > Do not mess with the Volcano! </ volcano >'
+                tooltip: ' < volcano class = "nature lava" id = "Agung" > Do not mess with a volcano! </ volcano >'
             },
             {
                 id: 4,
@@ -548,7 +548,7 @@ export default [
                 id: 3,
                 class: "coronavirus",
                 disappear: true,
-                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Coronavirus! </ virus >'
+                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous coronavirus! </ virus >'
             }
         ],
         story: "The ghosts are gone but the Monsters are facing a new challenge -  an unsafe coronavirus spreading around the Monster Village.",
@@ -614,7 +614,7 @@ export default [
                 id: 4,
                 class: "coronavirus",
                 disappear: true,
-                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Coronavirus! </ virus >'
+                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous coronavirus! </ virus >'
             },
             {
                 id: 5,
@@ -686,7 +686,7 @@ export default [
                 id: 3,
                 class: "coronavirus",
                 disappear: true,
-                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Coronavirus! </ virus >'
+                tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous coronavirus! </ virus >'
             },
             {
                 id: 4,
@@ -763,7 +763,7 @@ export default [
     {
         level: 11,
         task: [
-            {id:1, text:'Select the monster sick with coronavirus', bold:false}
+            {id:1, text:'Select the Monster sick with coronavirus', bold:false}
         ],
         elements: [
             {
@@ -776,7 +776,7 @@ export default [
                 id: 2,
                 class: "infected",
                 disappear: true,
-                tooltip: ' < infected class = "spreading coronavirus"> I am sick with Coronavirus! </ infected > '
+                tooltip: ' < infected class = "spreading coronavirus"> I am sick with coronavirus! </ infected > '
             },
             {
                 id: 3,
@@ -803,7 +803,7 @@ export default [
                 tooltip: '< monster class = "dark-blue tentacles" id = "Julia" > Hello, I am a Monster! </ monster >'
             }
         ],
-        story: "The best way to reduce the spread of the virus is to isolate every monster tested positive for COVID-19. Catch the infected monster and send him home.",
+        story: "The best way to reduce the spread of the virus is to isolate every Monster tested positive for COVID-19. Catch the infected Monster and send him home.",
         task_description: [
             {id:1, text:'Catch the infected monster with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
@@ -847,14 +847,14 @@ export default [
     {
         level: 12,
         task: [
-            {id:1, text:'Select the monsters sick with coronavirus', bold:false}
+            {id:1, text:'Select the Monsters sick with coronavirus', bold:false}
         ],
         elements: [
             {
                 id: 1,
                 class: "infected",
                 disappear: true,
-                tooltip: ' < isolated class = "tested virus"> I am sick with Coronavirus! </ isolated > '
+                tooltip: ' < isolated class = "tested virus"> I am sick with coronavirus! </ isolated > '
             },
             {
                 id: 2,
@@ -884,7 +884,7 @@ export default [
                 id: 6,
                 class: "infected",
                 disappear: false,
-                tooltip: ' < infected class = "spreading virus"> I am sick with Coronavirus! </ infected > '
+                tooltip: ' < infected class = "spreading virus"> I am sick with coronavirus! </ infected > '
             },
             {
                 id: 7,
@@ -896,7 +896,7 @@ export default [
                 id: 8,
                 class: "infected",
                 disappear: false,
-                tooltip: ' < sick class = "corona virus"> I am sick with Coronavirus! </ sick > '
+                tooltip: ' < sick class = "corona virus"> I am sick with coronavirus! </ sick > '
             },
             {
                 id: 9,
@@ -905,7 +905,7 @@ export default [
                 tooltip: '< monster class = "green one-eyed" id = "Frank" > Hello, I am a Monster! </ monster >'
             }
         ],
-        story: "The coronavirus infection can go with no symptoms. Reach all the monsters that are sick with COVID-19 weather they are feeling symptoms or not.",
+        story: "The coronavirus infection can go with no symptoms. Reach all the Monsters that are sick with COVID-19 weather they are feeling symptoms or not.",
         task_description: [
             {id:1, text:'Try to catch all the infected monsters with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
@@ -937,7 +937,7 @@ export default [
     {
         level: 13,
         task: [
-            {id:1, text:'Select the monsters sick with coronavirus', bold:false}
+            {id:1, text:'Select the Monsters sick with coronavirus', bold:false}
         ],
         elements: [
             {
@@ -968,7 +968,7 @@ export default [
                 id: 5,
                 class: "infected",
                 disappear: true,
-                tooltip: ' < infected class = "spreading virus"> I am sick with Coronavirus! </ infected > '
+                tooltip: ' < infected class = "spreading virus"> I am sick with coronavirus! </ infected > '
             },
             {
                 id: 6,
@@ -980,7 +980,7 @@ export default [
                 id: 7,
                 class: "infected",
                 disappear: true,
-                tooltip: ' < sick class = "corona virus"> I am sick with Coronavirus! </ sick > '
+                tooltip: ' < sick class = "corona virus"> I am sick with coronavirus! </ sick > '
             },
             {
                 id: 8,
@@ -989,7 +989,7 @@ export default [
                 tooltip: '< monster class = "green one-eyed" id = "Frank" > Hello, I am a Monster! </ monster >'
             }
         ],
-        story: "Oopsie, you reached only the first monster infected with the virus. The others still have to be isolated. Don't worry, there is a way to reach them all!",
+        story: "Oopsie, you reached only the first Monster infected with the virus. The others still have to be isolated. Don't worry, there is a way to reach them all!",
         task_description: [
             {id:1, text:'Catch the rest of the infected monsters with the ', bold:false},
             {id:2, text:'querySelectorAll( )', bold:true},
@@ -1022,7 +1022,7 @@ export default [
     {
         level: 14,
         task: [
-            {id:1, text:'Select the monsters with infected hands', bold:false}
+            {id:1, text:'Select the Monsters with infected hands', bold:false}
         ],
         elements: [
             {
@@ -1064,9 +1064,9 @@ export default [
         ],
         story: "Every monster should sanitize hands to avoid getting infected with coronavirus. Track the monsters that do not wash their hands.",
         task_description: [
-            {id:1, text:'Catch all the monsters that do not sanitize their hands using the ', bold:false},
+            {id:1, text:'Catch all the Monsters that do not sanitize their hands properly. Use the ', bold:false},
             {id:2, text:'querySelectorAll( )', bold:true},
-            {id:3, text:'. Use an appropriate selector.', bold:false}
+            {id:3, text:'. Choose an appropriate selector.', bold:false}
         ],
         instructions: [
             {id:1, bullet: [
@@ -1135,7 +1135,7 @@ export default [
                 tooltip: '< monster class = "brown fatso" id = "Mathias" > Hello, I am a Monster! </ monster >'
             }
         ],
-        story: "The virus has gone. Just after opening borders, a dragon appeared in the village. Catch this colorful creature and send it back where it belongs.",
+        story: "The virus has gone. Just after opening borders, a dragon appeared in the village. Catch the dragon and send it back where it belongs.",
         task_description: [
             {id:1, text:'Catch the dragon with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
@@ -1158,8 +1158,7 @@ export default [
             ]}
         ],
         example: [
-            {id:1, text:'document.querySelector(".class")', bold:true},
-            {id:2, text:' will access the first element with the specified class.', bold:false}
+            {id:1, text:'Try it yourself!', bold:false}
         ],
         expected_input: [
             'querySelector(".chinese")',
@@ -1174,6 +1173,162 @@ export default [
             'querySelector(".dragon");',
             "querySelector('.dragon');",
             "querySelector(`.dragon`);"
+        ]
+    },
+    {
+        level: 16,
+        task: [
+            {id:1, text:'Select all the newcomers', bold:false}
+        ],
+        elements: [
+            {
+                id: 1,
+                class: "monster6",
+                disappear: false,
+                tooltip: '< monster class = "pink crazy-lady" id = "Martha" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 2,
+                class: "mummy",
+                disappear: true,
+                tooltip: ' < mummy class = "fantastic halloween" id = "Tutankhamun" > I am a newcomer! </ mummy >'
+            },
+            {
+                id: 3,
+                class: "monster10",
+                disappear: false,
+                tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 4,
+                class: "monster3",
+                disappear: false,
+                tooltip: '< monster class = "yellow notched" id = "Clark" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 5,
+                class: "troll",
+                disappear: true,
+                tooltip: ' < troll class = "mystical fantastic" id = "Borg" > I am a newcomer! </ troll >'
+            },
+            {
+                id: 6,
+                class: "monster7",
+                disappear: false,
+                tooltip: '< monster class = "brown fatso" id = "Mathias" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 7,
+                class: "orc",
+                disappear: true,
+                tooltip: ' < orc class = "fantastic fiona" id = "Shrek" > I am a newcomer! </ orc >'
+            },
+            {
+                id: 8,
+                class: "monster8",
+                disappear: false,
+                tooltip: '< monster class = "green one-eyed" id = "Frank"> Hello, I am a Monster! </ monster >'
+            }
+        ],
+        story: "The newcomers from afar are stopping by for a visit. Recovering from the virus, the Monsters are not willing to meet with strangers. Keep newcomers away from the village.",
+        task_description: [
+            {id:1, text:'Catch all the newcomers: orc, troll and mummy with the ', bold:false},
+            {id:2, text:'querySelectorAll( )', bold:true},
+            {id:3, text:'. Use an appropriate selector.', bold:false}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:true}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:false},
+                {id:3, text:'', bold:false}
+            ]}
+        ],
+        example: [
+            {id:1, text:'Try it yourself!', bold:false}
+        ],
+        expected_input: [
+            'querySelectorAll(".fantastic")',
+            "querySelectorAll('.fantastic')",
+            "querySelectorAll(`.fantastic`)",
+            'querySelectorAll(".fantastic");',
+            "querySelectorAll('.fantastic');",
+            "querySelectorAll(`.fantastic`);",
+        ]
+    },
+    {
+        level: 17,
+        task: [
+            {id:1, text:'Select all the Monsters', bold:false}
+        ],
+        elements: [
+            {
+                id: 1,
+                class: "tornado",
+                disappear: false,
+                tooltip: '< tornado class = "force nature" id = "wind" > Do not mess with a tornado! </ tornado >'
+            },
+            {
+                id: 2,
+                class: "monster10",
+                disappear: true,
+                tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 3,
+                class: "monster3",
+                disappear: true,
+                tooltip: '< monster class = "yellow notched" id = "Clark" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 4,
+                class: "monster7",
+                disappear: true,
+                tooltip: '< monster class = "brown fatso" id = "Mathias" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 5,
+                class: "monster1",
+                disappear: true,
+                tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 6,
+                class: "monster8",
+                disappear: true,
+                tooltip: '< monster class = "green one-eyed" id = "Frank"> Hello, I am a Monster! </ monster >'
+            }
+        ],
+        story: "A huge tornado is coming to the village. Take all the Monsters together and guide them to the nearest shelter.",
+        task_description: [
+            {id:1, text:'Catch all the Monsters together with the ', bold:false},
+            {id:2, text:'querySelectorAll( )', bold:true},
+            {id:3, text:'. Use an appropriate selector.', bold:false}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:true}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:false},
+                {id:3, text:'', bold:false}
+            ]}
+        ],
+        example: [
+            {id:1, text:'Try it yourself!', bold:false}
+        ],
+        expected_input: [
+            'querySelectorAll("monster")',
+            "querySelectorAll('monster')",
+            "querySelectorAll(`monster`)",
+            'querySelectorAll("monster");',
+            "querySelectorAll('monster');",
+            "querySelectorAll(`monster`);",
         ]
     }
 ];

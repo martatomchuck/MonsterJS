@@ -73,21 +73,21 @@ let elements = [
         id: 0,
         class: "ghost",
         disappear: true,
-        tooltip: '< ghost class = "ghost fairy enemy" id = "scary-ghost" > Hello, I am a Ghost! </ ghost >',
+        tooltip: '< ghost class = "ghost fairy enemy" id = "scary-ghost" > Hello, I am a ghost! </ ghost >',
         author: "Dimitry Miroliubov"
     },
     {
         id: 0,
         class: "coronavirus",
         disappear: true,
-        tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous Coronavirus! </ virus >',
+        tooltip: '< virus class = "dangerous" id = "COVID-19" > I am a dangerous coronavirus! </ virus >',
         author: "Freepik"
     },
     {
         id: 0,
         class: "infected",
         disappear: true,
-        tooltip: ' < infected class = "spreading virus"> I am sick with Coronavirus! </ infected > ',
+        tooltip: ' < infected class = "spreading virus"> I am sick with coronavirus! </ infected > ',
         author: "Freepik"
     },
     {
@@ -143,14 +143,14 @@ let elements = [
         id: 0,
         class: "volcano",
         disappear: true,
-        tooltip: ' < volcano class = "nature lava" id = "Agung" > Do not mess with the Volcano! </ volcano >',
+        tooltip: ' < volcano class = "nature lava" id = "Agung" > Do not mess with a volcano! </ volcano >',
         author: "Freepik"
     },
     {
         id: 0,
         class: "tornado",
         disappear: true,
-        tooltip: ' < tornado > </ tornado >',
+        tooltip: ' < tornado class = "force nature" id = "wind" > Do not mess with a tornado! </ tornado >',
         author: "Freepik"
     },
     {
@@ -178,7 +178,7 @@ let elements = [
         id: 0,
         class: "orc",
         disappear: true,
-        tooltip: ' < orc > </ orc >',
+        tooltip: ' < orc class = "fantastic fiona" id = "Shrek" > I am a newcomer! </ orc >',
         author: "Freepik"
     },
     {
@@ -192,21 +192,21 @@ let elements = [
         id: 0,
         class: "witch",
         disappear: true,
-        tooltip: ' < witch > </ witch >',
+        tooltip: ' < witch class = "fantastic mystical" id = "Minerva" > I am a newcomer! </ witch >',
         author: "Freepik"
     },
     {
         id: 0,
         class: "troll",
         disappear: true,
-        tooltip: ' < troll > </ troll >',
+        tooltip: ' < troll class = "fantastic" id = "Borg" > I am a newcomer! </ troll >',
         author: "Freepik"
     },
     {
         id: 0,
         class: "mummy",
         disappear: true,
-        tooltip: ' < mummy > </ mummy >',
+        tooltip: ' < mummy class = "fantastic halloween" id = "Tutankhamun" > I am a newcomer! </ mummy >',
         author: "Freepik"
     }
 ];
