@@ -5,7 +5,7 @@
     box-shadow: 0 0 20px 2px #000b22;
     box-sizing: border-box;
     border-radius: 5px;
-    padding: 15px 20px 15px 40px;
+    padding: 15px 30px 15px 40px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -26,10 +26,9 @@
     line-height: 28px;
     font-size: 1.15em;
     font-weight: 300;
-    // font-family: 'Roboto', sans-serif;
-    width: 98%;
+    width: 100%;
     height: auto;
-    padding: 0 30px;
+    padding: 0 20px;
 
     li {
         margin: 2px 0;
@@ -76,8 +75,11 @@
     h4 {
         font-size: 1.2em;
         font-family: 'Baloo Paaji 2', cursive;
+        font-weight: 600;
         margin-bottom: 9px;
-        color: rgba(255, 255, 255, 0.9);
+        margin-top: 30px;
+        color: rgba(255, 255, 255, 0.8);
+        // text-decoration: underline;
     }
 }
 
