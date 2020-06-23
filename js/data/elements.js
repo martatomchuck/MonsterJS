@@ -122,7 +122,7 @@ let elements = [
         id: 0,
         class: "frankenstein",
         disappear: true,
-        tooltip: ' < frankenstein > </ frankenstein >',
+        tooltip: ' < monstrum name = "frankenstein"> </ monstrum >',
         author: "Dimitry Miroliubov"
     },
     {
@@ -142,14 +142,14 @@ let elements = [
     {
         id: 0,
         class: "volcano",
-        disappear: true,
+        disappear: false,
         tooltip: ' < volcano class = "nature lava" id = "Agung" > Do not mess with a volcano! </ volcano >',
         author: "Freepik"
     },
     {
         id: 0,
         class: "tornado",
-        disappear: true,
+        disappear: false,
         tooltip: ' < tornado class = "force nature" id = "wind" > Do not mess with a tornado! </ tornado >',
         author: "Freepik"
     },

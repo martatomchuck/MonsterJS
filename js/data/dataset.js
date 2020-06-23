@@ -763,7 +763,7 @@ export default [
     {
         level: 11,
         task: [
-            {id:1, text:'Select the Monster sick with coronavirus', bold:false}
+            {id:1, text:'Select the coronavirus infection', bold:false}
         ],
         elements: [
             {
@@ -776,7 +776,7 @@ export default [
                 id: 2,
                 class: "infected",
                 disappear: true,
-                tooltip: ' < infected class = "spreading coronavirus"> I am sick with coronavirus! </ infected > '
+                tooltip: ' < infection class = "spreading coronavirus"> I am sick with coronavirus! </ infection > '
             },
             {
                 id: 3,
@@ -805,7 +805,7 @@ export default [
         ],
         story: "The best way to reduce the spread of the virus is to isolate every Monster tested positive for COVID-19. Catch the infected Monster and send him home.",
         task_description: [
-            {id:1, text:'Catch the infected monster with the ', bold:false},
+            {id:1, text:'Catch the virus infection with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
             {id:3, text:'. Define a selector using an ID, class or a tag - the choice is yours.', bold:false}
         ],
@@ -824,12 +824,12 @@ export default [
             {id:1, text:'Try it yourself!', bold:false}
         ],
         expected_input: [
-            'querySelector("infected")',
-            "querySelector('infected')",
-            "querySelector(`infected`)",
-            'querySelector("infected");',
-            "querySelector('infected');",
-            "querySelector(`infected`);",
+            'querySelector("infection")',
+            "querySelector('infection')",
+            "querySelector(`infection`)",
+            'querySelector("infection");',
+            "querySelector('infection');",
+            "querySelector(`infection`);",
             'querySelector(".spreading")',
             "querySelector('.spreading')",
             "querySelector(`.spreading`)",
@@ -847,14 +847,14 @@ export default [
     {
         level: 12,
         task: [
-            {id:1, text:'Select the Monsters sick with coronavirus', bold:false}
+            {id:1, text:'Select the first coronavirus infection', bold:false}
         ],
         elements: [
             {
                 id: 1,
                 class: "infected",
                 disappear: true,
-                tooltip: ' < isolated class = "tested virus"> I am sick with coronavirus! </ isolated > '
+                tooltip: ' < infection class = "tested virus"> I am sick with coronavirus! </ infection > '
             },
             {
                 id: 2,
@@ -896,7 +896,7 @@ export default [
                 id: 8,
                 class: "infected",
                 disappear: false,
-                tooltip: ' < sick class = "corona virus"> I am sick with coronavirus! </ sick > '
+                tooltip: ' < sick class = "no-symptoms virus"> I am sick with coronavirus! </ sick > '
             },
             {
                 id: 9,
@@ -905,9 +905,9 @@ export default [
                 tooltip: '< monster class = "green one-eyed" id = "Frank" > Hello, I am a Monster! </ monster >'
             }
         ],
-        story: "The coronavirus infection can go with no symptoms. Reach all the Monsters that are sick with COVID-19 weather they are feeling symptoms or not.",
+        story: "The coronavirus infection can go with no symptoms. Reach all the Monsters that are sick with COVID-19 no matter of feeling symptoms.",
         task_description: [
-            {id:1, text:'Try to catch all the infected monsters with the ', bold:false},
+            {id:1, text:'Select the first coronavirus infection with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
             {id:3, text:'. Define a selector using an ID, class or a tag - the choice is yours.', bold:false}
         ],
@@ -932,12 +932,24 @@ export default [
             'querySelector(".virus");',
             "querySelector('.virus');",
             "querySelector(`.virus`);",
+            'querySelector(".tested")',
+            "querySelector('.tested')",
+            "querySelector(`.tested`)",
+            'querySelector(".tested");',
+            "querySelector('.tested');",
+            "querySelector(`.tested`);",
+            'querySelector("infection")',
+            "querySelector('infection')",
+            "querySelector(`infection`)",
+            'querySelector("infection");',
+            "querySelector('infection');",
+            "querySelector(`infection`);"
         ]
     },
     {
         level: 13,
         task: [
-            {id:1, text:'Select the Monsters sick with coronavirus', bold:false}
+            {id:1, text:'Select all the coronavirus cases', bold:false}
         ],
         elements: [
             {
@@ -968,7 +980,7 @@ export default [
                 id: 5,
                 class: "infected",
                 disappear: true,
-                tooltip: ' < infected class = "spreading virus"> I am sick with coronavirus! </ infected > '
+                tooltip: ' < infected class = "spreading virus" id = "fever" > I am sick with coronavirus! </ infected > '
             },
             {
                 id: 6,
@@ -980,7 +992,7 @@ export default [
                 id: 7,
                 class: "infected",
                 disappear: true,
-                tooltip: ' < sick class = "corona virus"> I am sick with coronavirus! </ sick > '
+                tooltip: ' < sick class = "cough virus pneumonia"> I am sick with coronavirus! </ sick > '
             },
             {
                 id: 8,
@@ -989,9 +1001,9 @@ export default [
                 tooltip: '< monster class = "green one-eyed" id = "Frank" > Hello, I am a Monster! </ monster >'
             }
         ],
-        story: "Oopsie, you reached only the first Monster infected with the virus. The others still have to be isolated. Don't worry, there is a way to reach them all!",
+        story: "Oopsie, you reached only the first infection case. All the infected Monsters have to be isolated. Don't worry, there is a way to reach them all!",
         task_description: [
-            {id:1, text:'Catch the rest of the infected monsters with the ', bold:false},
+            {id:1, text:'Select all the coronavirus infections with the ', bold:false},
             {id:2, text:'querySelectorAll( )', bold:true},
             {id:3, text:'. You can use the same selector you used in the previous level.', bold:false}
         ],
@@ -1022,7 +1034,7 @@ export default [
     {
         level: 14,
         task: [
-            {id:1, text:'Select the Monsters with infected hands', bold:false}
+            {id:1, text:'Select the carrier of the virus', bold:false}
         ],
         elements: [
             {
@@ -1035,7 +1047,7 @@ export default [
                 id: 2,
                 class: "hand",
                 disappear: true,
-                tooltip: ' < hands class = "spreading virus" id = "COVID-19" > I am not washing my hands! </ hands > '
+                tooltip: ' < carrier class = "spreading virus" id = "COVID-19" > I am not washing my hands! </ carrier > '
             },
             {
                 id: 3,
@@ -1047,7 +1059,7 @@ export default [
                 id: 4,
                 class: "hand",
                 disappear: true,
-                tooltip: ' < hands class = "hand hygiene"> I am not washing my hands! </ hands > '
+                tooltip: ' < carrier class = "hand hygiene"> I am not washing my hands! </ carrier > '
             },
             {
                 id: 5,
@@ -1062,7 +1074,7 @@ export default [
                 tooltip: '< monster class = "green one-eyed" id = "Frank"> Hello, I am a Monster! </ monster >'
             },
         ],
-        story: "Every monster should sanitize hands to avoid getting infected with coronavirus. Track the monsters that do not wash their hands.",
+        story: "Every monster should sanitize hands to prevent the spread of a virus. Track the Monsters that do not wash their hands properly.",
         task_description: [
             {id:1, text:'Catch all the Monsters that do not sanitize their hands properly. Use the ', bold:false},
             {id:2, text:'querySelectorAll( )', bold:true},
@@ -1084,12 +1096,12 @@ export default [
             {id:2, text:' will access all the elements with a specified tag.', bold:false}
         ],
         expected_input: [
-            'querySelectorAll("hands")',
-            "querySelectorAll('hands')",
-            "querySelectorAll(`hands`)",
-            'querySelectorAll("hands");',
-            "querySelectorAll('hands');",
-            "querySelectorAll(`hands`);",
+            'querySelectorAll("carrier")',
+            "querySelectorAll('carrier')",
+            "querySelectorAll(`carrier`)",
+            'querySelectorAll("carrier");',
+            "querySelectorAll('carrier');",
+            "querySelectorAll(`carrier`);",
         ]
     },
     {
@@ -1135,7 +1147,7 @@ export default [
                 tooltip: '< monster class = "brown fatso" id = "Mathias" > Hello, I am a Monster! </ monster >'
             }
         ],
-        story: "The virus has gone. Just after opening borders, a dragon appeared in the village. Catch the dragon and send it back where it belongs.",
+        story: "The virus has gone. Just after opening borders, a chinese dragon appeared in the village. To be cautious, catch the dragon and send it back where it belongs.",
         task_description: [
             {id:1, text:'Catch the dragon with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
