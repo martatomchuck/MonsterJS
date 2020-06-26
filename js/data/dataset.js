@@ -1342,5 +1342,77 @@ export default [
             "querySelectorAll('monster');",
             "querySelectorAll(`monster`);",
         ]
+    },
+    {
+        level: 18,
+        task: [
+            {id:1, text:'Select all the Monsters', bold:false}
+        ],
+        elements: [
+            {
+                id: 1,
+                class: "tornado",
+                disappear: false,
+                tooltip: '< tornado class = "force nature" id = "wind" > Do not mess with a tornado! </ tornado >'
+            },
+            {
+                id: 2,
+                class: "monster10",
+                disappear: true,
+                tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 3,
+                class: "monster3",
+                disappear: true,
+                tooltip: '< monster class = "yellow notched" id = "Clark" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 4,
+                class: "monster7",
+                disappear: true,
+                tooltip: '< monster class = "brown fatso" id = "Mathias" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 5,
+                class: "monster1",
+                disappear: true,
+                tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 6,
+                class: "monster8",
+                disappear: true,
+                tooltip: '< monster class = "green one-eyed" id = "Frank"> Hello, I am a Monster! </ monster >'
+            }
+        ],
+        story: "A huge tornado is coming to the village. Take all the Monsters together and guide them to the nearest shelter.",
+        task_description: [
+            {id:1, text:'Catch all the Monsters together with the ', bold:false},
+            {id:2, text:'querySelectorAll( )', bold:true},
+            {id:3, text:'. Use an appropriate selector.', bold:false}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:true}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:false},
+                {id:3, text:'', bold:false}
+            ]}
+        ],
+        example: [
+            {id:1, text:'Try it yourself!', bold:false}
+        ],
+        expected_input: [
+            'querySelectorAll("monster")',
+            "querySelectorAll('monster')",
+            "querySelectorAll(`monster`)",
+            'querySelectorAll("monster");',
+            "querySelectorAll('monster');",
+            "querySelectorAll(`monster`);",
+        ]
     }
 ];
