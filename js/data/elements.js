@@ -108,14 +108,14 @@ let elements = [
         id: 0,
         class: "ufo",
         disappear: true,
-        tooltip: '',
+        tooltip: '< spaceship class = "ufo" id = "Air Force UFO" > </ spaceship >',
         author: "Smashicons"
     },
     {
         id: 0,
         class: "alien",
         disappear: true,
-        tooltip: '',
+        tooltip: '< alien from = "Planet Mars" class = "non-native" id = "foreigner"> </ alien >',
         author: "Smashicons"
     },
     {

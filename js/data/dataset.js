@@ -1346,51 +1346,195 @@ export default [
     {
         level: 18,
         task: [
-            {id:1, text:'Select all the Monsters', bold:false}
+            {id:1, text:'Select the spaceship', bold:false}
         ],
         elements: [
             {
                 id: 1,
-                class: "tornado",
+                class: "monster4",
                 disappear: false,
-                tooltip: '< tornado class = "force nature" id = "wind" > Do not mess with a tornado! </ tornado >'
+                tooltip: '< monster class = "turquoise dotted" id = "Thomas" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 2,
-                class: "monster10",
+                class: "ufo",
                 disappear: true,
-                tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
+                tooltip: '< spaceship for = "foreigner" class = "ufo" id = "Air Force UFO" > </ spaceship >'
             },
             {
                 id: 3,
-                class: "monster3",
+                class: "monster7",
+                disappear: false,
+                tooltip: '< monster class = "brown fatso" id = "Mathias" > Hello, I am a Monster! </ monster >'
+            }
+        ],
+        story: "The monsters seem to have bad luck. Someone has seen a spaceship in the sky and now they all live in fear of aliens.",
+        task_description: [
+            {id:1, text:'Catch the spaceship with the method ', bold:false},
+            {id:2, text:'getElementsByClassName( )', bold:true},
+            {id:3, text:'. Use an appropriate class.', bold:false}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:true}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:false},
+                {id:3, text:'', bold:false}
+            ]}
+        ],
+        example: [
+            {id:1, text:'document.getElementsByClassName("classname")', bold:true},
+            {id:2, text:' will access all the elements with a specified class.', bold:false}
+        ],
+        expected_input: [
+            'getElementsByClassName("ufo")',
+            "getElementsByClassName('ufo')",
+            "getElementsByClassName(`ufo`)",
+            'getElementsByClassName("ufo");',
+            "getElementsByClassName('ufo');",
+            "getElementsByClassName(`ufo`);",
+        ]
+    },
+    {
+        level: 19,
+        task: [
+            {id:1, text:'Select all the aliens', bold:false}
+        ],
+        elements: [
+            {
+                id: 1,
+                class: "alien",
                 disappear: true,
-                tooltip: '< monster class = "yellow notched" id = "Clark" > Hello, I am a Monster! </ monster >'
+                tooltip: '< alien from = "Planet Mars" class = "non-native" id = "Eva" > </ alien >'
+            },
+            {
+                id: 2,
+                class: "monster4",
+                disappear: false,
+                tooltip: '< monster class = "turquoise dotted" id = "Thomas" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 3,
+                class: "monster5",
+                disappear: false,
+                tooltip: '< monster class = "dark-blue tentacles" id = "Julia" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 4,
                 class: "monster7",
-                disappear: true,
+                disappear: false,
                 tooltip: '< monster class = "brown fatso" id = "Mathias" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 5,
-                class: "monster1",
-                disappear: true,
-                tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
+                class: "monster3",
+                disappear: false,
+                tooltip: '< monster class = "yellow notched" id = "Clark" > Hello, I am a Monster! </ monster >'
             },
             {
                 id: 6,
-                class: "monster8",
+                class: "alien",
                 disappear: true,
-                tooltip: '< monster class = "green one-eyed" id = "Frank"> Hello, I am a Monster! </ monster >'
+                tooltip: '< alien from = "Planet Mars" class = "non-native" id = "Gregory" > </ alien >'
             }
         ],
-        story: "A huge tornado is coming to the village. Take all the Monsters together and guide them to the nearest shelter.",
+        story: "Too late. The spaceship has landed. Welcome aliens to Planet Earth and ask them gently to leave the Monster Village.",
         task_description: [
-            {id:1, text:'Catch all the Monsters together with the ', bold:false},
-            {id:2, text:'querySelectorAll( )', bold:true},
-            {id:3, text:'. Use an appropriate selector.', bold:false}
+            {id:1, text:'Catch all the aliens with the method ', bold:false},
+            {id:2, text:'getElementsByClassName( )', bold:true}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:true}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:false},
+                {id:3, text:'', bold:false}
+            ]}
+        ],
+        example: [
+            {id:1, text:'document.getElementsByClassName("classname")', bold:true},
+            {id:2, text:' will access all the elements with a specified class.', bold:false}
+        ],
+        expected_input: [
+            'getElementsByClassName("non-native")',
+            "getElementsByClassName('non-native')",
+            "getElementsByClassName(`non-native`)",
+            'getElementsByClassName("non-native");',
+            "getElementsByClassName('non-native');",
+            "getElementsByClassName(`non-native`);",
+        ]
+    },
+    {
+        level: 20,
+        task: [
+            {id:1, text:'Select all the aliens and the spaceship', bold:false}
+        ],
+        elements: [
+            {
+                id: 1,
+                class: "monster3",
+                disappear: false,
+                tooltip: '< monster class = "yellow notched" id = "Clark" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 2,
+                class: "monster10",
+                disappear: false,
+                tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 3,
+                class: "alien",
+                disappear: true,
+                tooltip: '< alien from = "Planet Mars" class = "visitor foreigners" id = "Gregory" > </ alien >'
+            },
+            {
+                id: 4,
+                class: "alien",
+                disappear: true,
+                tooltip: '< alien from = "Planet Mars" class = "foreigners non-native" id = "Eva" > </ alien >'
+            },
+            {
+                id: 5,
+                class: "monster4",
+                disappear: false,
+                tooltip: '< monster class = "turquoise dotted" id = "Thomas" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 6,
+                class: "monster5",
+                disappear: false,
+                tooltip: '< monster class = "dark-blue tentacles" id = "Julia" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 7,
+                class: "monster6",
+                disappear: false,
+                tooltip: '< monster class = "pink crazy-lady" id = "Martha" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 8,
+                class: "ufo",
+                disappear: true,
+                tooltip: '< spaceship class = "ufo foreigners" id = "Air Force UFO"> </ spaceship >'
+            },
+            {
+                id: 9,
+                class: "monster1",
+                disappear: false,
+                tooltip: '< monster class = "dark-green one-eyed" id = "Jacob" > Hello, I am a Monster! </ monster >'
+            }
+        ],
+        story: "It seems that the aliens like the village too much and do not intend to fly away. Unfortunately, the monsters do not like them back. Help them to get rid of the visitors.",
+        task_description: [
+            {id:1, text:'Catch all the aliens and the spaceship with the method ', bold:false},
+            {id:2, text:'getElementsByClassName( )', bold:true}
         ],
         instructions: [
             {id:1, bullet: [
@@ -1407,12 +1551,12 @@ export default [
             {id:1, text:'Try it yourself!', bold:false}
         ],
         expected_input: [
-            'querySelectorAll("monster")',
-            "querySelectorAll('monster')",
-            "querySelectorAll(`monster`)",
-            'querySelectorAll("monster");',
-            "querySelectorAll('monster');",
-            "querySelectorAll(`monster`);",
+            'getElementsByClassName("foreigners")',
+            "getElementsByClassName('foreigners')",
+            "getElementsByClassName(`foreigners`)",
+            'getElementsByClassName("foreigners");',
+            "getElementsByClassName('foreigners');",
+            "getElementsByClassName(`foreigners`);",
         ]
     }
 ];
