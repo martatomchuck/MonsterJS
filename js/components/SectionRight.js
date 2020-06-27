@@ -100,7 +100,7 @@ const InputCode = () => {
     return (
         <form onSubmit={handleSubmit}>
             <div className="console-userinput">
-                <label>const enemy = document. </label>
+                <label>const chosen = document. </label>
                 <input type="text" spellCheck="false" placeholder="Type in your code" value={answer} onChange={(e) => setAnswer(e.target.value)} onClick={() => {handleUnCheck(); clearAnswer(answer);}} />
             </div>
 
