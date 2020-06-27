@@ -14,7 +14,7 @@ Click the link and play: http://monsterjs.com
 
 ## 🐤 LEARNING OBJECTIVES
 
-The game teaches how to access DOM three elements in an HTML webpage using predefined JavaScript functions:
+The game teaches how to access DOM three elements in an HTML webpage using predefined JavaScript functions and explain differences between them:
 
 * getElementById(),
 * GetElementsByTagName(),
