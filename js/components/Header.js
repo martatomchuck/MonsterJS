@@ -25,21 +25,26 @@ const Counter = ({datasetLength, level}) => {
     const {clearAnswer, handleClick} = useContext(AnswerContext);
 
     return (
-        <div className="counter">
-            <div id="counter-prev" onClick={() => {
-                handlePrevBtn();
-                handleUnCheck();
-                clearAnswer();
-                handleClick();
-            }}></div>
-            <div id="counter-level">Level {level} of {datasetLength}</div>
-            <div id="counter-next" onClick={() => {
-                handleNextBtn();
-                handleUnCheck();
-                clearAnswer();
-                handleClick();
-            }}></div>
-        </div>
+        <>
+            <div className="counter">
+                <div id="counter-prev" onClick={() => {
+                    handlePrevBtn();
+                    handleUnCheck();
+                    clearAnswer();
+                    handleClick();
+                }}></div>
+                <div id="counter-level">Level {level} of {datasetLength}</div>
+                <div id="counter-next" onClick={() => {
+                    handleNextBtn();
+                    handleUnCheck();
+                    clearAnswer();
+                    handleClick();
+                }}></div>
+            </div>
+            <div>
+                
+            </div>
+        </>
     )
 }
 
