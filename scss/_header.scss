@@ -80,6 +80,16 @@
     }
 }
 
+.counter-list {
+    width: 300px;
+    height: 500px;
+    background-color: #ffc2c2;
+    border-radius: 10px;
+    position: absolute;
+    top: 80px;
+    left: calc(50% - 150px);
+}
+
 .header .header-share {
     color: white;
     opacity: 0.6;

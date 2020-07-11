@@ -41,7 +41,7 @@ const Counter = ({datasetLength, level}) => {
                     handleClick();
                 }}></div>
             </div>
-            <div>
+            <div className="counter-list">
                 
             </div>
         </>
