@@ -3,12 +3,13 @@ import React, { useState, useContext } from "react";
 import { LevelContext } from "../contexts/LevelContext";
 import { CheckContext } from "../contexts/CheckContext";
 import { AnswerContext } from "../contexts/AnswerContext";
+import dataset from "../data/dataset";
 
-const Header = ({datasetLength, level}) => {
+const Header = ({datasetLength, level, levelId}) => {
     return (
         <header className={"header"}>
             <div className={"header-title"}>MonsterJS</div>
-            <Counter datasetLength={datasetLength} level={level}/>
+            <Counter datasetLength={datasetLength} level={level} levelId={levelId}/>
             <div className={"header-share"}>
                 <p>Share</p>
                 <a type="twitter" href="https://twitter.com/intent/tweet?url=http://monsterjs.com&text=Learning JavaScript? Check out this game -> &hashtags=javascript,DOM,elements,monsterjs&via=martatomc" target="_blank"><div className="header-twitter"></div></a>
@@ -19,7 +20,7 @@ const Header = ({datasetLength, level}) => {
     )
 }
 
-const Counter = ({datasetLength, level}) => {
+const Counter = ({datasetLength, level, levelId}) => {
     const {handlePrevBtn, handleNextBtn} = useContext(LevelContext);
     const {handleUnCheck} = useContext(CheckContext);
     const {clearAnswer, handleClick} = useContext(AnswerContext);
@@ -41,10 +42,43 @@ const Counter = ({datasetLength, level}) => {
                     handleClick();
                 }}></div>
             </div>
-            <div className="counter-list">
-                
-            </div>
+            <CounterList levelId={levelId}/>
         </>
+    )
+}
+
+const CounterList = (levelId) => {
+    return (
+        <div className="counter-list">
+            <div className="counter-list-elements">
+                <div className="counter-list-el">1</div>
+                <div className="counter-list-el">2</div>
+                <div className="counter-list-el">3</div>
+                <div className="counter-list-el">4</div>
+                <div className="counter-list-el">5</div>
+                <div className="counter-list-el">6</div>
+                <div className="counter-list-el">1</div>
+                <div className="counter-list-el">2</div>
+                <div className="counter-list-el">3</div>
+                <div className="counter-list-el">4</div>
+                <div className="counter-list-el">5</div>
+                <div className="counter-list-el">6</div>
+                <div className="counter-list-el">1</div>
+                <div className="counter-list-el">2</div>
+                <div className="counter-list-el">3</div>
+                <div className="counter-list-el">4</div>
+                <div className="counter-list-el">5</div>
+                <div className="counter-list-el">6</div>
+                <div className="counter-list-el">6</div>
+                <div className="counter-list-el">1</div>
+                <div className="counter-list-el">2</div>
+                <div className="counter-list-el">3</div>
+                <div className="counter-list-el">4</div>
+                <div className="counter-list-el">5</div>
+                <div className="counter-list-el">6</div>
+            </div>
+            <div className="counter-reset">Zacznij od początku</div>
+        </div>
     )
 }
 

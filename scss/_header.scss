@@ -81,18 +81,64 @@
 }
 
 .counter-list {
-    width: 230px;
-    height: 320px;
+    width: 220px;
+    height: 420px;
     background-color: #ffd4d4;
     // background-color: #001033;
     box-shadow: 2px 3px 10px #000b2291;
-    border-bottom: 5px dashed #ff9d9d;
+    border-bottom: 7px dashed #ff9d9d;
     // border-top: 2px dashed #ff9d9d;
     border-radius: 0px;
     position: absolute;
     top: 70px;
-    left: calc(50% - 115px);
+    left: calc(50% - 110px);
     z-index: 99999;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+}
+
+.counter-list-elements {
+    height: 340px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.counter-list-el {
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    background-color: #ffbdbd;
+    // border-radius: 50%;
+    border-radius: 8px;
+    text-align: center;
+    border: 1.8px solid #000b222d;
+    color: #000b22;
+    font-size: 20px;
+    font-weight: 600;
+
+    &:hover {
+        background-color: #ffd4d4;
+
+        // background-color: #ff2e63;
+        // color: #ffd4d4;
+        // border-color: #ff2e63;
+    }
+}
+
+.counter-reset {
+    font-weight: 500;
+    font-size: 1.1em;
+    margin-top: 15px;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .header .header-share {
