@@ -20,10 +20,12 @@ const Header = ({datasetLength, level, levelId}) => {
     )
 }
 
-const Counter = ({datasetLength, level, levelId}) => {
+const Counter = ({datasetLength, level}) => {
     const {handlePrevBtn, handleNextBtn} = useContext(LevelContext);
     const {handleUnCheck} = useContext(CheckContext);
     const {clearAnswer, handleClick} = useContext(AnswerContext);
+
+    const [counterList, setCounterList] = useState();
 
     return (
         <>
@@ -34,7 +36,9 @@ const Counter = ({datasetLength, level, levelId}) => {
                     clearAnswer();
                     handleClick();
                 }}></div>
-                <div id="counter-level">Level {level} of {datasetLength}</div>
+                <div id="counter-level" onClick={() => {
+                    setCounterList(!counterList)
+                }}>Level {level} of {datasetLength}</div>
                 <div id="counter-next" onClick={() => {
                     handleNextBtn();
                     handleUnCheck();
@@ -42,40 +46,19 @@ const Counter = ({datasetLength, level, levelId}) => {
                     handleClick();
                 }}></div>
             </div>
-            <CounterList levelId={levelId}/>
+            <CounterList counterList={counterList} level={level} datasetLength={datasetLength}/>
         </>
     )
 }
 
-const CounterList = (levelId) => {
+const CounterList = ({counterList, level, datasetLength}) => {
+
+    console.log(counterList);
+
     return (
-        <div className="counter-list">
+        <div className={counterList ? "counter-list" : "counter-list-none"}>
             <div className="counter-list-elements">
                 <div className="counter-list-el">1</div>
-                <div className="counter-list-el">2</div>
-                <div className="counter-list-el">3</div>
-                <div className="counter-list-el">4</div>
-                <div className="counter-list-el">5</div>
-                <div className="counter-list-el">6</div>
-                <div className="counter-list-el">1</div>
-                <div className="counter-list-el">2</div>
-                <div className="counter-list-el">3</div>
-                <div className="counter-list-el">4</div>
-                <div className="counter-list-el">5</div>
-                <div className="counter-list-el">6</div>
-                <div className="counter-list-el">1</div>
-                <div className="counter-list-el">2</div>
-                <div className="counter-list-el">3</div>
-                <div className="counter-list-el">4</div>
-                <div className="counter-list-el">5</div>
-                <div className="counter-list-el">6</div>
-                <div className="counter-list-el">6</div>
-                <div className="counter-list-el">1</div>
-                <div className="counter-list-el">2</div>
-                <div className="counter-list-el">3</div>
-                <div className="counter-list-el">4</div>
-                <div className="counter-list-el">5</div>
-                <div className="counter-list-el">6</div>
             </div>
             <div className="counter-reset">Zacznij od początku</div>
         </div>

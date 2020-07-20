@@ -82,22 +82,24 @@
 
 .counter-list {
     width: 220px;
-    height: 420px;
-    background-color: #ffd4d4;
-    // background-color: #001033;
-    box-shadow: 2px 3px 10px #000b2291;
+    height: 410px;
+    background-color: #ffdfdf;
+    box-shadow: 2px 2px 20px 5px #000b22a9;
     border-bottom: 7px dashed #ff9d9d;
-    // border-top: 2px dashed #ff9d9d;
     border-radius: 0px;
     position: absolute;
     top: 70px;
     left: calc(50% - 110px);
-    z-index: 99999;
+    z-index: 999999999999999;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 15px 20px;
+    padding: 20px;
+}
+
+.counter-list-none {
+    display: none;
 }
 
 .counter-list-elements {
@@ -112,9 +114,8 @@
     width: 38px;
     height: 38px;
     line-height: 36px;
-    background-color: #ffbdbd;
-    // border-radius: 50%;
-    border-radius: 8px;
+    background-color: #fac4c4;
+    border-radius: 50%;
     text-align: center;
     border: 1.8px solid #000b222d;
     color: #000b22;
@@ -122,7 +123,7 @@
     font-weight: 600;
 
     &:hover {
-        background-color: #ffd4d4;
+        background-color: #ffdfdf;
 
         // background-color: #ff2e63;
         // color: #ffd4d4;
@@ -133,7 +134,7 @@
 .counter-reset {
     font-weight: 500;
     font-size: 1.1em;
-    margin-top: 15px;
+    margin-top: 10px;
     cursor: pointer;
 
     &:hover {
