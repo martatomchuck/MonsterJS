@@ -1,16 +1,16 @@
 .header .header-title {
     color: white;
     opacity: 0.6;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
-    margin: 10px 0 10px 20px;
+    margin: 8px 0 10px 20px;
 
     &::before {
         content: url("../images/monster8.svg");
         display: inline-block;
         width: 25px;
         height: 25px;
-        margin: 8px;
+        margin: 7px;
         position: relative;
         top: 5px;
         left: 0;
@@ -145,7 +145,7 @@
 .header .header-share {
     color: white;
     opacity: 0.6;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 600;
     margin: 12px 20px 10px 0;
     text-align: end;
@@ -182,11 +182,6 @@
     .counter-list {
         position: absolute;
         top: 130px;
-    }
-
-    .header .header-share,
-    .header .header-title {
-        font-size: 1em;
     }
 }
 

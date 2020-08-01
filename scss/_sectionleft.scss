@@ -11,7 +11,7 @@
 
 .task {
     color: white;
-    font-size: 2em;
+    font-size: 1.9em;
     font-weight: 400;
     line-height: 35px;
     opacity: 95%;
@@ -28,7 +28,7 @@
 
 .game {
     width: 85%;
-    height: 70%;
+    height: 65%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -41,30 +41,31 @@
     width: 140px;
     height: 140px;
     border-radius: 10px;
-    border: 4px solid transparent;
+    border: 12px solid transparent;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    box-shadow: 2px 5px 20px 8px #000b22;
-    margin: 15px 30px;
+    box-shadow: 2px 5px 20px 8px #000b22a2;
+    margin: 12px 18px;
     position: relative;
-    transition: transform 2.5s ease;
+    transition: transform .4s ease;
 
     &:hover {
         transform: scale(1.15, 1.15);
-        transition: transform 0.8s ease-out;
+        transition: transform 0.5s ease-out;
         z-index: 99999;
     }
 }
 
 .tooltip {
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.05em;
     color: white;
     box-sizing: border-box;
-    padding: 12px 20px 12px 20px;
+    padding: 12px 20px;
     width: 280px;
-    height: 100px;
+    // height: 100px;
+    height: auto;
     line-height: 25px;
     background-color: #244cfc;
     background-image: linear-gradient(45deg, #1942fa, #277dfd);
@@ -73,15 +74,15 @@
     white-space: wrap;
     top: 130px;
     left: 130px;
-    border-radius: 2px 45px 45px 25px;
+    border-radius: 2px 25px 25px 25px;
 }
 
 .game-hint {
     color: white;
     opacity: 0.9;
-    font-size: 20px;
+    font-size: 1.1em;
     font-weight: 500;
-    margin: 30px 30px 20px 30px;
+    margin: 10px 30px 20px 30px;
     text-align: center;
 }
 
@@ -157,12 +158,14 @@
 
     .tooltip {
         top: 100px;
-        left: -40px;
-        font-size: 0.9rem;
+        left: -65px;
+        font-size: 0.9em;
         width: 220px;
-        height: 75px;
-        padding: 10px 15px 5px 12px;
+        // height: 75px;
+        height: auto;
+        padding: 10px 15px;
         line-height: 19px;
+        border-radius: 10px;
     }
 
     .game-hint {
@@ -188,11 +191,12 @@
     
     .tooltip {
         top: 85px;
-        left: -40px;
-        font-size: 0.7rem;
+        left: -55px;
+        font-size: 0.74em;
         width: 180px;
-        height: 70px;
-        padding: 10px 15px 5px 10px;
+        // height: 70px;
+        height: auto;
+        padding: 8px 12px;
         line-height: 17px;
     }
 }
@@ -222,6 +226,6 @@
 
     .tooltip {
         top: 72px;
-        left: -50px;
+        left: -65px;
     }
 }

@@ -15,20 +15,20 @@
 .title {
     color: #ffc2c2;
     align-self: center;
-    font-size: 1.9em;
+    font-size: 1.7em;
     font-weight: 500;
-    margin: 20px 3px 35px 0;
+    margin: 20px 3px 25px 0;
     text-align: center;
 }
 
 .description {
     color: rgba(255, 255, 255, 0.7);
     line-height: 28px;
-    font-size: 1.15em;
+    font-size: 1em;
     font-weight: 300;
     width: 100%;
     height: auto;
-    padding: 0 20px;
+    padding: 0 10px;
 
     li {
         margin: 2px 0;
@@ -59,8 +59,8 @@
     border-radius: 8px;
     box-shadow: -3px 0 20px 5px #000b2250;
     padding: 15px 20px;
-    margin-bottom: 45px;
-    font-size: 1.1em;
+    margin-bottom: 25px;
+    font-size: 1.05em;
     font-weight: 400;
     text-align: center;
 }
@@ -69,15 +69,15 @@
     line-height: 24px;
     font-weight: 300;
     font-size: 0.9em;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 0 20px;
 
     h4 {
-        font-size: 1.2em;
+        font-size: 1.1em;
         font-family: 'Baloo Paaji 2', cursive;
         font-weight: 600;
         margin-bottom: 9px;
-        margin-top: 30px;
+        margin-top: 25px;
         color: rgba(255, 255, 255, 0.8);
         // text-decoration: underline;
     }
@@ -106,7 +106,7 @@
     width: 5%;
     background-color: rgb(223, 223, 223);
     color: #000b229d;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 600;
     padding: 20px 15px;
     border: none;
@@ -134,7 +134,7 @@ form {
     margin: 8px 10px 10px 15px;
 
     label {
-        font-size: 1.1em;
+        font-size: 1em;
         font-weight: 500;
         color: #000b22a1;
     }
@@ -158,7 +158,7 @@ form {
     width: 90%;
     height: auto;
     color: white;
-    font-size: 22px;
+    font-size: 1em;
     border-radius: 10px;
     margin-left: 5%;
     margin-bottom: 15px;
@@ -310,7 +310,8 @@ form {
     }
 
     .description-story {
-        font-size: 1.15em;
+        font-size: 1em;
+        margin-bottom: 10px;
     }
 
     .description {
@@ -318,12 +319,12 @@ form {
         height: auto;
         padding: 0 0 0 8px;
         padding: 0;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         font-size: 1.2em;
     }
 
     .description-task {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .console {
@@ -359,6 +360,10 @@ form {
 
     .description-task {
         padding: 10px 1px;
+
+        h4 {
+            margin-top: 10px;
+        }
     }
     
     .description-bullets {
