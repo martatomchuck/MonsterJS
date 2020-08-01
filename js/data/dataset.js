@@ -776,7 +776,7 @@ export default [
                 id: 2,
                 class: "infected",
                 disappear: true,
-                tooltip: ' < infection class = "spreading coronavirus"> I am sick with coronavirus! </ infection > '
+                tooltip: ' < infection id = "virus" class = "spreading" > I am sick with coronavirus! </ infection > '
             },
             {
                 id: 3,
@@ -836,12 +836,12 @@ export default [
             'querySelector(".spreading");',
             "querySelector('.spreading');",
             "querySelector(`.spreading`);",
-            'querySelector(".coronavirus")',
-            "querySelector('.coronavirus')",
-            "querySelector(`.coronavirus`)",
-            'querySelector(".coronavirus");',
-            "querySelector('.coronavirus');",
-            "querySelector(`.coronavirus`);",
+            'querySelector("#virus")',
+            "querySelector('#virus')",
+            "querySelector(`#virus`)",
+            'querySelector("#virus");',
+            "querySelector('#virus');",
+            "querySelector(`#virus`);",
         ]
     },
     {
@@ -884,7 +884,7 @@ export default [
                 id: 6,
                 class: "infected",
                 disappear: false,
-                tooltip: ' < infected class = "spreading virus"> I am sick with coronavirus! </ infected > '
+                tooltip: ' < infection class = "spreading virus"> I am sick with coronavirus! </ infection > '
             },
             {
                 id: 7,
@@ -909,7 +909,7 @@ export default [
         task_description: [
             {id:1, text:'Select the first coronavirus infection with the ', bold:false},
             {id:2, text:'querySelector( )', bold:true},
-            {id:3, text:'. Define a selector using an ID, class or a tag - the choice is yours.', bold:false}
+            {id:3, text:'. Define a selector common for every infected element.', bold:false}
         ],
         instructions: [
             {id:1, bullet: [
@@ -931,19 +931,7 @@ export default [
             "querySelector(`.virus`)",
             'querySelector(".virus");',
             "querySelector('.virus');",
-            "querySelector(`.virus`);",
-            'querySelector(".tested")',
-            "querySelector('.tested')",
-            "querySelector(`.tested`)",
-            'querySelector(".tested");',
-            "querySelector('.tested');",
-            "querySelector(`.tested`);",
-            'querySelector("infection")',
-            "querySelector('infection')",
-            "querySelector(`infection`)",
-            'querySelector("infection");',
-            "querySelector('infection');",
-            "querySelector(`infection`);"
+            "querySelector(`.virus`);"
         ]
     },
     {
@@ -1005,7 +993,7 @@ export default [
         task_description: [
             {id:1, text:'Select all the coronavirus infections with the ', bold:false},
             {id:2, text:'querySelectorAll( )', bold:true},
-            {id:3, text:'. You can use the same selector you used in the previous level.', bold:false}
+            {id:3, text:'. Use class to define a selector. You see? You can use the same selector you used in the previous level.', bold:false}
         ],
         instructions: [
             {id:1, bullet: [
