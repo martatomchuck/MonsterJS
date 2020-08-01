@@ -82,7 +82,7 @@
 
 .counter-list {
     width: 220px;
-    height: 410px;
+    height: auto;
     background-color: #ffdfdf;
     box-shadow: 2px 2px 20px 5px #000b22a9;
     border-bottom: 7px dashed #ff9d9d;
@@ -103,7 +103,9 @@
 }
 
 .counter-list-elements {
-    height: 340px;
+    // height: 280px;
+    height: auto;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -114,6 +116,7 @@
     width: 38px;
     height: 38px;
     line-height: 36px;
+    margin: 5px 3px;
     background-color: #fac4c4;
     border-radius: 50%;
     text-align: center;
@@ -124,11 +127,36 @@
 
     &:hover {
         background-color: #ffdfdf;
-
-        // background-color: #ff2e63;
-        // color: #ffd4d4;
-        // border-color: #ff2e63;
     }
+}
+
+.counter-list-el-active {
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    margin: 5px 3px;
+    background-color: #fac4c4;
+    border-radius: 50%;
+    text-align: center;
+    border: 1.8px solid #000b222d;
+    color: #000b22;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ffdfdf;
+}
+
+.counter-list-el-passed {
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    margin: 5px 3px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1.8px solid #ff2e63;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #ff2e63;
+    color: #ffd4d4;
 }
 
 .counter-reset {

@@ -5,7 +5,7 @@ import SectionLeft from './SectionLeft';
 import SectionRight from './SectionRight';
 import Footer from './Footer';
 
-import Welcome from './Welcome';
+// import Welcome from './Welcome';
 
 import { LevelContext } from "../contexts/LevelContext";
 

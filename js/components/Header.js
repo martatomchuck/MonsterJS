@@ -3,7 +3,7 @@ import React, { useState, useContext } from "react";
 import { LevelContext } from "../contexts/LevelContext";
 import { CheckContext } from "../contexts/CheckContext";
 import { AnswerContext } from "../contexts/AnswerContext";
-import dataset from "../data/dataset";
+// import dataset from "../data/dataset";
 
 const Header = ({datasetLength, level, levelId}) => {
     return (
@@ -56,18 +56,22 @@ const Counter = ({datasetLength, level}) => {
 
 const CounterList = ({counterList, level, datasetLength}) => {
 
-    // console.log(counterList);
-    
+    const {counter, setCounter} = useContext(LevelContext);
+
     const levelNumbers = [];
     for (let i = 1; i <= datasetLength; i++) {
         levelNumbers.push(i);
     }
-    console.log(levelNumbers);
+
+    const changeLevel = (nb) => {
+        setCounter(nb-1);
+        console.log(nb, counter);
+    }
 
     return (
         <div className={counterList ? "counter-list" : "counter-list-none"}>
             <div className="counter-list-elements">
-                <div className="counter-list-el">1</div>
+                { levelNumbers.map((nb, i) => <div key={i} onClick={() => changeLevel(nb)} className={i === level-1 ? "counter-list-el-active" : "counter-list-el"}>{nb}</div> )}
             </div>
             <div className="counter-reset">Zacznij od początku</div>
         </div>

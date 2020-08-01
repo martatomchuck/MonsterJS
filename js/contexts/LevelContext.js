@@ -34,7 +34,7 @@ const LevelContextProvider = (props) => {
     }
 
     return (
-        <LevelContext.Provider value={{counter, handlePrevBtn, handleNextBtn}}>
+        <LevelContext.Provider value={{counter, setCounter, handlePrevBtn, handleNextBtn}}>
             {props.children}
         </LevelContext.Provider>
     )
