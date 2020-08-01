@@ -131,7 +131,7 @@ form {
 }
 
 .console-userinput {
-    margin: 8px 10px 10px 15px;
+    margin: 10px 10px 10px 15px;
 
     label {
         font-size: 1em;
@@ -140,11 +140,11 @@ form {
     }
 
     input[type="text"] {
-        font-size: 1em;
+        font-size: .9em;
         font-family: 'Roboto', sans-serif;
         color: #000b22;
         margin: 0 5px;
-        padding: 10px;
+        padding: 8px;
         outline: none;
         border-radius: 5px;
         border: 1px solid white;

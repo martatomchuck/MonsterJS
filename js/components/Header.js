@@ -7,10 +7,10 @@ import dataset from "../data/dataset";
 
 const Header = ({datasetLength, level, levelId}) => {
     return (
-        <header className={"header"}>
-            <div className={"header-title"}>MonsterJS</div>
+        <header className="header">
+            <div className="header-title">MonsterJS</div>
             <Counter datasetLength={datasetLength} level={level} levelId={levelId}/>
-            <div className={"header-share"}>
+            <div className="header-share">
                 <p>Share</p>
                 <a type="twitter" href="https://twitter.com/intent/tweet?url=http://monsterjs.com&text=Learning JavaScript? Check out this game -> &hashtags=javascript,DOM,elements,monsterjs&via=martatomc" target="_blank"><div className="header-twitter"></div></a>
                 
@@ -27,24 +27,27 @@ const Counter = ({datasetLength, level}) => {
 
     const [counterList, setCounterList] = useState();
 
+    const pushPrevConsoleBtn = () => {
+        handlePrevBtn();
+        handleUnCheck();
+        clearAnswer();
+        handleClick();
+    }
+    const pushNextConsoleBtn = () => {
+        handleNextBtn();
+        handleUnCheck();
+        clearAnswer();
+        handleClick();
+    }
+
     return (
         <>
             <div className="counter">
-                <div id="counter-prev" onClick={() => {
-                    handlePrevBtn();
-                    handleUnCheck();
-                    clearAnswer();
-                    handleClick();
-                }}></div>
+                <div id="counter-prev" onClick={pushPrevConsoleBtn}></div>
                 <div id="counter-level" onClick={() => {
                     setCounterList(!counterList)
                 }}>Level {level} of {datasetLength}</div>
-                <div id="counter-next" onClick={() => {
-                    handleNextBtn();
-                    handleUnCheck();
-                    clearAnswer();
-                    handleClick();
-                }}></div>
+                <div id="counter-next" onClick={pushNextConsoleBtn}></div>
             </div>
             <CounterList counterList={counterList} level={level} datasetLength={datasetLength}/>
         </>
@@ -53,7 +56,13 @@ const Counter = ({datasetLength, level}) => {
 
 const CounterList = ({counterList, level, datasetLength}) => {
 
-    console.log(counterList);
+    // console.log(counterList);
+    
+    const levelNumbers = [];
+    for (let i = 1; i <= datasetLength; i++) {
+        levelNumbers.push(i);
+    }
+    console.log(levelNumbers);
 
     return (
         <div className={counterList ? "counter-list" : "counter-list-none"}>

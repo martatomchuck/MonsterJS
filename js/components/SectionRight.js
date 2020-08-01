@@ -22,12 +22,11 @@ const SectionRight = ({story, description, task, instructions, example}) => {
 const Instructions = ({story, description, example}) => {
     return (
         <div className="description">
-            <div className={"description-story"}> {story} </div>
-            <div className={"description-task"}>
+            <div className="description-story"> {story} </div>
+            <div className="description-task">
                 <h4>Your task </h4>
-                {description.map((el) => {
-                    return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
-                })}
+                    {description.map(el => <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
+                )}
             </div>
 
             {/* <div className="description-bullets">
@@ -40,11 +39,10 @@ const Instructions = ({story, description, example}) => {
                 </ul>
             </div> */}
 
-            <div className={"description-task"}>
+            <div className="description-task">
                 <h4>Example </h4>
-                {example.map((el) => {
-                    return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
-                })}
+                    {example.map(el => <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
+                )}
             </div>
         </div>
     )
@@ -53,18 +51,15 @@ const Instructions = ({story, description, example}) => {
 const Console = () => {
     const {answerSubmit} = useContext(CheckContext);
 
+    const numbers = [];
+    for (let i = 1; i < 9; i++) {
+        numbers.push(i);
+    }
+
     return (
         <div className="console">
             <div className="console-numbers">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
+                {numbers.map((number, index) => <div key={index}>{number}</div>)}
             </div>
             <div className="console-task">
                 <div> 
@@ -91,11 +86,13 @@ const InputCode = () => {
         verifyAnswer(answer.trim());
     }
 
-    if (isClicked && answer !== "") {
-        // console.log("clicked", isClicked);
-        setAnswer("");
-        handleClick();
-    }
+    useEffect(() => {
+        if (isClicked && answer !== "") {
+            // console.log("clicked", isClicked);
+            setAnswer("");
+            handleClick();
+        }
+    }, [isClicked]);
 
     return (
         <form onSubmit={handleSubmit}>
@@ -113,7 +110,7 @@ const OutputCode = () => {
     const {isCorrect} = useContext(AnswerContext);
 
     return (
-        <div className={"console-output"} style={isCorrect ? {backgroundColor: "#388e3c"} : {backgroundColor: "#DB0049"}}>{isCorrect ? "Good job! The Monsters are safe now! You can move to the next level." : "Sorry, incorrect result. Correct your answer or try again."}</div>
+        <div className="console-output" style={{backgroundColor: isCorrect ? "#388e3c" : "#DB0049"}}>{isCorrect ? "Good job! The Monsters are safe now! You can move to the next level." : "Sorry, incorrect result. Correct your answer or try again."}</div>
     )
 }
 
@@ -122,12 +119,14 @@ const BtnNext = () => {
     const {handleUnCheck} = useContext(CheckContext);
     const {clearAnswer, handleClick} = useContext(AnswerContext);
 
-    return <div className="btn next-btn" onClick={() => {
+    const pushNextBtn = () => {
         handleNextBtn();
         handleUnCheck();
         clearAnswer();
         handleClick();
-    }}>Next</div>
+    }
+
+    return <div className="btn next-btn" onClick={pushNextBtn}>Next</div>
 }
 
 export default SectionRight;

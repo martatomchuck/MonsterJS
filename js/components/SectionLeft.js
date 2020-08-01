@@ -14,7 +14,7 @@ const SectionLeft = ({task, elements}) => {
 
 const Task = ({task}) => {
     return (
-        <div className={"task"}>
+        <div className="task">
             {task.map((el) => {
                 return <span key={el.id} className={el.bold ? "bold" : ""}>{el.text}</span>
             })}
@@ -54,7 +54,7 @@ const Game = ({elements}) => {
 }
 
 const Tooltip = ({tooltip}) => {
-    return <div className={"tooltip"}>{tooltip}</div>
+    return <div className="tooltip">{tooltip}</div>
 }
 
 export default SectionLeft;
