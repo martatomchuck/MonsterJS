@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, Fragment } from "react";
 
 import { LevelContext } from "../contexts/LevelContext";
 import { CheckContext } from "../contexts/CheckContext";
@@ -40,23 +40,25 @@ const Counter = ({datasetLength, level}) => {
         handleClick();
     }
 
+    const toggleCounterList = () => {
+        setCounterList(!counterList);
+    }
+
     return (
-        <>
-            <div className="counter">
+        <div>
+            <div className="counter" >
                 <div id="counter-prev" onClick={pushPrevConsoleBtn}></div>
-                <div id="counter-level" onClick={() => {
-                    setCounterList(!counterList)
-                }}>Level {level} of {datasetLength}</div>
+                <div id="counter-level" onClick={toggleCounterList}>Level {level} of {datasetLength}</div>
                 <div id="counter-next" onClick={pushNextConsoleBtn}></div>
             </div>
-            <CounterList counterList={counterList} level={level} datasetLength={datasetLength}/>
-        </>
+            <CounterList toggleCounterList={toggleCounterList} counterList={counterList} level={level} datasetLength={datasetLength}/>
+        </div>
     )
 }
 
-const CounterList = ({counterList, level, datasetLength}) => {
+const CounterList = ({toggleCounterList, counterList, level, datasetLength}) => {
 
-    const {counter, setCounter} = useContext(LevelContext);
+    const {setCounter} = useContext(LevelContext);
 
     const levelNumbers = [];
     for (let i = 1; i <= datasetLength; i++) {
@@ -65,7 +67,12 @@ const CounterList = ({counterList, level, datasetLength}) => {
 
     const changeLevel = (nb) => {
         setCounter(nb-1);
-        console.log(nb, counter);
+        toggleCounterList();
+    }
+
+    const resetLevel = () => {
+        setCounter(0);
+        toggleCounterList();
     }
 
     return (
@@ -73,7 +80,7 @@ const CounterList = ({counterList, level, datasetLength}) => {
             <div className="counter-list-elements">
                 { levelNumbers.map((nb, i) => <div key={i} onClick={() => changeLevel(nb)} className={i === level-1 ? "counter-list-el-active" : "counter-list-el"}>{nb}</div> )}
             </div>
-            <div className="counter-reset">Zacznij od początku</div>
+            <div className="counter-reset" onClick={resetLevel}>Zacznij od początku</div>
         </div>
     )
 }
