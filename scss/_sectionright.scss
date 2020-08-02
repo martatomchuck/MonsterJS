@@ -40,8 +40,8 @@
         background-color: rgba(#fff, 0.1);
         border-radius: 5px;
         color: white;
-        font-weight: 500;
-        letter-spacing: 1px;
+        font-weight: 400;
+        letter-spacing: .5px;
         word-break: break-all;
         margin: 0 3px 0 0;
 
@@ -96,7 +96,7 @@
 
 .console {
     width: 98%;
-    min-height: 250px;
+    min-height: 210px;
     display: flex;
     box-shadow: -5px 5px 30px 5px #000b22;
     margin: 20px 20px 20px 0;
@@ -158,14 +158,14 @@ form {
     width: 90%;
     height: auto;
     color: white;
-    font-size: 1em;
+    font-size: 1.1em;
     border-radius: 10px;
     margin-left: 5%;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     margin-top: 10px;
     text-align: center;
     line-height: 30px;
-    padding: 15px 10px;
+    padding: 25px 10px;
     border: 3px dashed #000b22;
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
     transform: translate3d(0, 0, 0);
@@ -262,14 +262,28 @@ form {
 }
 
 @media (max-width: 1380px) {
+    .section-right {
+        padding: 15px 20px 10px 30px;
+    }
+
+    .title {
+        font-size: 1.45em;
+        margin: 10px 3px 20px 0;
+    }
+    
     .description {
-        font-size: 1.1em;
+        font-size: .98em;
         line-height: 25px;
-        padding: 0 10px;
+        padding: 0 5px;
+    }
+
+    .description-story {
+        padding: 10px 20px;
+        font-size: 1em;
     }
 
     .console {
-        min-height: 270px;
+        min-height: 210px;
         margin-top: 10px;
     }
 
@@ -278,7 +292,7 @@ form {
     }
 
     .next-btn {
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
 }
 
@@ -307,11 +321,13 @@ form {
 
     .title {
         font-size: 2em;
+        margin: 10px 3px 20px 0;
     }
 
     .description-story {
         font-size: 1em;
         margin-bottom: 10px;
+        padding: 10px 20px;
     }
 
     .description {
@@ -328,7 +344,7 @@ form {
     }
 
     .console {
-        min-height: 280px;
+        min-height: 200px;
         box-shadow: none;
     }
 
@@ -338,7 +354,8 @@ form {
 
     .console-output {
         line-height: 30px;
-        padding: 10px;
+        padding: 20px;
+        font-size: 1.3em;
     }
 
     .console-btn {
@@ -371,7 +388,7 @@ form {
     }
 
     .console {
-        min-height: 300px;
+        min-height: 240px;
     }
     
     .console-output {

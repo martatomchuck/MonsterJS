@@ -82,6 +82,9 @@ const InputCode = () => {
      
     const handleSubmit = (e) => {
         e.preventDefault();
+    }
+
+    const handleCheckBlur = () => {
         handleCheck();
         verifyAnswer(answer.trim());
     }
@@ -98,10 +101,10 @@ const InputCode = () => {
         <form onSubmit={handleSubmit}>
             <div className="console-userinput">
                 <label>const chosen = document. </label>
-                <input type="text" spellCheck="false" placeholder="Type in your code" value={answer} onChange={(e) => setAnswer(e.target.value)} onClick={() => {handleUnCheck(); clearAnswer(answer);}} />
+                <input type="text" spellCheck="false" placeholder="Type in your code" value={answer} onChange={(e) => setAnswer(e.target.value)} onClick={() => {handleUnCheck(); clearAnswer(answer);}} onBlur={handleCheckBlur} />
             </div>
 
-            <input type="submit" className="btn check-btn" value="Check"></input>
+            {/* <input type="submit" className="btn check-btn" value="Check"></input> */}
         </form>
     );
 }
