@@ -1,5 +1,4 @@
 import React, { createContext, useState, useContext } from 'react';
-import dataset from '../data/dataset';
 import { LevelContext } from './LevelContext';
 
 export const AnswerContext = createContext();
@@ -22,13 +21,14 @@ const AnswerContextProvider = (props) => {
         setIsCorrect(false);
     }
 
-    const handleClick = () => {
+    // CLEARING THE INPUT VALUE part 1
+    const clearInputValue = () => {
         setIsClicked(!isClicked);
     }
 
 
     return (
-        <AnswerContext.Provider value={{isCorrect, verifyAnswer, clearAnswer, handleClick, isClicked}}>
+        <AnswerContext.Provider value={{isCorrect, verifyAnswer, clearAnswer, clearInputValue, isClicked}}>
             {props.children}
         </AnswerContext.Provider>
     )

@@ -6,10 +6,12 @@ const CheckContextProvider = (props) => {
     
     const [answerSubmit, setAnswerSubmit] = useState(false);
 
+    // TRIGGERING OUTPUT MESSAGE
     const handleCheck = () => {
         setAnswerSubmit(true);
     }
 
+    // CLEARING THE OUTPUT MESSAGE
     const handleUnCheck = () => {
         setAnswerSubmit(false);
     }

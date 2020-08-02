@@ -76,7 +76,7 @@ const Console = () => {
 
 const InputCode = () => {
     const {handleCheck, handleUnCheck} = useContext(CheckContext);
-    const {verifyAnswer, clearAnswer, isClicked, handleClick} = useContext(AnswerContext);
+    const {verifyAnswer, clearAnswer, isClicked, clearInputValue} = useContext(AnswerContext);
 
     const [answer, setAnswer] = useState("");
      
@@ -84,6 +84,7 @@ const InputCode = () => {
         e.preventDefault();
     }
 
+    // BLUR INSTEAD OF CHECK BTN
     const handleAnswerSubmit = () => {
         handleCheck();
         verifyAnswer(answer.trim());
@@ -95,11 +96,12 @@ const InputCode = () => {
         }
     }
 
+    // CLEARING THE INPUT VALUE part 2
     useEffect(() => {
         if (isClicked && answer !== "") {
             // console.log("clicked", isClicked);
             setAnswer("");
-            handleClick();
+            clearInputValue();
         }
     }, [isClicked]);
 
@@ -126,13 +128,13 @@ const OutputCode = () => {
 const BtnNext = () => {
     const {handleNextBtn} = useContext(LevelContext);
     const {handleUnCheck} = useContext(CheckContext);
-    const {clearAnswer, handleClick} = useContext(AnswerContext);
+    const {clearAnswer, clearInputValue} = useContext(AnswerContext);
 
     const pushNextBtn = () => {
         handleNextBtn();
         handleUnCheck();
         clearAnswer();
-        handleClick();
+        clearInputValue();
     }
 
     return <div className="btn next-btn" onClick={pushNextBtn}>Next</div>

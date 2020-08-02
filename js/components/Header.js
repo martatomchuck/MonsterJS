@@ -3,7 +3,6 @@ import React, { useState, useContext, Fragment } from "react";
 import { LevelContext } from "../contexts/LevelContext";
 import { CheckContext } from "../contexts/CheckContext";
 import { AnswerContext } from "../contexts/AnswerContext";
-// import dataset from "../data/dataset";
 
 const Header = ({datasetLength, level, levelId}) => {
     return (
@@ -23,7 +22,7 @@ const Header = ({datasetLength, level, levelId}) => {
 const Counter = ({datasetLength, level}) => {
     const {handlePrevBtn, handleNextBtn} = useContext(LevelContext);
     const {handleUnCheck} = useContext(CheckContext);
-    const {clearAnswer, handleClick} = useContext(AnswerContext);
+    const {clearAnswer, clearInputValue} = useContext(AnswerContext);
 
     const [counterList, setCounterList] = useState();
 
@@ -31,13 +30,13 @@ const Counter = ({datasetLength, level}) => {
         handlePrevBtn();
         handleUnCheck();
         clearAnswer();
-        handleClick();
+        clearInputValue();
     }
     const pushNextConsoleBtn = () => {
         handleNextBtn();
         handleUnCheck();
         clearAnswer();
-        handleClick();
+        clearInputValue();
     }
 
     const toggleCounterList = () => {
@@ -58,6 +57,9 @@ const Counter = ({datasetLength, level}) => {
 
 const CounterList = ({toggleCounterList, counterList, level, datasetLength}) => {
 
+    const {handleUnCheck} = useContext(CheckContext);
+    const {clearAnswer, clearInputValue} = useContext(AnswerContext);
+
     const {setCounter} = useContext(LevelContext);
 
     const levelNumbers = [];
@@ -68,11 +70,17 @@ const CounterList = ({toggleCounterList, counterList, level, datasetLength}) => 
     const changeLevel = (nb) => {
         setCounter(nb-1);
         toggleCounterList();
+        handleUnCheck();
+        clearAnswer();
+        clearInputValue();
     }
 
     const resetLevel = () => {
         setCounter(0);
         toggleCounterList();
+        handleUnCheck();
+        clearAnswer();
+        clearInputValue();
     }
 
     return (
