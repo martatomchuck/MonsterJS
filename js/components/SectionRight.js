@@ -84,9 +84,15 @@ const InputCode = () => {
         e.preventDefault();
     }
 
-    const handleCheckBlur = () => {
+    const handleAnswerSubmit = () => {
         handleCheck();
         verifyAnswer(answer.trim());
+    }
+
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            handleAnswerSubmit();
+        }
     }
 
     useEffect(() => {
@@ -101,7 +107,7 @@ const InputCode = () => {
         <form onSubmit={handleSubmit}>
             <div className="console-userinput">
                 <label>const chosen = document. </label>
-                <input type="text" spellCheck="false" placeholder="Type in your code" value={answer} onChange={(e) => setAnswer(e.target.value)} onClick={() => {handleUnCheck(); clearAnswer(answer);}} onBlur={handleCheckBlur} />
+                <input type="text" spellCheck="false" placeholder="Type in your code" value={answer} onChange={(e) => setAnswer(e.target.value)} onClick={() => {handleUnCheck(); clearAnswer(answer);}} onBlur={handleAnswerSubmit} onKeyDown={handleKeyDown} />
             </div>
 
             {/* <input type="submit" className="btn check-btn" value="Check"></input> */}
