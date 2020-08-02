@@ -1,4 +1,4 @@
-import React, { useState, useContext, Fragment } from "react";
+import React, { useState, useContext } from "react";
 
 import { LevelContext } from "../contexts/LevelContext";
 import { CheckContext } from "../contexts/CheckContext";
