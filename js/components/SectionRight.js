@@ -86,8 +86,10 @@ const InputCode = () => {
 
     // BLUR INSTEAD OF CHECK BTN
     const handleAnswerSubmit = () => {
-        handleCheck();
-        verifyAnswer(answer.trim());
+        if (answer !== "") {
+            handleCheck();
+            verifyAnswer(answer.trim());   
+        }
     }
 
     const handleKeyDown = (e) => {
@@ -104,6 +106,12 @@ const InputCode = () => {
             clearInputValue();
         }
     }, [isClicked]);
+
+    useEffect(() => {
+        if (answer === "") {
+            handleUnCheck();
+        }
+    })
 
     return (
         <form onSubmit={handleSubmit}>
