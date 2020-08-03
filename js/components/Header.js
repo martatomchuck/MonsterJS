@@ -20,7 +20,7 @@ const Header = ({datasetLength, level, levelId}) => {
 }
 
 const Counter = ({datasetLength, level}) => {
-    const {handlePrevBtn, handleNextBtn} = useContext(LevelContext);
+    const {counter, handlePrevBtn, handleNextBtn} = useContext(LevelContext);
     const {handleUnCheck} = useContext(CheckContext);
     const {clearAnswer, clearInputValue} = useContext(AnswerContext);
 
@@ -46,9 +46,9 @@ const Counter = ({datasetLength, level}) => {
     return (
         <div>
             <div className="counter" >
-                <div id="counter-prev" onClick={pushPrevConsoleBtn}></div>
+                <div id="counter-prev" onClick={pushPrevConsoleBtn} style={{backgroundColor: counter === 0 ? "#ff9d9d9d" : "#ff9d9d"}}></div>
                 <div id="counter-level" onClick={toggleCounterList}>Level {level} of {datasetLength}</div>
-                <div id="counter-next" onClick={pushNextConsoleBtn}></div>
+                <div id="counter-next" onClick={pushNextConsoleBtn} style={{backgroundColor: counter === datasetLength-1 ? "#ff9d9d9d" : "#ff9d9d"}}></div>
             </div>
             <CounterList toggleCounterList={toggleCounterList} counterList={counterList} level={level} datasetLength={datasetLength}/>
         </div>
@@ -88,7 +88,7 @@ const CounterList = ({toggleCounterList, counterList, level, datasetLength}) => 
             <div className="counter-list-elements">
                 { levelNumbers.map((nb, i) => <div key={i} onClick={() => changeLevel(nb)} className={i === level-1 ? "counter-list-el-active" : "counter-list-el"}>{nb}</div> )}
             </div>
-            <div className="counter-reset" onClick={resetLevel}>Zacznij od początku</div>
+            <div className="counter-reset" onClick={resetLevel}>Reset progress</div>
         </div>
     )
 }
