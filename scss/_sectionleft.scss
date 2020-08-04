@@ -59,14 +59,14 @@
 
 .tooltip {
     display: block;
-    font-size: 1.05em;
+    font-size: 0.85em;
     color: white;
     box-sizing: border-box;
-    padding: 12px 20px;
-    width: 280px;
+    padding: 8px 18px;
+    width: 210px;
     // height: 100px;
     height: auto;
-    line-height: 25px;
+    line-height: 20px;
     background-color: #244cfc;
     background-image: linear-gradient(45deg, #1942fa, #277dfd);
     position: absolute;
@@ -161,10 +161,10 @@
     }
 
     .tooltip {
-        top: 100px;
-        left: -65px;
+        top: 90px;
+        left: -60px;
         font-size: 0.9em;
-        width: 220px;
+        width: 200px;
         // height: 75px;
         height: auto;
         padding: 10px 15px;
@@ -194,10 +194,10 @@
 
     
     .tooltip {
-        top: 85px;
-        left: -55px;
+        top: 75px;
+        left: -50px;
         font-size: 0.74em;
-        width: 180px;
+        width: 160px;
         // height: 70px;
         height: auto;
         padding: 8px 12px;
@@ -229,7 +229,8 @@
     }
 
     .tooltip {
-        top: 72px;
-        left: -65px;
+        width: 150px;
+        top: 68px;
+        left: -50px;
     }
 }
