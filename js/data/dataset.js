@@ -1347,7 +1347,7 @@ export default [
                 id: 2,
                 class: "ufo",
                 disappear: true,
-                tooltip: '< spaceship for = "foreigner" class = "ufo" id = "Air Force UFO" > </ spaceship >'
+                tooltip: '< spaceship for = "foreigner" class = "ufo" id = "Air Force UFO" > Hello, UFO here! </ spaceship >'
             },
             {
                 id: 3,
@@ -1396,7 +1396,7 @@ export default [
                 id: 1,
                 class: "alien",
                 disappear: true,
-                tooltip: '< alien from = "Planet Mars" class = "non-native" id = "Eva" > </ alien >'
+                tooltip: '< alien from = "Planet Mars" class = "non-native" id = "Eva" > I am an alien! </ alien >'
             },
             {
                 id: 2,
@@ -1426,7 +1426,7 @@ export default [
                 id: 6,
                 class: "alien",
                 disappear: true,
-                tooltip: '< alien from = "Planet Mars" class = "non-native" id = "Gregory" > </ alien >'
+                tooltip: '< alien from = "Planet Mars" class = "non-native" id = "Gregory" > I am an alien! </ alien >'
             }
         ],
         story: "Too late. The spaceship has landed. Welcome aliens to Planet Earth and ask them gently to leave the Monster Village.",
@@ -1480,13 +1480,13 @@ export default [
                 id: 3,
                 class: "alien",
                 disappear: true,
-                tooltip: '< alien from = "Planet Mars" class = "visitor foreigners" id = "Gregory" > </ alien >'
+                tooltip: '< alien from = "Planet Mars" class = "visitor foreigners" id = "Gregory" > I am an alien! </ alien >'
             },
             {
                 id: 4,
                 class: "alien",
                 disappear: true,
-                tooltip: '< alien from = "Planet Mars" class = "foreigners non-native" id = "Eva" > </ alien >'
+                tooltip: '< alien from = "Planet Mars" class = "foreigners non-native" id = "Eva" > I am an alien! </ alien >'
             },
             {
                 id: 5,
@@ -1510,7 +1510,7 @@ export default [
                 id: 8,
                 class: "ufo",
                 disappear: true,
-                tooltip: '< spaceship class = "ufo foreigners" id = "Air Force UFO"> </ spaceship >'
+                tooltip: '< spaceship class = "ufo foreigners" id = "Air Force UFO"> Hi, UFO here! </ spaceship >'
             },
             {
                 id: 9,
