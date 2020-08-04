@@ -111,7 +111,7 @@ const InputCode = () => {
         if (answer === "") {
             handleUnCheck();
         }
-    })
+    }, [answer]);
 
     return (
         <form onSubmit={handleSubmit}>
