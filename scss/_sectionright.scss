@@ -197,7 +197,11 @@ form {
     width: 100%;
 }
 
-.btn {
+.console-btn-hidden {
+    display: none;
+}
+
+.btn-next {
     width: 160px;
     height: 45px;
     color: white;
@@ -209,25 +213,6 @@ form {
     line-height: 45px; 
     cursor: pointer;
     transition: all 0.5s ease;
-}
-
-.check-btn {
-    background-color: #FF9721;
-    box-shadow: -2px 3px 7px 0px gray;
-    margin: 15px 0px;
-    border: none;
-    outline: none;
-    align-self: center;
-    appearance: none;
-
-    &:hover {
-        background-color: #ffa41b;
-        // background-image: linear-gradient(45deg, #ff2e63, #FF9721);
-        transition: all 0.5s ease;
-    }
-}
-
-.next-btn {
     background-color: #ff2e62b7;
     box-shadow: -4px 4px 10px 0px #000b22;
     margin: 10px 48px 15px 0;
@@ -237,6 +222,22 @@ form {
         transition: all 0.5s ease;
     }
 }
+
+// Button CHECK deactivated, changes submitted on blur
+// .check-btn {
+//     background-color: #FF9721;
+//     box-shadow: -2px 3px 7px 0px gray;
+//     margin: 15px 0px;
+//     border: none;
+//     outline: none;
+//     align-self: center;
+//     appearance: none;
+
+//     &:hover {
+//         background-color: #ffa41b;
+//         transition: all 0.5s ease;
+//     }
+// }
 
 @media (max-width: 1600px) {
     .description {
@@ -256,7 +257,7 @@ form {
         min-height: 250px;
     }
 
-    .next-btn {
+    .btn-next {
         margin-bottom: 10px;
     }
 }
@@ -291,7 +292,7 @@ form {
         padding: 8px;
     }
 
-    .next-btn {
+    .btn-next {
         margin-bottom: 10px;
     }
 }
@@ -362,7 +363,7 @@ form {
         justify-content: flex-start;
     }
 
-    .next-btn {
+    .btn-next {
         width: 98%;
         box-shadow: 0 0 20px 0 #000b228a;
         margin: 10px 0;

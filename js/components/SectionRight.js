@@ -7,12 +7,14 @@ import { CheckContext } from "../contexts/CheckContext";
 
 const SectionRight = ({story, description, task, instructions, example}) => {
 
+    const {isCorrect} = useContext(AnswerContext);
+
     return (
         <section className="section-right">
             <div className="title">Welcome to Monster Village!</div>
             <Instructions story={story} description={description} task={task} instructions={instructions} example={example}/>
             <Console/>
-            <div className="console-btn">
+            <div className={isCorrect ? "console-btn" : "console-btn-hidden"}>
                 <BtnNext/>
             </div>
         </section>
@@ -145,7 +147,7 @@ const BtnNext = () => {
         clearInputValue();
     }
 
-    return <div className="btn next-btn" onClick={pushNextBtn}>Next</div>
+    return <div className="btn-next" onClick={pushNextBtn}>Next</div>
 }
 
 export default SectionRight;
