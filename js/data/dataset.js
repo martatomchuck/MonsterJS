@@ -9,6 +9,15 @@ export default [
                 id: 1,
                 class: "monster8",
                 disappear: false,
+
+                // tooltip: [
+                //     {id:1, text:'monster', type:"tag"},
+                //     {id:2, text:'green one-eyed', type:"class"},
+                //     {id:3, text:'Frank', type:"id"},
+                //     {id:2, text:'Hello, I am a new Tooltip!', type:"innertext"}
+                // ],
+
+
                 tooltip: '< monster class = "green one-eyed" id = "Frank"> Hello, I am a Monster! </ monster >'
             },
             {

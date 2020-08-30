@@ -1,6 +1,7 @@
-import React, { useState, useContext } from "react";
-
+import React, { useState, useContext, useEffect } from "react";
 import { AnswerContext } from "../contexts/AnswerContext";
+
+import NewTooltip from '../data/tooltip';
 
 // SECTION LEFT
 const SectionLeft = ({task, elements}) => {
@@ -42,7 +43,7 @@ const Game = ({elements}) => {
                     return (
                         <>
                             <div key={monster.id} className={`element ${monster.class}`} style={isCorrect && monster.disappear ? {display: "none"} : {display: "block"}} onMouseOver={() => handleMouseHover(monster.id)} onMouseLeave={handleMouseHoverLeave}>
-                                {isHovering === monster.id && <Tooltip tooltip={monster.tooltip} />}
+                                {isHovering === monster.id && <Tooltip tooltip={NewTooltip} />}
                             </div>
                         </>
                     )
@@ -54,7 +55,33 @@ const Game = ({elements}) => {
 }
 
 const Tooltip = ({tooltip}) => {
-    return <div className="tooltip">{tooltip}</div>
+
+    return (
+        <div className="tooltip">
+            <span>{tooltip.start}</span>
+
+            <span style={{color: "orange", fontWeight: "600"}}>{tooltip.tag} </span>
+            
+            {tooltip.class && <span>class = </span>}
+            <span style={{color: "yellow", fontWeight: "600"}}> {tooltip.class} </span>
+            <br/>
+            {tooltip.id && <span>id = </span>}
+            <span style={{color: "green", fontWeight: "600"}}> {tooltip.id} </span>
+
+            <span>{tooltip.end}</span>
+
+            <br/>
+            <span style={{display: "inline-block", marginLeft: "15px"}}> {tooltip.innertext} </span>
+            <br/>
+
+            <span>{tooltip.start}</span>
+
+            <span style={{color: "orange", fontWeight: "600"}}>{tooltip.tag} </span>
+
+            <span>{tooltip.end}</span>
+            
+        </div>
+    )
 }
 
 export default SectionLeft;
