@@ -3,6 +3,7 @@ var path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
+
 module.exports = {
   devtool: 'eval-source-map',
   watch: true,
@@ -36,7 +37,13 @@ module.exports = {
                 "@babel/plugin-proposal-class-properties", {
                   "loose": true
                 }
-              ]
+              ],
+              ["prismjs", {
+                "languages": ["javascript", "css", "html"],
+                "plugins": ["line-numbers", "show-language"],
+                "theme": "okaidia",
+                "css": true
+              }]
             ]
           }
         }
