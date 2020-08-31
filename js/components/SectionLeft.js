@@ -1,8 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import { AnswerContext } from "../contexts/AnswerContext";
 
-import NewTooltip from '../data/tooltip';
-
 // SECTION LEFT
 const SectionLeft = ({task, elements}) => {
     return (
