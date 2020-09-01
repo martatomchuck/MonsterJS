@@ -29,18 +29,21 @@ a {
 
 // SCROLLBAR
 ::-webkit-scrollbar {
-    width: 11px;
+    width: 9px;
 }
 
 ::-webkit-scrollbar-track {
     background: #000b22;
-    margin: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgba(240, 239, 239, 0.644);
-    border-radius: 5px;
-    border: 4px solid #000b22;
+    background: #4f6294;
+    border-radius: 10px;
+
+    &:hover {
+        background: #ff7aa8;
+    }
+
 }
 
 // THE APP
