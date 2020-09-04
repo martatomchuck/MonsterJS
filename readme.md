@@ -34,10 +34,10 @@ Familiarity with the basics of HTML and JavaScript fundamentals is a plus but no
 * Responsive Web Design (RWD)
 * Progressive Web Application (PWA)
 * Player progress is saved using localStorage
-* Language version: ENG
+* Language version: ENG (English is not my native language. I would be grateful for proofreading the descriptions.)
 * Language version: PL <sub>to appear soon</sub>
 * Difficulty levels: beginner / intermediate <sub>to appear soon</sub>
-* Reset progress <sub>to appear soon</sub>
+* Reset progress
 * Vibration effect (mobile) <sub>to appear soon</sub>
 
 ## 📓 TECHNOLOGIES
