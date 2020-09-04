@@ -90,7 +90,9 @@ const InputCode = () => {
     const handleAnswerSubmit = () => {
         if (answer !== "") {
             handleCheck();
-            verifyAnswer(answer.trim());   
+            // trim() - removing whitespace from both ends of a string
+            // replace() with regular expressions - removing all the whitespace from a string
+            verifyAnswer(answer.replace(/\s+/g, ""));
         }
     }
 
