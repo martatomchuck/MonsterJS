@@ -2545,5 +2545,83 @@ export default [
             "getElementsByClassName('foreigners');",
             "getElementsByClassName(`foreigners`);",
         ]
+    },
+    {
+        level: 21,
+        task: [
+            {id:1, text:'Select the frankenstein', bold:false}
+        ],
+        elements: [
+            {
+                id: 1,
+                class: "monster5",
+                disappear: false,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"dark-blue tentacles"',
+                    id:'"Julia"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "dark-blue tentacles" id = "Julia" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 2,
+                class: "monster4",
+                disappear: false,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"turquoise dotted"',
+                    id:'"Thomas"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "turquoise dotted" id = "Thomas" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 3,
+                class: "frankenstein",
+                disappear: true,
+                tooltip: {
+                    start:'< ',
+                    tag:'monstrum',
+                    name:'"frankenstein"',
+                    innertext:' I am the Frankenstein! ',
+                    end:' >'
+                }
+                // tooltip: '< monstrum name = "frankenstein"> I am the Frankenstein! </ monstrum >'
+            }
+        ],
+        story: "One of the Monster experiments in hiding trying to create a perfect monster. Accidentally, he creates Frankenstein's creature!",
+        task_description: [
+            {id:1, text:'Catch the Frankenstein with the method ', bold:false},
+            {id:2, text:'getElementsByName( )', bold:true},
+            {id:3, text:'. Use name attribute as a selector.', bold:false}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:true}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:false},
+                {id:3, text:'', bold:false}
+            ]}
+        ],
+        example: [
+            {id:1, text:'document.getElementsByName("name-attr")', bold:true},
+            {id:2, text:' will access all the elements with a name attribute set up as "name-attr".', bold:false}
+        ],
+        expected_input: [
+            'getElementsByName("frankenstein")',
+            "getElementsByName('frankenstein')",
+            "getElementsByName(`frankenstein`)",
+            'getElementsByName("frankenstein");',
+            "getElementsByName('frankenstein');",
+            "getElementsByName(`frankenstein`);",
+        ]
     }
 ];
