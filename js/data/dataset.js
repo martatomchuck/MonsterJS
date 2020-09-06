@@ -2208,7 +2208,7 @@ export default [
                 tooltip: {
                     start:'< ',
                     tag:'spaceship',
-                    for: '"foreigner"',
+                    datafor: '"foreigner"',
                     class:'"ufo"',
                     id:'"Air Force UFO"',
                     innertext:' Hello, UFO here! ',
@@ -2274,7 +2274,7 @@ export default [
                 tooltip: {
                     start:'< ',
                     tag:'alien',
-                    from: '"Planet Mars"',
+                    datafrom: '"Planet Mars"',
                     class:'"non-native"',
                     id:'"Eva"',
                     innertext:' I am an alien! ',
@@ -2345,7 +2345,7 @@ export default [
                 tooltip: {
                     start:'< ',
                     tag:'alien',
-                    from: '"Planet Mars"',
+                    datafrom: '"Planet Mars"',
                     class:'"non-native"',
                     id:'"Gregory"',
                     innertext:' I am an alien! ',
@@ -2424,7 +2424,7 @@ export default [
                 tooltip: {
                     start:'< ',
                     tag:'alien',
-                    from: '"Planet Mars"',
+                    datafrom: '"Planet Mars"',
                     class:'"visitor foreigners"',
                     id:'"Gregory"',
                     innertext:' I am an alien! ',
@@ -2439,7 +2439,7 @@ export default [
                 tooltip: {
                     start:'< ',
                     tag:'alien',
-                    from: '"Planet Mars"',
+                    datafrom: '"Planet Mars"',
                     class:'"foreigners non-native"',
                     id:'"Eva"',
                     innertext:' I am an alien! ',
@@ -2549,7 +2549,7 @@ export default [
     {
         level: 21,
         task: [
-            {id:1, text:'Select the frankenstein', bold:false}
+            {id:1, text:'Select the Frankenstein', bold:false}
         ],
         elements: [
             {
@@ -2591,7 +2591,7 @@ export default [
                     innertext:' I am the Frankenstein! ',
                     end:' >'
                 }
-                // tooltip: '< monstrum name = "frankenstein"> I am the Frankenstein! </ monstrum >'
+                // tooltip: '< monstrum name = "frankenstein" > I am the Frankenstein! </ monstrum >'
             }
         ],
         story: "One of the Monster experiments in hiding trying to create a perfect monster. Accidentally, he creates Frankenstein's creature!",
@@ -2622,6 +2622,126 @@ export default [
             'getElementsByName("frankenstein");',
             "getElementsByName('frankenstein');",
             "getElementsByName(`frankenstein`);",
+        ]
+    },
+    {
+        level: 22,
+        task: [
+            {id:1, text:'Select all the Frankensteins', bold:false}
+        ],
+        elements: [
+            {
+                id: 1,
+                class: "frankenstein",
+                disappear: true,
+                tooltip: {
+                    start:'< ',
+                    tag:'monstrum',
+                    class:'"gigantic"',
+                    name:'"creature"',
+                    innertext:' I am the Frankenstein! ',
+                    end:' >'
+                }
+                // tooltip: '< monstrum class = "gigantic" name = "creature" > I am the Frankenstein! </ monstrum >'
+            },
+            {
+                id: 2,
+                class: "monster8",
+                disappear: true,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"green one-eyed"',
+                    id:'"Frank"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "green one-eyed" id = "Frank"> Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 3,
+                class: "monster5",
+                disappear: false,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"dark-blue tentacles"',
+                    id:'"Julia"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "dark-blue tentacles" id = "Julia" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 4,
+                class: "monster3",
+                disappear: false,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"yellow notched"',
+                    id:'"Clark"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "yellow notched" id = "Clark" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 5,
+                class: "frankenstein",
+                disappear: true,
+                tooltip: {
+                    start:'< ',
+                    tag:'monstrum',
+                    class:'"green-face"',
+                    name:'"creature"',
+                    innertext:' I am the Frankenstein! ',
+                    end:' >'
+                }
+                // tooltip: '< monstrum class = "green-face" name = "creature" > I am the Frankenstein! </ monstrum >'
+            },
+            {
+                id: 6,
+                class: "monster4",
+                disappear: false,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"turquoise dotted"',
+                    id:'"Thomas"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "turquoise dotted" id = "Thomas" > Hello, I am a Monster! </ monster >'
+            }
+        ],
+        story: "Wait… The Frankenstein has doubled. Try to chase the creatures again before they take revenge on their creator and his family!",
+        task_description: [
+            {id:1, text:'Catch the Frankensteins with the method ', bold:false},
+            {id:2, text:'getElementsByName( )', bold:true},
+            {id:3, text:'. Use name attribute as a selector.', bold:false}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:true}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:false},
+                {id:3, text:'', bold:false}
+            ]}
+        ],
+        example: [
+            {id:1, text:'Try it yourself!', bold:false}
+        ],
+        expected_input: [
+            'getElementsByName("creature")',
+            "getElementsByName('creature')",
+            "getElementsByName(`creature`)",
+            'getElementsByName("creature");',
+            "getElementsByName('creature');",
+            "getElementsByName(`creature`);",
         ]
     }
 ];
