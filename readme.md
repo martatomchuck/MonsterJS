@@ -55,5 +55,5 @@ Familiarity with the basics of HTML and JavaScript fundamentals is a plus but no
 
 Icons from flaticon.com made by:
 * Smashicons: https://www.flaticon.com/packs/monsters-3 + https://www.flaticon.com/packs/alien-ufo-9
-* Freepik: https://www.flaticon.com/packs/coronavirus-25 + https://www.flaticon.com/packs/nature-38 + https://www.flaticon.com/packs/fantastic-characters-32
+* Freepik: https://www.flaticon.com/packs/coronavirus-25 + https://www.flaticon.com/packs/nature-38 + https://www.flaticon.com/packs/fantastic-characters-32 + https://www.flaticon.com/packs/avatars-46
 * Dimitry Miroliubov: https://www.flaticon.com/packs/halloween-29
