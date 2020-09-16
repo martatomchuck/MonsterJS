@@ -8,6 +8,15 @@ const LevelContextProvider = (props) => {
         return localData ? JSON.parse(localData) : 0;
     });
 
+    // opening and closing counter list
+    const [counterList, setCounterList] = useState();
+
+    const closeCounterList = () => {
+        if (counterList === true) {
+            setCounterList(!counterList);
+        }
+    }
+
     useEffect(() => {
         clearTimeout(timeout); 
         localStorage.setItem('currentLevel', JSON.stringify(counter));
@@ -34,7 +43,7 @@ const LevelContextProvider = (props) => {
     }
 
     return (
-        <LevelContext.Provider value={{counter, setCounter, handlePrevBtn, handleNextBtn}}>
+        <LevelContext.Provider value={{counter, setCounter, counterList, setCounterList, closeCounterList, handlePrevBtn, handleNextBtn}}>
             {props.children}
         </LevelContext.Provider>
     )

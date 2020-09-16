@@ -1,11 +1,16 @@
 import React, { useState, useContext, useEffect } from "react";
+
 import { AnswerContext } from "../contexts/AnswerContext";
+import { LevelContext } from "../contexts/LevelContext";
+
 import Tooltip from '../components/Tooltip';
 
 // SECTION LEFT
 const SectionLeft = ({task, elements}) => {
+    const {closeCounterList} = useContext(LevelContext);
+    
     return (
-        <section className="section-left">
+        <section className="section-left" onClick={closeCounterList}>
             <Task task={task}/>
             <Game elements={elements}/>
         </section>

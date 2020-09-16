@@ -1,8 +1,12 @@
 import React, { useState, useContext } from "react";
 
+import { LevelContext } from "../contexts/LevelContext";
+
 const Footer = () => {
+    const {closeCounterList} = useContext(LevelContext);
+
     return (
-        <footer className="footer">
+        <footer className="footer" onClick={closeCounterList}>
             <div className="footer-copyright">
             Created with <div className="footer-heart"></div> by <a href={"https://github.com/mtomchuck"} target={"_blank"}>martatomchuck</a>
             </div>

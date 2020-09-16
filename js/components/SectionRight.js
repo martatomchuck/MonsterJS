@@ -6,11 +6,11 @@ import { CheckContext } from "../contexts/CheckContext";
 
 
 const SectionRight = ({story, description, task, instructions, example}) => {
-
     const {isCorrect} = useContext(AnswerContext);
-
+    const {closeCounterList} = useContext(LevelContext);
+    
     return (
-        <section className="section-right">
+        <section className="section-right" onClick={closeCounterList}>
             <div className="title">Welcome to Monster Village!</div>
             <Instructions story={story} description={description} task={task} instructions={instructions} example={example}/>
             <Console/>

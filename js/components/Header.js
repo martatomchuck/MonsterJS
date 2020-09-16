@@ -5,8 +5,10 @@ import { CheckContext } from "../contexts/CheckContext";
 import { AnswerContext } from "../contexts/AnswerContext";
 
 const Header = ({datasetLength, level, levelId}) => {
+    const {closeCounterList} = useContext(LevelContext);
+
     return (
-        <header className="header">
+        <header className="header" onClick={closeCounterList}>
             <div className="header-title">MonsterJS</div>
             <Counter datasetLength={datasetLength} level={level} levelId={levelId}/>
             <div className="header-share">
@@ -20,11 +22,11 @@ const Header = ({datasetLength, level, levelId}) => {
 }
 
 const Counter = ({datasetLength, level}) => {
-    const {counter, handlePrevBtn, handleNextBtn} = useContext(LevelContext);
+    const {counter, counterList, setCounterList, handlePrevBtn, handleNextBtn} = useContext(LevelContext);
     const {handleUnCheck} = useContext(CheckContext);
     const {clearAnswer, clearInputValue} = useContext(AnswerContext);
 
-    const [counterList, setCounterList] = useState();
+    // const [counterList, setCounterList] = useState();
 
     const pushPrevConsoleBtn = () => {
         handlePrevBtn();
