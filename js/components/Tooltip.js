@@ -29,6 +29,11 @@ const Tooltip = ({tooltip}) => {
             {tooltip.name && <span>name = </span>}
             <span style={{color: "#36F8F6", fontWeight: "600"}}> {tooltip.name} </span>
 
+            {/* Attribute */}
+            {tooltip.attr && <span> {tooltip.attrname} = </span>}
+            <span style={{color: "#CEB2FB", fontWeight: "600"}}> {tooltip.attr} </span>
+
+
             <span>{tooltip.end}</span>
 
             <br/>

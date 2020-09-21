@@ -1785,6 +1785,172 @@ export default [
     {
         level: 15,
         task: [
+            {id:1, text:'Select all the carriers of COVID-19', bold:false}
+        ],
+        elements: [
+            {
+                id: 1,
+                class: "infected",
+                disappear: true,
+                tooltip: {
+                    start:'< ',
+                    tag:'infected',
+                    class:'"spreading virus"',
+                    innertext:' I am sick with coronavirus! ',
+                    end:' >'
+                }
+                // tooltip: ' < infected class = "spreading virus" > I am sick with coronavirus! </ infected > '
+            },
+            {
+                id: 2,
+                class: "hand",
+                disappear: true,
+                tooltip: {
+                    start:'< ',
+                    tag:'carrier',
+                    class:'"spreading virus"',
+                    id:'"COVID-19"',
+                    innertext:' I am not washing my hands! ',
+                    end:' >'
+                }
+                // tooltip: ' < carrier class = "spreading virus" id = "COVID-19" > I am not washing my hands! </ carrier > '
+            },
+            {
+                id: 3,
+                class: "monster9",
+                disappear: false,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"light-purple buka"',
+                    id:'"Alice"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "light-purple buka" id = "Alice" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 4,
+                class: "monster5",
+                disappear: false,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"dark-blue tentacles"',
+                    id:'"Julia"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "dark-blue tentacles" id = "Julia" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 5,
+                class: "monster4",
+                disappear: false,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"turquoise dotted"',
+                    id:'"Thomas"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "turquoise dotted" id = "Thomas" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 6,
+                class: "infected",
+                disappear: true,
+                tooltip: {
+                    start:'< ',
+                    tag:'infected',
+                    class:'"spreading virus"',
+                    id: '"fever"',
+                    innertext:' I am sick with coronavirus! ',
+                    end:' >'
+                }
+                // tooltip: ' < infected class = "spreading virus" id = "fever" > I am sick with coronavirus! </ infected > '
+            },
+            {
+                id: 7,
+                class: "monster10",
+                disappear: false,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"yellow alien"',
+                    id:'"Alex"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "yellow alien" id = "Alex" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 8,
+                class: "hand",
+                disappear: true,
+                tooltip: {
+                    start:'< ',
+                    tag:'carrier',
+                    class:'"spreading virus"',
+                    innertext:' I am not washing my hands! ',
+                    end:' >'
+                }
+                // tooltip: ' < carrier class = "spreading virus"> I am not washing my hands! </ carrier > '
+            },
+            {
+                id: 9,
+                class: "monster8",
+                disappear: false,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"green one-eyed"',
+                    id:'"Frank"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "green one-eyed" id = "Frank"> Hello, I am a Monster! </ monster >'
+            },
+        ],
+        story: "The spread of the coronavirus is now a pandemic. You should find, isolate and treat every case and potential risk of spreading the virus.",
+        task_description: [
+            {id:1, text:'Catch all the Monsters that do not sanitize their hands and all the Monsters that are infected with the virus. Use the ', bold:false},
+            {id:2, text:'querySelectorAll( )', bold:true},
+            {id:3, text:'. Choose an appropriate selector.', bold:false}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:true}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:false},
+                {id:3, text:'', bold:false}
+            ]}
+        ],
+        example: [
+            {id:1, text:'Try it yourself!', bold:false}
+        ],
+        expected_input: [
+            'querySelectorAll(".spreading")',
+            "querySelectorAll('.spreading')",
+            "querySelectorAll(`.spreading`)",
+            'querySelectorAll(".spreading");',
+            "querySelectorAll('.spreading');",
+            "querySelectorAll(`.spreading`);",
+            'querySelectorAll(".virus")',
+            "querySelectorAll('.virus')",
+            "querySelectorAll(`.virus`)",
+            'querySelectorAll(".virus");',
+            "querySelectorAll('.virus');",
+            "querySelectorAll(`.virus`);"
+        ]
+    },
+    {
+        level: 16,
+        task: [
             {id:1, text:'Select the dragon', bold:false}
         ],
         elements: [
@@ -1914,7 +2080,7 @@ export default [
         ]
     },
     {
-        level: 16,
+        level: 17,
         task: [
             {id:1, text:'Select all the newcomers', bold:false}
         ],
@@ -2062,7 +2228,7 @@ export default [
         ]
     },
     {
-        level: 17,
+        level: 18,
         task: [
             {id:1, text:'Select all the Monsters', bold:false}
         ],
@@ -2182,7 +2348,7 @@ export default [
         ]
     },
     {
-        level: 18,
+        level: 19,
         task: [
             {id:1, text:'Select the spaceship', bold:false}
         ],
@@ -2262,7 +2428,7 @@ export default [
         ]
     },
     {
-        level: 19,
+        level: 20,
         task: [
             {id:1, text:'Select all the aliens', bold:false}
         ],
@@ -2384,7 +2550,7 @@ export default [
         ]
     },
     {
-        level: 20,
+        level: 21,
         task: [
             {id:1, text:'Select all the aliens and the spaceship', bold:false}
         ],
@@ -2547,7 +2713,7 @@ export default [
         ]
     },
     {
-        level: 21,
+        level: 22,
         task: [
             {id:1, text:'Select the Frankenstein', bold:false}
         ],
@@ -2625,7 +2791,7 @@ export default [
         ]
     },
     {
-        level: 22,
+        level: 23,
         task: [
             {id:1, text:'Select all the Frankensteins', bold:false}
         ],
@@ -2647,7 +2813,7 @@ export default [
             {
                 id: 2,
                 class: "monster8",
-                disappear: true,
+                disappear: false,
                 tooltip: {
                     start:'< ',
                     tag:'monster',
@@ -2742,6 +2908,178 @@ export default [
             'getElementsByName("creature");',
             "getElementsByName('creature');",
             "getElementsByName(`creature`);",
+        ]
+    },
+    {
+        level: 24,
+        task: [
+            {id:1, text:'Select all the endangered Monsters', bold:false}
+        ],
+        elements: [
+            {
+                id: 1,
+                class: "flood",
+                disappear: false,
+                tooltip: {
+                    start:'< ',
+                    tag:'flood',
+                    class:'"water cataclysm"',
+                    innertext:' Do not mess with a flood! ',
+                    end:' >'
+                }
+                // tooltip: '< flood class = "water cataclysm" > Do not mess with a flood! </ flood >'
+            },
+            {
+                id: 2,
+                class: "monster8",
+                disappear: true,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"green one-eyed"',
+                    id:'"Frank"',
+                    attrname:'data-in-danger',
+                    attr:'"yes"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "green one-eyed" id = "Frank" data-in-danger = "yes" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 3,
+                class: "monster5",
+                disappear: true,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"dark-blue tentacles"',
+                    id:'"Julia"',
+                    attrname:'data-in-danger',
+                    attr:'"yep"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "dark-blue tentacles" id = "Julia" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 4,
+                class: "monster3",
+                disappear: true,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"yellow notched"',
+                    id:'"Clark"',
+                    attrname:'data-in-danger',
+                    attr:'"of course"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "yellow notched" id = "Clark" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 5,
+                class: "flood",
+                disappear: false,
+                tooltip: {
+                    start:'< ',
+                    tag:'flood',
+                    class:'"water cataclysm"',
+                    innertext:' Do not mess with a flood! ',
+                    end:' >'
+                }
+                // tooltip: '< flood class = "water cataclysm" > Do not mess with a flood! </ flood >'
+            },
+            {
+                id: 6,
+                class: "monster4",
+                disappear: true,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"turquoise dotted"',
+                    id:'"Thomas"',
+                    attrname:'data-in-danger',
+                    attr:'"yes"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "turquoise dotted" id = "Thomas" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 7,
+                class: "monster9",
+                disappear: true,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"light-purple buka"',
+                    id:'"Alice"',
+                    attrname:'data-in-danger',
+                    attr:'"yeah"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "light-purple buka" id = "Alice" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 8,
+                class: "monster2",
+                disappear: true,
+                tooltip: {
+                    start:'< ',
+                    tag:'monster',
+                    class:'"purple happy"',
+                    id:'"Devil"',
+                    attrname:'data-in-danger',
+                    attr:'"yesss"',
+                    innertext:' Hello, I am a Monster! ',
+                    end:' >'
+                }
+                // tooltip: '< monster class = "purple happy" id = "Devil" > Hello, I am a Monster! </ monster >'
+            },
+            {
+                id: 9,
+                class: "flood",
+                disappear: false,
+                tooltip: {
+                    start:'< ',
+                    tag:'flood',
+                    class:'"water cataclysm"',
+                    innertext:' Do not mess with a flood! ',
+                    end:' >'
+                }
+                // tooltip: '< flood class = "water cataclysm" > Do not mess with a flood! </ flood >'
+            }
+        ],
+        story: "The Monsters have to face another cataclysm coming. A big wave is approaching. Help them to evacuate.",
+        task_description: [
+            {id:1, text:'Catch all the Monsters with the attribute "in-danger". Use the method ', bold:false},
+            {id:2, text:'querySelectorAll( )', bold:true},
+            {id:3, text:' .', bold:false}
+        ],
+        instructions: [
+            {id:1, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:true}
+            ]},
+            {id:2, bullet: [
+                {id:1, text:'', bold:false},
+                {id:2, text:'', bold:false},
+                {id:3, text:'', bold:false}
+            ]}
+        ],
+        example: [
+            {id:1, text:'document.querySelectorAll( "element[attribute]" )', bold:true},
+            {id:2, text:' will access all the elements with a specified attribute. The value of the attribute does not matter.', bold:false}
+        ],
+        expected_input: [
+            'querySelectorAll("monster[data-in-danger]")',
+            "querySelectorAll('monster[data-in-danger]')",
+            "querySelectorAll(`monster[data-in-danger]`)",
+            'querySelectorAll("monster[data-in-danger]");',
+            "querySelectorAll('monster[data-in-danger]');",
+            "querySelectorAll(`monster[data-in-danger]`);",
         ]
     }
 ];
