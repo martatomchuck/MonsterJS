@@ -48,7 +48,7 @@ Familiarity with the basics of HTML and JavaScript fundamentals is a plus but no
 * Webpack
 * Babel
 * SASS
-* CSS animations (eg. shake effect, auto-scroll)
+* CSS animations (eg. shake effect)
 * localStorage
 
 ## 👏 CONTRIBUTE
