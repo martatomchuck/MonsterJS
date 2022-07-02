@@ -51,6 +51,8 @@ Familiarity with the basics of HTML and JavaScript fundamentals is a plus but no
 * CSS animations (eg. shake effect)
 * localStorage
 
+**If you spot any bug or have feedback, please open an isssue on Github. All your comments are very welcome.**
+
 ## 👏 CONTRIBUTE
 
 Icons from flaticon.com made by:
