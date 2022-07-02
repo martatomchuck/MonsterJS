@@ -170,36 +170,11 @@
     }
 }
 
-.header .header-share {
-    color: white;
-    opacity: 0.6;
-    font-size: 1em;
-    font-weight: 600;
-    margin: 12px 20px 10px 0;
-    text-align: end;
+.header .header-action {
+    opacity: 0.8;
+    margin: 20px 20px 10px 0;
     display: flex;
     justify-content: flex-end;
-
-    p {
-        display: block;
-        margin-top: 18px;
-        margin-right: 5px;
-    }
-
-    div {
-        margin: 13px 4px;
-        position: relative;
-        width: 24px;
-        height: 24px;
-    }
-
-    .header-twitter {
-        background-image: url('../images/twitter24.png');
-    }
-
-    .header-facebook {
-        background-image: url('../images/facebook24.png');
-    }
 }
 
 @media (max-width: 765px) {

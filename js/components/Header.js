@@ -11,11 +11,8 @@ const Header = ({datasetLength, level, levelId}) => {
         <header className="header" onClick={closeCounterList}>
             <div className="header-title">MonsterJS</div>
             <Counter datasetLength={datasetLength} level={level} levelId={levelId}/>
-            <div className="header-share">
-                <p>Share</p>
-                <a type="twitter" href="https://twitter.com/intent/tweet?url=http://monsterjs.com&text=Learning JavaScript? Check out this game -> &hashtags=javascript,DOM,elements,monsterjs&via=martatomc" target="_blank"><div className="header-twitter"></div></a>
-                
-                <a type="facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://monsterjs.com/" target="_blank"><div className="header-facebook"></div></a>
+            <div className="header-action">
+                <a className="github-button" href="https://github.com/martatomchuck/MonsterJS" data-color-scheme="no-preference: light_high_contrast; light: light_high_contrast; dark: light_high_contrast;" rel="noopener" target="_blank" data-icon="octicon-star" data-size="large" aria-label="Star martatomchuck/MonsterJS on GitHub">Star on GitHub</a>
             </div>
         </header>
     )
