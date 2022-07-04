@@ -8,12 +8,25 @@ const Footer = () => {
     return (
         <footer className="footer" onClick={closeCounterList}>
             <div className="footer-copyright">
-            Created with <div className="footer-heart"></div> by <a href={"https://github.com/martatomchuck"} target={"_blank"}>martatomchuck</a>
+                Created with 117 cups of
+                <div className="footer-coffee-icon"></div>
+                by 
+                <a 
+                    href={"https://github.com/martatomchuck"} 
+                    target={"_blank"}
+                >martatomchuck</a>
             </div>
-            <div className="footer-github">
-                If you spot any bug or have feedback, please open an isssue on<a href={"https://github.com/martatomchuck/MonsterJS"} target={"_blank"}>GitHub</a>
+
+            <div className="footer-coffee">
+                If you want to support my creativity, you can load me with caffeine here
+                <a 
+                    className="footer-coffee-button"
+                    href={"https://www.buymeacoffee.com/monstervillage"} 
+                    target={"_blank"}
+                ><div className="footer-coffee-icon"></div>Buy me a coffee</a>            
             </div>
-            <div>Images made by Freepik & Smashicons & Dimitry Miroliubov from flaticon.com</div>
+
+            <div className="footer-contributions">Images made by Freepik & Smashicons & Dimitry Miroliubov from flaticon.com</div>
         </footer>
     )
 }

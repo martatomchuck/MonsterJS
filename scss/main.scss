@@ -49,7 +49,7 @@ a {
 // THE APP
 .header {
     width: 100%;
-    height: 85px; 
+    height: 160px; //85px
     background-image: linear-gradient(#000b22, transparent);
     display: flex;
     justify-content: space-between;
@@ -67,9 +67,9 @@ a {
 
 .footer {
     width: 100%;
-    height: 150px; 
+    height: 260px; //150px
     background-image: linear-gradient(transparent, #000b22);
-    padding-top: 25px;
+    padding-top: 95px; //25px
 }
 
 
@@ -86,7 +86,11 @@ a {
 @media (max-width: 1000px) {
     body {
         font-size: 14px;
-    }    
+    }
+
+    .header {
+        height: 90px;
+    }
 
     .container {
         width: 100vw;
@@ -94,10 +98,15 @@ a {
         flex-direction: column;
         height: auto;
     }
+
+    .footer {
+        height: 270px;
+        padding-top: 80px;
+    }
 }
 
 @media (max-width: 410px) {
     .footer {
-        height: 170px;
+        height: 340px;
     }
 }
