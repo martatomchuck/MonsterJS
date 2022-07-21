@@ -42,6 +42,7 @@ const Game = ({elements}) => {
 
     return (
         <>
+            <div className="game-hint">Hover or tap the element to peek its HTML structure.</div>
             <div className="game">
                 {elements.map((monster) => {
                     return (
@@ -53,7 +54,6 @@ const Game = ({elements}) => {
                     )
                 })}
             </div>
-            <h4 className="game-hint">Hover or tap the element to peek its HTML structure.</h4>
         </>
     )
 }
