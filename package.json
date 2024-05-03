@@ -19,7 +19,7 @@
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-stage-2": "^7.0.0",
     "autoprefixer": "^8.6.5",
-    "axios": "^0.21.2",
+    "axios": "^0.28.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.0.2",
     "babel-plugin-prismjs": "^2.0.1",
