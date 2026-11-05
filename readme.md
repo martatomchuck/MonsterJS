@@ -6,8 +6,6 @@
 
 ## 🦄 DEMO
 
-Click the link and play: https://monsterjs.com
-
 ![demo screenshot](/images/demo_screen_level10_new.png)
 
 **Happy hacking!**
